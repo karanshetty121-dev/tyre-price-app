@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
-from data import BRIDGESTONE_TURANZA, BRIDGESTONE_DUELER, BRIDGESTONE_LT, YOKOHAMA_EARTH1
+from data import BRIDGESTONE_TURANZA, BRIDGESTONE_DUELER, BRIDGESTONE_LT, YOKOHAMA_PASSENGER
 
 st.set_page_config(page_title="Tyre Price Finder", layout="wide")
 
+# Password Protection
 def check_password():
     if "password_correct" not in st.session_state:
         st.session_state["password_correct"] = False
@@ -27,7 +28,7 @@ if check_password():
         st.session_state["password_correct"] = False
         st.rerun()
 
-    search = st.text_input("🔍 Search Brand, Size, or Code:", placeholder="e.g. 215/75 or PSR0D")
+    search = st.text_input("🔍 Global Search:", placeholder="Enter Size, Pattern, or Code...")
 
     def show_brand_table(title, data_dict):
         df = pd.DataFrame(data_dict)
@@ -50,7 +51,8 @@ if check_password():
             )
             st.markdown("---")
 
-    [span_0](start_span)[span_1](start_span)show_brand_table("Bridgestone Passenger (Turanza 6i)", BRIDGESTONE_TURANZA)[span_0](end_span)[span_1](end_span)
-    [span_2](start_span)show_brand_table("Bridgestone SUV (Dueler AT002)", BRIDGESTONE_DUELER)[span_2](end_span)
-    [span_3](start_span)show_brand_table("Bridgestone Commercial (Duravis)", BRIDGESTONE_LT)[span_3](end_span)
-    [span_4](start_span)show_brand_table("Yokohama India (Earth-1)", YOKOHAMA_EARTH1)[span_4](end_span)
+    # Display tables
+    show_brand_table("Bridgestone Passenger (Turanza 6i)", BRIDGESTONE_TURANZA)
+    show_brand_table("Bridgestone SUV (Dueler AT002)", BRIDGESTONE_DUELER)
+    show_brand_table("Bridgestone Commercial (Duravis)", BRIDGESTONE_LT)
+    show_brand_table("Yokohama India (Earth-1 Max)", YOKOHAMA_PASSENGER)
