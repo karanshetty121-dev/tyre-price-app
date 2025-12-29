@@ -1,10 +1,11 @@
 import streamlit as st
 import pandas as pd
+from data import BRIDGESTONE_PASSENGER, BRIDGESTONE_LT, YOKOHAMA_PASSENGER
 
-# 1. Page Config
+# 1. Page Configuration
 st.set_page_config(page_title="Tyre Price Finder", layout="wide")
 
-# 2. Password Protection
+# 2. Password Logic
 def check_password():
     if "password_correct" not in st.session_state:
         st.session_state["password_correct"] = False
@@ -21,45 +22,19 @@ def check_password():
     return True
 
 if check_password():
-    st.title("🛞 Multi-Brand Tyre Price List")
-    st.caption("Effective From: 22nd September 2025")
+    st.title("🛞 Complete Tyre Price Dashboard")
+    st.caption("Prices effective from 22nd September 2025")
 
-    # Logout Button
+    # Sidebar Logout
     if st.sidebar.button("Log Out"):
         st.session_state["password_correct"] = False
         st.rerun()
 
-    # --- BRAND DATA SECTION ---
-    
-    # Bridgestone Data (Extracted from your PDFs)
-    bridgestone_data = {
-        "Rim": ["12", "14", "15", "16", "17"],
-        "Tyre Size": ["145 R12", "165 65 R14 79H", "215 75 R15 100T", "235 70 R16 106T", "235 65 R17 108H"],
-        "Pattern": ["Duravis R400", "Turanza 6i", "Dueler A/T002", "Dueler A/T002", "Dueler A/T002"],
-        "Type": ["TL", "TL", "TL", "TL", "TL"],
-        "Product code": ["LVR0D108", "PSR0D864", "PSR0D860", "PSR0D849", "PSR0D859"],
-        "Consumer Price": [3400, 5350, 7950, 9850, 14450],
-        "MRP": [3641, 5869, 8720, 10714, 15706]
-    }
+    # --- SEARCH LOGIC ---
+    search = st.text_input("🔍 Global Search:", placeholder="Enter Size, Pattern, or Code...")
 
-    # Yokohama Data (Extracted from your PDF)
-    yokohama_data = {
-        "Rim": ["12", "13", "13", "14", "15"],
-        "Tyre Size": ["145/80 R12", "145/80 R13", "155/65 R13", "165/70 R14", "175/65 R15"],
-        "Pattern": ["Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max"],
-        "Type": ["TL", "TL", "TL", "TL", "TL"],
-        "Product code": ["$1454", "$1155", "S1163", "$1159", "S1169"],
-        "Consumer Price": [3130, 3660, 3890, 4130, 5860],
-        "MRP": [3440, 4020, 4270, 4550, 6440]
-    }
-
-    # --- SEARCH & DISPLAY LOGIC ---
-    search = st.text_input("🔍 Global Search:", placeholder="Search Size, Pattern, or Product Code...")
-
-    def display_brand_table(brand_name, data_dict):
+    def show_brand_table(title, data_dict):
         df = pd.DataFrame(data_dict)
-        
-        # Filtering logic
         if search:
             mask = df.astype(str).apply(lambda x: x.str.contains(search, case=False)).any(axis=1)
             filt = df[mask]
@@ -67,18 +42,20 @@ if check_password():
             filt = df
         
         if not filt.empty:
-            st.header(f"🏷️ {brand_name}")
+            st.header(f"🏷️ {title}")
             st.dataframe(
-                filt,
-                use_container_width=True,
+                filt, 
+                use_container_width=True, 
                 hide_index=True,
                 column_config={
                     "Consumer Price": st.column_config.NumberColumn("Consumer Price", format="₹%d"),
                     "MRP": st.column_config.NumberColumn("MRP", format="₹%d"),
                 }
             )
-            st.write("---") # Creates the visual gap between brands
+            st.markdown("---")
 
-    # Display the tables
-    [span_0](start_span)[span_1](start_span)[span_2](start_span)display_brand_table("Bridgestone", bridgestone_data)[span_0](end_span)[span_1](end_span)[span_2](end_span)
-    [span_3](start_span)display_brand_table("Yokohama", yokohama_data)[span_3](end_span)
+    # Display tables for each category
+    show_brand_table("Bridgestone Passenger", BRIDGESTONE_PASSENGER)
+    show_brand_table("Bridgestone Commercial (LT)", BRIDGESTONE_LT)
+    show_brand_table("Yokohama India", YOKOHAMA_PASSENGER)
+
