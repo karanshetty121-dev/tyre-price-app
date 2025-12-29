@@ -1,16 +1,16 @@
 import streamlit as st
 import pandas as pd
 
-# 1. Function to check password
+# This must be the first command
+st.set_page_config(page_title="Tyre Price Finder", layout="wide")
+
 def check_password():
     if "password_correct" not in st.session_state:
         st.session_state["password_correct"] = False
-
     if not st.session_state["password_correct"]:
         st.title("🔐 Locked Dashboard")
-        pwd = st.text_input("Enter Password to Access Prices:", type="password")
+        pwd = st.text_input("Enter Password:", type="password")
         if st.button("Unlock"):
-            # This looks for a secret named 'password' in Streamlit settings
             if pwd == st.secrets["password"]:
                 st.session_state["password_correct"] = True
                 st.rerun()
@@ -19,12 +19,13 @@ def check_password():
         return False
     return True
 
-# 2. Only show the app if password is correct
 if check_password():
-    st.set_page_config(page_title="Tyre Price Finder", layout="centered")
-
-    # Your Data
+    st.title("🛞 Bridgestone Price List")
+    
+    # 1. ADD YOUR DATA HERE
+    # Just add more items to these lists. Make sure every list has the SAME number of items.
     data = {
+        "Product Code": ["BS-001", "BS-002", "BS-003", "BS-004", "BS-005", "BS-006", "BS-007"],
         "Rim": ["12", "13", "14", "14", "15", "15", "15"],
         "Size": ["145 R12", "155 R13", "165 R14", "185 R14", "195 R15", "215 75 R15", "7.00 R15"],
         "Pattern": ["Duravis R400", "Duravis R400", "Duravis R400", "Duravis R400", "Duravis R400", "Duravis R400", "Duravis R400 Plus"],
@@ -32,21 +33,37 @@ if check_password():
         "Price": [3400, 4250, 4850, 5800, 6750, 7200, 9650],
         "MRP": [3641, 4574, 5123, 6260, 7283, 7746, 10412]
     }
+    
     df = pd.DataFrame(data)
 
-    st.title("🛞 Bridgestone Price List")
-    search = st.text_input("🔍 Search Size or Rim:", placeholder="e.g. 15")
+    # 2. Search & Filter
+    search = st.text_input("🔍 Quick Search:", placeholder="Search Size, Pattern, or Code...")
+    
+    if search:
+        # Search across multiple columns at once
+        filt = df[
+            df['Size'].str.contains(search, case=False) | 
+            df['Pattern'].str.contains(search, case=False) |
+            df['Product Code'].str.contains(search, case=False) |
+            df['Rim'].str.contains(search)
+        ]
+    else:
+        filt = df
 
-    filt = df[df['Size'].str.contains(search, case=False) | df['Rim'].str.contains(search)] if search else df
+    # 3. Display as Interactive Table
+    # use_container_width=True makes it fill the phone screen
+    st.dataframe(
+        filt, 
+        use_container_width=True, 
+        hide_index=True,
+        column_config={
+            "Price": st.column_config.NumberColumn("Our Price", format="₹%d"),
+            "MRP": st.column_config.NumberColumn("MRP", format="₹%d"),
+        }
+    )
 
-    for index, row in filt.iterrows():
-        with st.container():
-            col1, col2 = st.columns([2, 1])
-            with col1:
-                st.markdown(f"**{row['Size']}** ({row['Pattern']})")
-                st.info(f"Type: {row['Type']}")
-            with col2:
-                st.markdown(f"### ₹{row['Price']}")
-                st.caption(f"MRP: ₹{row['MRP']}")
-            st.divider()
+    if st.sidebar.button("Log Out"):
+        st.session_state["password_correct"] = False
+        st.rerun()
+
 
