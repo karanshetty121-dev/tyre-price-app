@@ -1,9 +1,10 @@
 import streamlit as st
 import pandas as pd
 
-# This must be the first command
+# 1. Page Config
 st.set_page_config(page_title="Tyre Price Finder", layout="wide")
 
+# 2. Password Protection
 def check_password():
     if "password_correct" not in st.session_state:
         st.session_state["password_correct"] = False
@@ -20,48 +21,64 @@ def check_password():
     return True
 
 if check_password():
-    st.title("🛞 Bridgestone Price List")
-    
-    # 1. ADD YOUR DATA HERE
-    # Just add more items to these lists. Make sure every list has the SAME number of items.
-    data = {
-        "Product Code": ["BS-001", "BS-002", "BS-003", "BS-004", "BS-005", "BS-006", "BS-007"],
-        "Rim": ["12", "13", "14", "14", "15", "15", "15"],
-        "Size": ["145 R12", "155 R13", "165 R14", "185 R14", "195 R15", "215 75 R15", "7.00 R15"],
-        "Pattern": ["Duravis R400", "Duravis R400", "Duravis R400", "Duravis R400", "Duravis R400", "Duravis R400", "Duravis R400 Plus"],
-        "Type": ["TL", "TL", "TL", "TL", "TL", "TL", "TT"],
-        "Price": [3400, 4250, 4850, 5800, 6750, 7200, 9650],
-        "MRP": [3641, 4574, 5123, 6260, 7283, 7746, 10412]
-    }
-    
-    df = pd.DataFrame(data)
+    st.title("🛞 Multi-Brand Tyre Price List")
+    st.caption("Effective From: 22nd September 2025")
 
-    # 2. Search & Filter
-    search = st.text_input("🔍 Quick Search:", placeholder="Search Size, Pattern, or Code...")
-    
-    if search:
-        # Search across multiple columns at once
-        filt = df[
-            df['Size'].str.contains(search, case=False) | 
-            df['Pattern'].str.contains(search, case=False) |
-            df['Product Code'].str.contains(search, case=False) |
-            df['Rim'].str.contains(search)
-        ]
-    else:
-        filt = df
-
-    # 3. Display as Interactive Table
-    # use_container_width=True makes it fill the phone screen
-    st.dataframe(
-        filt, 
-        use_container_width=True, 
-        hide_index=True,
-        column_config={
-            "Price": st.column_config.NumberColumn("Our Price", format="₹%d"),
-            "MRP": st.column_config.NumberColumn("MRP", format="₹%d"),
-        }
-    )
-
+    # Logout Button
     if st.sidebar.button("Log Out"):
         st.session_state["password_correct"] = False
         st.rerun()
+
+    # --- BRAND DATA SECTION ---
+    
+    # Bridgestone Data (Extracted from your PDFs)
+    bridgestone_data = {
+        "Rim": ["12", "14", "15", "16", "17"],
+        "Tyre Size": ["145 R12", "165 65 R14 79H", "215 75 R15 100T", "235 70 R16 106T", "235 65 R17 108H"],
+        "Pattern": ["Duravis R400", "Turanza 6i", "Dueler A/T002", "Dueler A/T002", "Dueler A/T002"],
+        "Type": ["TL", "TL", "TL", "TL", "TL"],
+        "Product code": ["LVR0D108", "PSR0D864", "PSR0D860", "PSR0D849", "PSR0D859"],
+        "Consumer Price": [3400, 5350, 7950, 9850, 14450],
+        "MRP": [3641, 5869, 8720, 10714, 15706]
+    }
+
+    # Yokohama Data (Extracted from your PDF)
+    yokohama_data = {
+        "Rim": ["12", "13", "13", "14", "15"],
+        "Tyre Size": ["145/80 R12", "145/80 R13", "155/65 R13", "165/70 R14", "175/65 R15"],
+        "Pattern": ["Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max"],
+        "Type": ["TL", "TL", "TL", "TL", "TL"],
+        "Product code": ["$1454", "$1155", "S1163", "$1159", "S1169"],
+        "Consumer Price": [3130, 3660, 3890, 4130, 5860],
+        "MRP": [3440, 4020, 4270, 4550, 6440]
+    }
+
+    # --- SEARCH & DISPLAY LOGIC ---
+    search = st.text_input("🔍 Global Search:", placeholder="Search Size, Pattern, or Product Code...")
+
+    def display_brand_table(brand_name, data_dict):
+        df = pd.DataFrame(data_dict)
+        
+        # Filtering logic
+        if search:
+            mask = df.astype(str).apply(lambda x: x.str.contains(search, case=False)).any(axis=1)
+            filt = df[mask]
+        else:
+            filt = df
+        
+        if not filt.empty:
+            st.header(f"🏷️ {brand_name}")
+            st.dataframe(
+                filt,
+                use_container_width=True,
+                hide_index=True,
+                column_config={
+                    "Consumer Price": st.column_config.NumberColumn("Consumer Price", format="₹%d"),
+                    "MRP": st.column_config.NumberColumn("MRP", format="₹%d"),
+                }
+            )
+            st.write("---") # Creates the visual gap between brands
+
+    # Display the tables
+    [span_0](start_span)[span_1](start_span)[span_2](start_span)display_brand_table("Bridgestone", bridgestone_data)[span_0](end_span)[span_1](end_span)[span_2](end_span)
+    [span_3](start_span)display_brand_table("Yokohama", yokohama_data)[span_3](end_span)
