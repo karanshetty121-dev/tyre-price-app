@@ -46,7 +46,8 @@ if check_password():
         "MRP": [3221, 3404, 3481, 3649, 3706, 3838, 3859, 3768, 4004, 3773, 4038, 5040, 5093, 4908, 4731, 5117, 5255, 5331, 6092, 5913, 6492, 6593, 6882, 6652, 6552, 6548, 7147, 8955, 8255, 10002]
     }
 
-    # --- BALANCED YOKOHAMA DATASET (156 ROWS) ---
+    # --- COMPLETE YOKOHAMA DATASET (156 ROWS) ---
+    # Tyre Size and LI/SS clubbed as requested
     yokohama_master = {
         "Brand": ["Yokohama"] * 156,
         "Pattern": ["Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "Earth-1 Max", "GT Max", "Earth-1 Max", "AS01", "Earth-1 Max", "Earth-1 Max", "GT Max", "Earth-1 Max", "AS01", "Earth-1 Max", "AS01", "Earth-1 Max", "AS01", "GT Max", "AE30", "Earth-1 Max", "GT Max", "Earth-1 Max", "GT Max", "Earth-1 Max", "GT Max", "Earth-1 Max", "AS01", "AS01", "GT Max", "Earth-1 Max", "AS01", "Earth-1 Max", "GT Max", "AS01", "AS01", "AS01", "Earth-1 Max", "G015", "G055", "G015.", "Earth-1 Max", "G015", "G015", "G015", "LT G015", "LT G015", "LT G015", "LT G015", "G015", "G003", "G003", "GT Max", "Earth-1 Max", "Earth-1 Max", "GT Max", "AS01", "V013", "Earth-1 Max", "GT Max", "Earth-1 Max", "Earth-1 Max", "GT Max", "AS01", "AC02", "V103", "Earth-1 Max", "GT Max", "RV02", "Earth-1 Max", "GT Max", "RV02", "GT Max", "Earth-1 Max", "GT Max", "RV02", "G015", "G055", "GT Max", "V103", "GT Max", "V105S", "GT Max", "G055", "G015", "G015", "G015", "G015", "G003", "G003", "V013", "V013", "RV02", "GT Max", "AS01", "V551", "Earth-1 Max", "GT Max", "Earth-1 Max", "GT Max", "RV02", "GT Max", "AS01", "V103", "GT Max", "V103", "Earth-1 Max", "GT Max", "V105S", "Earth-1 Max", "GT Max", "RV02", "G015", "G055", "GT Max", "G015", "G055", "G015", "G015", "G016", "G003", "RV02", "V105S", "RV02", "RV02", "AC02", "RV02", "RV02", "G055", "V105S", "GT Max", "V105S", "GT Max", "V103", "G057", "G015", "G015", "G015", "G015", "G015", "G016", "G057", "V105S", "GT Max", "V105S", "V105", "G057", "G057", "V105S", "V107", "G057", "V105S", "G057", "G057", "G057", "G057", "V103B", "V103B", "G015", "G057", "V105"],
@@ -74,7 +75,7 @@ if check_password():
                 })
             st.markdown("---")
 
-    # Display Each Brand Master Table
+    # Display Tables
     show_brand_table("Bridgestone Master List", bridgestone_master)
     show_brand_table("Firestone Master List", firestone_master)
     show_brand_table("Yokohama Master List", yokohama_master)
