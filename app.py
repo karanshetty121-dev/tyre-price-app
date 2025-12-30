@@ -46,15 +46,14 @@ if check_password():
         "MRP": [3221, 3404, 3481, 3649, 3706, 3838, 3859, 3768, 4004, 3773, 4038, 5040, 5093, 4908, 4731, 5117, 5255, 5331, 6092, 5913, 6492, 6593, 6882, 6652, 6552, 6548, 7147, 8955, 8255, 10002]
     }
 
-    # --- YOKOHAMA DATASET (ONLY FROM THE LAST PDF) ---
-    # Size and LI/SS clubbed as requested
-    yokohama_master = {
-        "Brand": ["Yokohama"] * 5,
-        "Pattern": ["Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max"],
-        "Tyre Size": ["145 80 R12 74T", "145 80 R13 75S", "155 65 R13 73T", "155 70 R13 75T", "155 80 R13 79T"],
-        "Type": ["TL"] * 5,
-        "Consumer Price": [3130, 3660, 3890, 4020, 4340],
-        "MRP": [3440, 4020, 4270, 4420, 4770]
+    # --- COMPLETE FIRESTONE DATASET (30 ROWS) ---
+    firestone_master = {
+        "Brand": ["Firestone"] * 30,
+        "Pattern": ["Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 22", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Destination LE02", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 2z", "Roadhawk 22", "Destination LE02", "Destination LE02", "Destination LE02"],
+        "Tyre Size": ["145 80 R12", "145 70 R13", "145 80 R13", "155 65 R13", "155 70 R13", "155 80 R13", "165 65 R13", "155 65 R14", "165 65 R14", "165 70 R14", "165 80 R14", "175 65 R14", "175 70 R14", "185 65 R14", "185 70 R14", "175 65 R15", "185 60 R15", "185 65 R15", "195 60 R15", "195 65 R15", "205 65 R15", "215 75 R15", "195 55 R16", "195 60 R16", "205 60 R16", "205 65 R16", "215 60 R16", "215 65 R16", "235 70 R16", "225 60 R17"],
+        "Type": ["TL"] * 30,
+        "Consumer Price": [2950, 3050, 3200, 3400, 3450, 3650, 3500, 3350, 3800, 3450, 3700, 4700, 4700, 4550, 4500, 4800, 4950, 5000, 5650, 5500, 6000, 6100, 6550, 6350, 6250, 6100, 6650, 8350, 7700, 9300],
+        "MRP": [3221, 3404, 3481, 3649, 3706, 3838, 3859, 3768, 4004, 3773, 4038, 5040, 5093, 4908, 4731, 5117, 5255, 5331, 6092, 5913, 6492, 6593, 6882, 6652, 6552, 6548, 7147, 8955, 8255, 10002]
     }
 
     # --- DISPLAY LOGIC ---
@@ -78,4 +77,4 @@ if check_password():
     # Display Tables for Each Brand
     show_brand_table("Bridgestone Master List", bridgestone_master)
     show_brand_table("Firestone Master List", firestone_master)
-    show_brand_table("Yokohama Master List", yokohama_master)
+    show_brand_table("Firestone Master List", firestone_master)
