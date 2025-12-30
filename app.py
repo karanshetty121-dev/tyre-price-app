@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 
 # 1. Page Configuration
-st.set_page_config(page_title="Bridgestone Price Dashboard", layout="wide")
+st.set_page_config(page_title="Bridgestone Master Price List", layout="wide")
 
-# 2. Password Protection
+# 2. Password Logic
 def check_password():
     if "password_correct" not in st.session_state:
         st.session_state["password_correct"] = False
@@ -28,15 +28,15 @@ if check_password():
         st.session_state["password_correct"] = False
         st.rerun()
 
-    search = st.text_input("🔍 Global Search:", placeholder="Enter Size (e.g. 145 80 12), Pattern, or Code...")
+    search = st.text_input("🔍 Global Search:", placeholder="Enter Size (e.g. 145 80 12) or Pattern...")
 
-    # --- CATEGORY 1: BRIDGESTONE PASSENGER (BSID - Rims 12-21) ---
+    # --- FULL BSID DATA (Rims 12-21) ---
     bsid_data = {
         "Rim": ["12"]*9 + ["13"]*13 + ["14"]*22 + ["15"]*36 + ["16"]*20 + ["17"]*24 + ["18"]*16 + ["19"]*6 + ["20"]*5 + ["21"]*1,
         "Tyre Size": [
             "135 70 R12 65T", "145 70 R12 695", "145 70 R12 695", "145 80 R12 74H", "145 80 R12 745", "145 80 R12 745", "145 80 R12 74T", "155 65 R12 71T", "165 60 R12 71H",
             "145 70 R13 071T", "145 70 R13 71T", "145 80 R13 75T", "155 65 R13 73T", "155 70 R13 075T", "155 70 R13 75T", "155 80 R13 079T", "155 80 R13 79T", "155 R13 LT 90 89Q", "165 60 R13 73H", "165 65 R13 77T", "175 60 R13 77H", "175 70 R13 82T",
-            "155 65 R14 75T", "155 70 R14 77T", "165 65 R14 79H", "165 70 R14 815", "165 70 R14 81T", "165 80 R14 85T", "165 80 R14 85T", "165 80 R14 85T", "175 65 R14 82T", "175 65 R14 86T", "175 65 R14 82T", "175 65 R14 82T", "175 70 R14 84T", "175 R14 C 96 94Q", "185 65 R14 86T", "185 65 R14 86T", "185 70 R14 088T", "185 70 R14 88T", "185 70 R14 88T", "185 70 R14 88H", "195 70 R14 95H", "205 60 R14 89H",
+            "155 65 R14 75T", "155 70 R14 77T", "165 65 R14 79H", "165 70 R14 81S", "165 70 R14 81T", "165 80 R14 85T", "165 80 R14 85T", "165 80 R14 85T", "175 65 R14 82T", "175 65 R14 86T", "175 65 R14 82T", "175 65 R14 82T", "175 70 R14 84T", "175 R14 C 96 94Q", "185 65 R14 86T", "185 65 R14 86T", "185 70 R14 088T", "185 70 R14 88T", "185 70 R14 88T", "185 70 R14 88H", "195 70 R14 95H", "205 60 R14 89H",
             "165 80 R15 87S", "175 60 R15 81H", "175 60 R15 81H", "175 60 R15 81H", "175 65 R15 84T", "175 65 R15 84T", "175 65 R15 84H", "185 60 R15 084T", "185 60 R15 88T", "185 60 R15 84T", "185 60 R15 84H", "185 65 R15 88T", "185 65 R15 88H", "185 65 R15 88H", "185 65 R15 88H", "195 60 R15 88T", "195 60 R15 88T", "195 65 R15 91H", "195 65 R15 91T", "195 65 R15 91H", "195 80 R15 96S", "195 R15 LT 106 105Q", "195 80 R15 LT 107/105Q", "205 65 R15 94T", "205 65 R15 94S", "205 65 R15 99S", "205 65 R15 94H", "215 70 R15C 109 107S", "215 75 R15 100S", "215 75 R15 100 97Q", "215 75 R15 100S", "215 75 R15 106S", "215 75 R15 100S", "215 75 R15 100S", "235 75 R15 105S", "235 75 R15 105S",
             "185 55 R16 83H", "195 55 R16 87V", "195 55 R16 87H", "195 60 R16 89H", "195 60 R16 89H", "205 55 R16 91H", "205 55 R16 91T", "205 60 R16 92H", "205 65 R16 95H", "205 65 R16 95S", "215 55 R16 93V", "215 60 R16 95H", "215 60 R16 95T", "215 65 R16 98H", "225 50 R16 92W", "225 55 R16 99V", "225 60 R16 98V", "235 70 R16 105S", "235 70 R16 106H", "235 70 R16 109S",
             "205 40 R17 84Y", "205 50 R17 93H", "215 45 R17 91Y", "215 55 R17 94V", "215 55 R17 94V", "215 60 R17 96H", "215 60 R17 96H", "225 45 R17 91W", "225 50 R17 98W", "225 55 R17 97W", "225 60 R17 99H", "225 65 R17 102H", "235 45 R17 97Y", "235 55 R17 99V", "235 65 R17 104H", "235 65 R17 108H", "235 65 R17 104H", "235 65 R17 104H", "245 40 R17 91Y", "245 45 R17 95W", "245 65 R17 107H", "255 65 R17 110S", "265 65 R17 112H", "265 65 R17 112S",
@@ -44,9 +44,19 @@ if check_password():
             "245 40 R19 94W", "245 45 R19 98Y", "255 50 R19 107W", "275 35 R19 96W", "275 40 R19 105Y", "275 55 R19 111V",
             "245 35 R20 95Y", "265 55 R20 113V", "275 35 R20 102Y", "275 40 R20 106Y", "295 30 R20 101Y", "235 50 R21 101W"
         ],
-        "Pattern": ["Sturdo", "EP100", "S322", "ER60", "248", "S248", "Sturdo", "Sturdo", "G3", "EP150", "Sturdo", "Sturdo", "Sturdo", "EP150", "Sturdo", "EP150", "Sturdo", "L607", "MY02", "Sturdo", "MY02", "Sturdo", "Sturdo", "Sturdo", "Sturdo", "EP150", "Sturdo", "EP150", "S248", "Sturdo", "B250", "B250 Enliten", "EP150", "Sturdo", "Sturdo", "L607", "EP150", "Sturdo", "EP150", "B250", "Sturdo", "ER60", "RE88", "G3", "B800", "B250", "B250 Enliten", "Sturdo", "B250", "Sturdo", "EP150", "EP150", "B250", "Sturdo", "ER300", "EP150", "EP150", "B250", "Sturdo", "EP150", "Sturdo", "T001", "EP150", "Sturdo", "Dueler HL 852", "D689", "R623", "EP150", "B390", "B390", "ER60", "R623", "D689", "D689", "D689", "P.Cab", "D693II", "D684II", "D689", "D689", "EP150", "EP150", "Sturdo", "EP150", "T001", "Sturdo", "EP150", "G3", "DHP", "B390", "T005", "T001", "EP150", "T001", "T001", "T005A", "T005", "D689", "EP850", "D689", "S001", "EP150", "S001", "T001", "T005A", "DHP", "DHP Enliten", "T005A", "T005A", "T005A", "T001", "EP850", "S001", "Alenza 001", "D684", "EP850", "EP850", "Ecopia HL", "S001", "T005A", "Ecopia HL", "D840", "EP850", "D693", "S007A", "T001", "Dueler HL 33", "T005", "T001", "D684", "Alenza Enliten", "EP850", "Dueler HL33", "S001", "RE050A", "Alenza Sports", "Alenza 001", "Ecopia HL", "D684", "D693", "RE050", "S001", "Alenza 001", "RE050", "S001", "Alenza 001", "S007A", "D693", "S007A", "Alenza 001", "S007A", "Alenza 001"],
-        "Type": ["TL", "TL", "TT", "TL", "TT", "TO", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TT", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL"],
-        "Product code": ["-"] * 152,
+        "Pattern": [
+            "Sturdo", "EP100", "S322", "ER60", "248", "S248", "Sturdo", "Sturdo", "G3", 
+            "EP150", "Sturdo", "Sturdo", "Sturdo", "EP150", "Sturdo", "EP150", "Sturdo", "L607", "MY02", "Sturdo", "MY02", "Sturdo",
+            "Sturdo", "Sturdo", "Sturdo", "EP150", "Sturdo", "EP150", "S248", "Sturdo", "B250", "B250 Enliten", "EP150", "Sturdo", "Sturdo", "L607", "EP150", "Sturdo", "EP150", "B250", "Sturdo", "ER60", "RE88", "G3",
+            "B800", "B250", "B250 Enliten", "Sturdo", "B250", "Sturdo", "EP150", "EP150", "B250", "Sturdo", "ER300", "EP150", "EP150", "B250", "Sturdo", "EP150", "Sturdo", "T001", "EP150", "Sturdo", "Dueler HL 852", "D689", "R623", "EP150", "B390", "B390", "ER60", "R623", "D689", "D689", "D689", "P.Cab", "D693II", "D684II", "D689", "D689",
+            "EP150", "EP150", "Sturdo", "EP150", "T001", "Sturdo", "EP150", "G3", "DHP", "B390", "T005", "T001", "EP150", "T001", "T001", "T005A", "T005", "D689", "EP850", "D689",
+            "S001", "EP150", "S001", "T001", "T005A", "DHP", "DHP Enliten", "T005A", "T005A", "T005A", "T001", "EP850", "S001", "Alenza 001", "D684", "EP850", "EP850", "Ecopia HL", "S001", "T005A", "Ecopia HL", "D840", "EP850", "D693",
+            "S007A", "T001", "Dueler HL 33", "T005", "T001", "D684", "Alenza Enliten", "EP850", "Dueler HL33", "S001", "RE050A", "Alenza Sports", "Alenza 001", "Ecopia HL", "D684", "D693",
+            "RE050", "S001", "Alenza 001", "RE050", "S001", "Alenza 001",
+            "S007A", "D693", "S007A", "Alenza 001", "S007A", "Alenza 001"
+        ],
+        "Type": ["TL"]*152,
+        "Product code": ["-"]*152,
         "Consumer Price": [
             2850, 3300, 3200, 3550, 3550, 3050, 3450, 3500, 4050, 3650, 3800, 3800, 4000, 4000, 4150, 4300, 4450, 4450, 4500, 4200, 4850, 5300, 4150, 4350, 5000, 3950, 4100, 4350, 4700, 4600, 5850, 5950, 5650, 5850, 5850, 6850, 5350, 5550, 5450, 5650, 5650, 5700, 7050, 6200, 5100, 6800, 6850, 6800, 6150, 6150, 5900, 5950, 6200, 6200, 6350, 6300, 6300, 6550, 6550, 6900, 7150, 7350, 7000, 7250, 7350, 7650, 7350, 7350, 7650, 7850, 7750, 7600, 7700, 7700, 7950, 7850, 7850, 7800, 7800, 7950, 8000, 8400, 8800, 8350, 8600, 9700, 9350, 8500, 8050, 7850, 11450, 8950, 8650, 10250, 11900, 12100, 10200, 9550, 9200, 9550, 10950, 10450, 9750, 12000, 12200, 10950, 11050, 12350, 12200, 12150, 11800, 11850, 13650, 13700, 13900, 13650, 13650, 13650, 14200, 13200, 13950, 13300, 14050, 14450, 15400, 15200, 18450, 20400, 20050, 20800, 21200, 14850, 20650, 21200, 15800, 12550, 18100, 15400, 18700, 22950, 26350, 22300, 21000, 28350, 28850, 23850, 28050, 27900, 32850, 32250, 39300, 29450
         ],
@@ -55,50 +65,7 @@ if check_password():
         ]
     }
 
-    # --- CATEGORY 2: BRIDGESTONE RUN-FLAT (RFT) ---
-    rft_data = {
-        "Rim": ["16"]*3 + ["17"]*5 + ["18"]*5 + ["19"]*3 + ["20"]*2 + ["21"]*2,
-        "Tyre Size": ["205 55 R16 91V", "225 50 R16 92W", "225 50 R16 92V", "225 45 R17 91W", "225 45 R17 91Y", "225 50 R17 94W", "225 50 R17 94Y", "225 55 R17 97Y", "225 50 R18 95W", "235 60 R18 103H", "245 40 R18 93Y", "245 45 R18 96W", "245 50 R18 100Y", "245 45 R19 98Y", "275 35 R19 96W", "275 40 R19 101Y", "235 50 R20 100V", "245 45 R20 99Y", "245 40 R21 96Y", "275 35 R21 99Y"],
-        "Pattern": ["S001", "5001", "RE050", "5001", "RE050", "5001", "RE050", "S001", "S001", "Alenza 001", "RE050", "5001", "S001", "S001", "5001", "5001", "Alenza 001", "T005", "S001", "5001"],
-        "Type": ["TL (RFT)"] * 20,
-        "Product code": ["-"] * 20,
-        "Consumer Price": [11150, 14550, 14550, 15900, 15900, 17100, 17100, 17150, 22750, 20500, 24050, 23350, 22650, 28550, 32900, 30700, 31500, 32900, 37850, 39650],
-        "MRP": [11768, 15398, 15396, 16845, 16846, 18101, 18103, 18130, 24085, 21729, 25479, 24714, 23988, 29981, 34545, 32228, 33039, 34551, 39381, 41241]
-    }
-
-    # --- CATEGORY 3: BRIDGESTONE PREMIUM (Turanza 6i) ---
-    t6i_data = {
-        "Rim": ["14"]*3 + ["15"]*7 + ["16"]*14 + ["17"]*11 + ["18"]*7 + ["19"]*5 + ["20"]*6,
-        "Tyre Size": ["165 65 R14 79H", "175 65 R14 82T", "185 70 R14 88T", "175 65 R15 84T", "185 60 R15 84T", "185 65 R15 88H", "185 70 R15 89H", "195 55 R15 85V", "195 65 R15 91V", "205 55 R15 88V", "185 55 R16 83V", "185 60 R16 86H", "195 55 R16 87H", "195 60 R16 93V", "205 50 R16 87V", "205 55 R16 91W", "205 60 R16 92V", "205 65 R16 95H", "215 55 R16 97W", "215 60 R16 99V", "215 65 R16 98V", "225 50 R16 92W", "225 55 R16 99Y", "225 60 R16 102W", "205 45 R17 88Y", "205 55 R17 91H", "215 45 R17 91W", "215 55 R17 94W", "225 45 R17 94W", "225 50 R17 98Y", "225 55 R17 101W", "225 60 R17 99V", "235 55 R17 103W", "235 60 R17 102V", "245 45 R17 99W", "215 55 R18 95V", "235 45 R18 98W", "235 50 R18 97W", "235 60 R18 107W", "235 65 R18 106V", "245 45 R18 100Y", "255 55 R18 109W", "235 55 R19 101W", "255 50 R19 107W", "255 55 R19 111Y", "265 50 R19 110W", "275 55 R19 111V", "285 45 R19 107W", "255 50 R20 109W", "255 55 R20 110W", "275 45 R20 110Y", "275 50 R20 109W", "285 50 R20 116W"],
-        "Pattern": ["Turanza 6i"] * 53,
-        "Type": ["TL"] * 53,
-        "Product code": ["PSR0D864", "PSR0D868", "PSR0D871", "PSR0D869", "PSR0D870", "PSR0D865", "PSR0D890", "PSR0D872", "PSR0D679", "PSR0D875", "PSR0D678", "PSROD889", "PSR0D866", "PSROD010", "PSR0D873", "PSR0D874", "PSR0D877", "PSR0D855", "PSR0D677", "PSR0D996", "PSR0D011", "PSR0D676", "PSROD012", "PSR0D009", "PSR0D019", "PSR0D876", "PSR0D014", "PSR0D994", "PSR0D016", "PSR0D893", "PSR0D883", "PSR0D997", "PSR0D878", "PSR0D999", "PSR0D017", "PSR0D854", "PSR0D021", "PSR0D862", "PSR0D880", "PSR0D998", "PSR0D894", "PSR0D886", "PSR0D863", "PSR0D884", "PSR0D881", "PSR0D888", "PSR0D879", "PSR0D005", "PSROD885", "PSR0D887", "PSR0D882", "PSR0D861", "PSR0D992"],
-        "Consumer Price": [5350, 6200, 6050, 6500, 6500, 6850, 6650, 6900, 7550, 7700, 8450, 7250, 9250, 8800, 9200, 10350, 8550, 8200, 11550, 9300, 10650, 12300, 11850, 10300, 10000, 10000, 10100, 12400, 12700, 12650, 12550, 12150, 14600, 20200, 13650, 13400, 20800, 21050, 15850, 21400, 16100, 19700, 19650, 21650, 21200, 26500, 25250, 28800, 25500, 25450, 27500, 25850, 27650],
-        "MRP": [5869, 6826, 6643, 7141, 7127, 7508, 7256, 7580, 8301, 8434, 9294, 7844, 10083, 9749, 10046, 11286, 9291, 8919, 12697, 10212, 11691, 13490, 13009, 11284, 10897, 10898, 11142, 13695, 13998, 13946, 13635, 13417, 15934, 22287, 15041, 14620, 22853, 22913, 17290, 23539, 17670, 21448, 21010, 23207, 22692, 28354, 26973, 30698, 27315, 27210, 29447, 27653, 30004]
-    }
-
-    # 4. BRIDGESTONE SUV (Dueler)
-    dueler_data = {
-        "Rim": ["15", "16", "17", "17", "17", "18", "18", "18", "18", "18"],
-        "Tyre Size": ["215 75 R15 100T", "235 70 R16 106T", "235 65 R17 108H", "245 60 R17 108H", "265 65 R17 112T", "235 60 R18 107H", "245 55 R18 103V", "255 65 R18 111H", "265 60 R18 114H", "285 60 R18 116H"],
-        "Pattern": ["Dueler All-Terrain"] * 10,
-        "Type": ["TL"] * 10,
-        "Product code": ["PSR0D860", "PSR0D849", "PSR0D859", "PSR0D858", "PSR0D848", "PSR0D851", "PSR0D850", "PSR0D853", "PSR0D852", "PSR0D896"],
-        "Consumer Price": [7950, 9850, 14450, 15000, 14900, 15750, 16550, 13100, 19350, 20600],
-        "MRP": [8720, 10714, 15706, 16081, 16205, 17153, 17702, 14254, 21084, 22036]
-    }
-
-    # 5. BRIDGESTONE COMMERCIAL (Duravis LT)
-    lt_data = {
-        "Rim": ["12", "13", "14", "14", "15", "15", "15"],
-        "Tyre Size": ["145 R12", "155 R13", "165 R14", "185 R14", "195 R15", "215 75 R15", "7.00 R15"],
-        "Pattern": ["Duravis R400"] * 6 + ["Duravis R400 Plus"],
-        "Type": ["TL"] * 6 + ["TT"],
-        "Product code": ["LVR0D108", "LVR0D113", "LVR0D109", "LVROD106", "LVR0D107", "LVR0D112", "LSR0D004"],
-        "Consumer Price": [3400, 4250, 4850, 5800, 6750, 7200, 9650],
-        "MRP": [3641, 4574, 5123, 6260, 7283, 7746, 10412]
-    }
-
+    # --- DISPLAY LOGIC ---
     def show_table(title, data):
         df = pd.DataFrame(data)
         if search:
@@ -106,17 +73,18 @@ if check_password():
             filt = df[mask]
         else:
             filt = df
+        
         if not filt.empty:
             st.header(f"🏷️ {title}")
             st.dataframe(
-                filt, use_container_width=True, hide_index=True,
-                column_config={"Consumer Price": st.column_config.NumberColumn("Consumer Price", format="₹%d"), "MRP": st.column_config.NumberColumn("MRP", format="₹%d")}
+                filt, 
+                use_container_width=True, 
+                hide_index=True,
+                column_config={
+                    "Consumer Price": st.column_config.NumberColumn("Consumer Price", format="₹%d"),
+                    "MRP": st.column_config.NumberColumn("MRP", format="₹%d"),
+                }
             )
-            st.write("---")
+            st.markdown("---")
 
-    show_table("Bridgestone Passenger (BSID)", bsid_data)
-    show_table("Bridgestone प्रीमियम (Turanza 6i)", t6i_data)
-    show_table("Bridgestone Run-Flat (RFT)", rft_data)
-    show_table("Bridgestone SUV (Dueler AT002)", dueler_data)
-    show_table("Bridgestone Commercial (Duravis LT)", lt_data)
-
+    show_table("Bridgestone Master List (BSID)", bsid_data)
