@@ -83,6 +83,46 @@ if check_password():
         ]
     }
 
+    # --- JK TYRE (Full list from PDF) ---
+    jk_master = {
+        "Brand": ["JK Tyre"] * 42,
+        "Pattern": [
+            "TYRE AND TUBE", "TUBELESS", "TUBELESS", "TYRE AND TUBE", "ULTIMA SPORT", 
+            "ULTIMA NEO", "TAXIMAX", "TAXIMAX", "ULTIMA HI LIFE", "TAXIMAX", 
+            "TAXIMAX", "TAXIMAX", "TAXIMAX", "TAXIMAX", "UX ROYALE", 
+            "TAXIMAX", "TUBELESS XPC", "UX ROYALE", "TAXIMAX", "TAXIMAX", 
+            "UX ROYALE", "UX TOURING", "RANGER HT", "STEEL KING TLS", "STEEL KING TUBE", 
+            "AT", "BRUTE TTF", "UX TOURING", "UX ROYALE", "UXROYAL WITH SENSOR", 
+            "HPE", "UX ROYALE", "TAXIMAX", "UX TOURING", "RANGER HT", 
+            "UX ROYALE", "AT", "ELANZO SUPER", "UX ROYALE", "RANGER HT", 
+            "RANGER WITH SENSOR", "RANGER HT"
+        ],
+        "Tyre Size": [
+            "145/70/12", "145/70/12", "145/80/12", "145/80/12", "165/70/12", 
+            "155/65/14", "155/70/13", "155/80/13", "165/65/13", "165/65/14", 
+            "165/70/14", "165/80/14", "175/65/14", "175/70/14", "185/65/14", 
+            "185/70/14", "185R 14", "175/65/15", "185/60/15", "185/65/15", 
+            "195/65/15", "205/65/15", "215/75/15", "215/75/15", "215/75/15", 
+            "215/75/15", "21575/15", "195/55/16", "195/55/16", "195/55/16", 
+            "195/60/16", "205/60/16", "205/65/16", "215/60/16", "215/65/16", 
+            "225/60/16", "235/70/16", "245/75/16", "215/60/17", "235/65/17", 
+            "235/65/17", "265/65/17"
+        ],
+        "Type": ["TT", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", 
+                 "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", 
+                 "TL", "TL", "TL", "TL", "TT", "TL", "TT", "TL", "TL", "TL", 
+                 "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", 
+                 "TL", "TL"],
+        "Consumer Price": [
+            2310, 2150, 2340, 2470, 2500, 2610, 2900, 2970, 2900, 2960, 2760, 2810, 3490, 3640, 3320, 
+            3490, 4840, 3400, 3740, 3920, 4160, 4720, 4910, 6450, 6970, 5020, 6350, 4620, 4930, 5150, 
+            4730, 5070, 4640, 4740, 6350, 5020, 5900, 5630, 4820, 8220, 9150, 8740
+        ],
+        "MRP": [2310, 2150, 2340, 2470, 2500, 2610, 2900, 2970, 2900, 2960, 2760, 2810, 3490, 3640, 3320, 
+                3490, 4840, 3400, 3740, 3920, 4160, 4720, 4910, 6450, 6970, 5020, 6350, 4620, 4930, 5150, 
+                4730, 5070, 4640, 4740, 6350, 5020, 5900, 5630, 4820, 8220, 9150, 8740]
+    }
+    
     # --- DISPLAY LOGIC ---
     def show_brand_table(title, data_dict):
         df = pd.DataFrame(data_dict)
@@ -103,3 +143,4 @@ if check_password():
 
     show_brand_table("Bridgestone Master Data", bridgestone_master)
     show_brand_table("Firestone Master Data", firestone_master)
+    show_brand_table("JK Tyre Master Data", jk tyre_master)
