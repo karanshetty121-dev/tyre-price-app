@@ -120,7 +120,7 @@ if check_password():
                 4730, 5070, 4640, 4740, 6350, 5020, 5900, 5630, 4820, 8220, 9150, 8740]
     }
 
-   # --- 2. YOKOHAMA MASTER DATA (Earth 1 Max - No Hyphen) ---
+    # --- YOKOHAMA MASTER DATA (156 ROWS) ---
     yokohama_master = {
         "Brand": ["Yokohama"] * 156,
         "Tyre Size": [
