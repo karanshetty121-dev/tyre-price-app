@@ -120,9 +120,8 @@ if check_password():
                 4730, 5070, 4640, 4740, 6350, 5020, 5900, 5630, 4820, 8220, 9150, 8740]
     }
 
-    # --- BALANCED YOKOHAMA DATASET (156 ROWS) ---
-    # Clubbed Size + LI/SS and set Type to TL for all
-    yokohama_master = {
+   # --- 2. YOKOHAMA MASTER DATA (Earth 1 Max - No Hyphen) ---
+    yokohama_12_15 = {
         "Brand": ["Yokohama"] * 156,
         "Tyre Size": [
             "145 80 R12 74T", "145 80 R13 75S", "155 65 R13 73T", "155 70 R13 75T", "155 80 R13 79T", "165 65 R13 77T", "175 60 R13 77H", "175 70 R13 82H", "155 65 R14 75H", "165 65 R14 79T", "165 70 R14 81T", "165 80 R14 85T", "175 65 R14 82H", "175 70 R14 84T", "175 70 R14 84H", "185 60 R14 82H", "185 65 R14 86H", "185 70 R14 88H", "195 60 R14 86H", "195 65 R14 89H", "195 70 R14 91H", "205 60 R14 88H",
