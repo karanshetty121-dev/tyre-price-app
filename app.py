@@ -120,6 +120,19 @@ if check_password():
                 4730, 5070, 4640, 4740, 6350, 5020, 5900, 5630, 4820, 8220, 9150, 8740]
     }
 
+    # --- 2. YOKOHAMA MASTER DATA (Earth 1 Max - No Hyphen) ---
+    yokohama_12_15 = {
+        "Brand": ["Yokohama"] * 60,
+        "Tyre Size": [
+            "145 80 R12 74T", "145 80 R13 75S", "155 65 R13 73T", "155 70 R13 75T", "155 80 R13 79T", "165 65 R13 77T", "175 60 R13 77H", "175 70 R13 82H", "155 65 R14 75H", "165 65 R14 79T", "165 70 R14 81T", "165 80 R14 85T", "175 65 R14 82H", "175 70 R14 84T", "175 70 R14 84H", "185 60 R14 82H", "185 60 R14 82H", "185 65 R14 86H", "185 70 R14 88H", "185 70 R14 88H", "195 60 R14 86H", "195 60 R14 86H", "195 65 R14 89H", "195 65 R14 89H", "195 70 R14 91H", "205 60 R14 88H",
+            "175 60 R15 81H", "175 60 R15 81H", "175 65 R15 84H", "175 65 R15 84H", "185 60 R15 84H", "185 60 R15 84H", "185 65 R15 88H", "185 65 R15 88H", "185 70 R15 89H", "195 50 R15 82V", "195 55 R15 85V", "195 60 R15 88V", "195 60 R15 88H", "195 60 R15 88H", "195 65 R15 91H", "195 65 R15 91V", "205 50 R15 86V", "205 55 R15 88V", "205 60 R15 95H", "205 65 R15 94H", "205 70 R15 96H", "205 70 R15 96H", "215 75 R15 100S", "225 60 R15 96H", "235 70 R15 103S", "235 75 R15 105T", "265 70 R15 112H", "LT215 75 R15 100/97S", "LT215 75 R15 (OWL) 100/97S", "LT235 75 R15 104/101S", "LT235 75 R15 (OWL) 104/101S", "31X10.5 R15 109S", "31X10.5 R15 109Q", "33X12.5 R15 108Q"
+        ],
+        "Pattern": ["Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "Earth 1 Max", "GT Max", "Earth 1 Max", "AS01", "Earth 1 Max", "Earth 1 Max", "GT Max", "Earth 1 Max", "AS01", "Earth 1 Max", "AS01", "Earth 1 Max", "AS01", "GT Max", "AE30", "Earth 1 Max", "GT Max", "Earth 1 Max", "GT Max", "Earth 1 Max", "GT Max", "Earth 1 Max", "AS01", "AS01", "GT Max", "Earth 1 Max", "AS01", "Earth 1 Max", "GT Max", "AS01", "AS01", "AS01", "Earth 1 Max", "G015", "G055", "G015", "Earth 1 Max", "G015", "G015", "G015", "G015", "G015", "G015", "G015", "G015", "G003", "G003"],
+        "Type": ["TL"] * 60,
+        "Consumer Price": [3130, 3660, 3890, 4020, 4340, 4070, 4680, 5120, 3970, 4790, 4130, 4420, 5570, 5530, 5630, 5400, 5640, 5320, 5400, 5490, 6030, 6220, 5660, 5740, 6690, 5870, 6570, 6350, 5860, 5960, 5970, 6060, 6210, 6300, 6300, 7290, 6480, 6880, 6770, 6950, 6940, 7050, 8160, 7320, 7850, 7380, 7430, 7070, 7180, 10430, 8520, 7980, 11020, 7720, 8470, 8920, 9860, 11900, 16140, 18280],
+        "MRP": [3440, 4020, 4270, 4420, 4770, 4480, 5150, 5630, 4370, 5270, 4550, 4860, 6120, 6090, 6190, 5940, 6200, 5850, 5940, 6040, 6640, 6840, 6220, 6310, 7360, 6460, 7230, 6990, 6440, 6550, 6560, 6670, 6830, 6940, 6930, 8020, 7130, 7570, 7440, 7650, 7630, 7750, 8980, 8060, 8630, 8120, 8180, 7780, 7900, 11480, 9380, 8780, 12120, 8490, 9320, 9820, 10840, 13090, 17760, 20110]
+    }
+    
     # --- DISPLAY LOGIC ---
     def show_brand_table(title, data_dict):
         df = pd.DataFrame(data_dict)
@@ -141,6 +154,7 @@ if check_password():
             st.markdown("---")
 
     show_brand_table("Bridgestone Master Data", bridgestone_master)
-    show_brand_table("Bridgestone Master Data", yokohama_master)
     show_brand_table("Firestone Master Data", firestone_master)
     show_brand_table("JK Tyre Master Data", jk_master)
+    show_brand_table("Yokohama Master Data", yokohama_master)
+
