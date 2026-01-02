@@ -6,7 +6,7 @@ st.set_page_config(page_title="MOTO FINEZ Master Data", layout="wide")
 
 # 2. Main Title
 st.title("Tyres Master Price List")
-st.caption("Bridgestone, Firestone, JK Tyre & Yokohama • Effective Sep 2025")
+st.caption("Bridgestone, Firestone, JK Tyre, Ceat & Yokohama • Effective Sep 2025")
 
 # 3. Password Protection Logic
 def check_password():
@@ -120,6 +120,25 @@ if check_password():
                 4730, 5070, 4640, 4740, 6350, 5020, 5900, 5630, 4820, 8220, 9150, 8740]
     }
 
+    # --- COMPLETE CEAT DATASET (132 ROWS) ---
+    # Logic: Consumer Price = List Price; MRP = Consumer Price + 8%
+    ceat_master = {
+        "Brand": ["CEAT"] * 132,
+        "Tyre Size": [
+            "135 70 R12 65S", "155 65 R12 71S", "145 70 R12 69T", "145 70 R12 69T", "145 80 R12 74T", "145 80 R12 74T", "145 80 R12 80R", "145 80 R12 80R", "145 70 R12 70R", "155 70 R13 71T", "155 70 R13 71T", "155 65 R13 75T", "155 80 R13 73T", "155 80 R13 75T", "155 80 R13 75T", "155 80 R13 79T", "165 65 R13 77T", "175 70 R13 82T", "155 80 R13 80R", "155 65 R13 65R", "165 70 R14 75T", "165 65 R14 79T", "165 65 R14 79T", "155 65 R14 81T", "165 70 R14 85S", "165 80 R14 85S", "165 80 R14 85T", "175 65 R14 82T", "175 65 R14 82T", "175 70 R14 84T", "185 65 R14 88T", "185 70 R14 88T", "185 70 R14 88H", "185 R 14 82T", "165 70 R14 81T", "165 80 R14 80R", "175 65 R14 65R", "165 70 R14 70R", "155 65 R14 65R", "165 65 R14 65R", "185 70 R14 70R", "175 65 R15 65R", "175 60 R15 81H", "175 65 R15 84H", "175 65 R15 84T", "185 60 R15 89H", "185 60 R15 88H", "185 65 R15 88T", "185 65 R15 84H", "195 55 R15 88V", "195 60 R15 88H", "195 60 R15 91V", "195 65 R15 94S", "205 65 R15 100S", "205 70 R15 106Q", "205 70 R15 100S", "215 75 R15 106Q", "215 75 R15 113S", "215 75 R15 100S", "235 75 R15 113S", "215 75 R15 113S", "215 75 R15 113S", "235 75 R15 113S", "235 70 R15 105S", "215 75 R15 100S", "215 75 R15 100S", "205 65 R15 100H", "195 55 R16 55R", "185 55 R16 83V", "195 55 R16 87V", "205 55 R16 91H", "205 60 R16 92H", "215 60 R16 92H", "215 60 R16 95H", "205 65 R16 94S", "215 65 R16 98H", "215 60 R16 95H", "235 70 R16 100S", "235 70 R16 105Q", "245 75 R16 111H", "225 60 R16 89V", "235 70 R16 105S", "245 75 R16 105Q", "215 65 R16 100H", "255 65 R16 106S", "245 75 R16 75R", "265 70 R16 70R", "255 65 R16 106S", "225 50 R17 99T", "215 45 R17 91Y", "205 45 R17 88Y", "215 50 R17 94Y", "225 45 R17 101W", "215 55 R17 91H", "235 55 R17 104H", "225 50 R17 94V", "215 60 R17 94V", "215 60 R17 96H", "265 65 R17 112S", "265 65 R17 112S", "215 60 R17 96H", "235 65 R17 104H", "265 65 R17 112S", "225 55 R17 99H", "235 65 R17 104T", "255 60 R17 112S", "215 55 R17 104H", "255 55 R18 99T", "265 60 R18 110S", "285 60 R18 110T", "255 65 R18 111H", "255 65 R18 111H", "255 55 R18 55R", "255 65 R18 65R", "265 60 R18 110H", "235 60 R18 60R", "245 60 R18 60R", "265 60 R18 110S", "285 60 R18 110T", "235 55 R19 105W", "225 55 R19 104W", "235 50 R19 97Y", "255 50 R19 100H", "255 50 R19 100Y", "255 45 R19 102Y", "255 50 R19 50R", "255 55 R19 55R", "235 55 R19 105W", "265 50 R20 109H", "245 45 R20 45R", "255 45 R20 45R", "275 40 R20 40R"
+        ],
+        "Pattern": [
+            "Milaze", "Milaze", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X5", "Milaze X5", "Energy Drive", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X5", "Milaze X5", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Fuel Smart", "Milaze X3", "SecuraDrive", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "SecuraDrive", "SecuraDrive", "SecuraDrive", "Milaze X5", "Milaze X5", "Milaze X5", "Milaze X5", "Milaze X5", "Milaze X5", "Milaze X5", "SecuraDrive", "SecuraDrive", "Milaze X3", "SecuraDrive", "SecuraDrive", "Milaze X3", "SecuraDrive", "SecuraDrive", "Energy Drive", "SecuraDrive", "Milaze X3", "F1 Steel BT", "Steel Plus LT", "Czar HT", "Steel Plus LT", "Milaze LT", "F1 Steel BT", "F1 Steel BT", "Milaze LT", "Milaze", "Milaze HD", "Milaze", "CrossDrive AT", "CrossDrive AT", "SecuraDrive SUV", "Milaze X5", "SecuraDrive", "SecuraDrive", "SecuraDrive", "SecuraDrive", "SecuraDrive", "SecuraDrive SUV", "Milaze X3", "SecuraDrive SUV", "SecuraDrive", "Czar HT", "Czar AT", "Czar AT", "SecuraDrive", "Czar AT", "Milaze LT", "Czar HP", "CrossDrive AT", "Czar AT", "Czar AT", "CrossDrive AT", "SportDrive", "SportDrive", "SportDrive", "SportDrive", "SportDrive", "SecuraDrive", "SecuraDrive SUV", "SecuraDrive", "SecuraDrive SUV", "SecuraDrive SUV", "Czar AT", "CrossDrive AT", "SecuraDrive", "Czar AT", "Czar AT", "Czar HP", "CrossDrive AT", "CrossDrive AT", "SecuraDrive SUV", "SportDrive", "Czar AT", "CrossDrive AT", "CrossDrive HT", "CrossDrive AT", "SportDrive SUV", "Czar AT", "Czar AT", "SportDrive SUV", "Sportdrive SUV", "Czar AT", "CrossDrive AT", "Sportdrive SUV", "SportDrive", "SportDrive", "SecuraDrive", "SportDrive", "Sportdrive", "Sportdrive SUV", "Sportdrive SUV", "SportDrive SUV", "CrossDrive AT", "Sportdrive SUV", "Sportdrive SUV", "SportDrive SUV"
+        ],
+        "Type": ["TL", "TL", "TL", "TT", "TL", "TT", "TL", "TT", "TT", "TT", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TT", "TT", "TL", "TL", "TT", "TL", "TL", "TT", "TL", "TL", "TT", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL"],
+        "Consumer Price": [
+            2557, 3108, 2456, 2687, 2736, 2749, 2818, 2834, 2466, 3218, 3146, 3122, 3344, 3368, 3456, 3359, 3738, 4591, 3463, 3444, 3385, 3905, 3905, 3203, 3154, 3659, 3876, 4365, 4365, 4778, 4729, 4394, 4738, 4496, 3587, 3690, 4493, 3297, 3481, 4018, 4524, 4951, 4101, 5157, 4818, 5069, 5126, 4750, 5327, 6363, 4951, 6137, 6151, 5688, 6055, 6076, 5704, 6077, 5663, 6300, 6077, 5974, 5974, 7374, 5966, 6060, 6304, 5663, 5218, 6507, 7010, 6765, 6137, 6137, 6151, 7991, 6044, 5977, 5246, 7230, 6092, 7523, 5837, 5704, 8074, 7230, 6166, 8074, 12752, 9486, 8740, 11939, 11768, 6942, 10544, 6222, 6222, 6589, 12005, 13153, 6589, 12083, 11886, 8116, 11119, 13153, 10310, 12752, 14849, 16745, 9143, 9267, 13008, 8839, 13779, 14317, 10779, 14849, 16745, 19297, 14395, 14531, 9139, 15228, 11381, 17254, 16545, 15020, 12394, 27671, 20072, 15588
+        ],
+        "MRP": [
+            2761, 3356, 2652, 2901, 2954, 2968, 3043, 3060, 2663, 3475, 3397, 3371, 3611, 3637, 3732, 3627, 4037, 4958, 3740, 3719, 3655, 4217, 4217, 3459, 3406, 3951, 4186, 4714, 4714, 5160, 5107, 4745, 5117, 4855, 3873, 3985, 4852, 3560, 3759, 4339, 4885, 5347, 4429, 5569, 5203, 5474, 5536, 5130, 5753, 6872, 5347, 6627, 6643, 6143, 6539, 6562, 6160, 6563, 6116, 6804, 6563, 6451, 6451, 7963, 6443, 6544, 6808, 6116, 5635, 7027, 7570, 7306, 6627, 6627, 6643, 8630, 6527, 6455, 5665, 7808, 6579, 8124, 6303, 6160, 8719, 7808, 6659, 8719, 13772, 10244, 9439, 12894, 12709, 7497, 11387, 6719, 6719, 7116, 12965, 14205, 7116, 13049, 12836, 8765, 12008, 14205, 11134, 13772, 16036, 18084, 9874, 10008, 14048, 9546, 14881, 15462, 11641, 16036, 18084, 20840, 15546, 15693, 9870, 16446, 12291, 18634, 17868, 16221, 13385, 29884, 21677, 16835
+        ]
+    }
+    
    # --- 2. YOKOHAMA MASTER DATA (Earth 1 Max - No Hyphen) ---
     yokohama_master = {
         "Brand": ["Yokohama"] * 162,
@@ -163,5 +182,6 @@ if check_password():
     show_brand_table("Bridgestone Master Data", bridgestone_master)
     show_brand_table("Firestone Master Data", firestone_master)
     show_brand_table("JK Tyre Master Data", jk_master)
+    show_brand_table("Ceat Master Data", ceat_master)
     show_brand_table("Yokohama Master Data", yokohama_master)
 
