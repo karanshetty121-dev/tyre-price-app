@@ -128,3 +128,4 @@ if check_password():
 
     show_brand_table("Bridgestone Master Data", bridgestone_master)
     show_brand_table("Firestone Master Data", firestone_master)
+    show_brand_table("Apollo Master Data", Apollo_master)
