@@ -97,7 +97,7 @@ if check_password():
     }
 
    # --- COMPLETE JK TYRE DATASET (126 ROWS) ---
-    # Logic: CP = Base + 6% | MRP = CP + 8% | Jumbo King = Tube Type
+   # Logic: CP = Base + 6% | MRP = CP + 8% | Jumbo King = Tube Type
     jk_master = {
         "Brand": ["JK Tyre"] * 126,
         "Tyre Size": [
