@@ -142,4 +142,4 @@ if check_password():
     show_brand_table("Bridgestone Master Data", bridgestone_master)
     show_brand_table("Firestone Master Data", firestone_master)
     show_brand_table("Apollo Master Data", apollo_master)
-    show_brand_table("JK Tyre Data", jk, tyre_master)
+    show_brand_table("JK Tyre Data", jk_master)
