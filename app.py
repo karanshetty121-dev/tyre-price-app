@@ -4,29 +4,12 @@ import pandas as pd
 # 1. Page Configuration
 st.set_page_config(page_title="MOTO FINEZ Master Data", layout="wide")
 
-# 2. Main Title
-st.title("Tyres Master Price List")
-st.caption("Bridgestone, Firestone, JK Tyre, Ceat, Apollo & Yokohama • Effective Sep 2025")
-
-# 3. Password Protection Logic
-def check_password():
-    if "password_correct" not in st.session_state:
-        st.session_state["password_correct"] = False
-    if not st.session_state["password_correct"]:
-        pwd = st.text_input("Enter Credentials:", type="password")
-        if st.button("Unlock Master Data"):
-            if pwd == st.secrets.get("password", "admin123"):
-                st.session_state["password_correct"] = True
-                st.rerun()
-            else: st.error("❌ Incorrect password")
-        return False
-    return True
-
-if check_password():
-    # --- GLOBAL SEARCH ---
-    search = st.text_input("🔍 Global Search:", placeholder="Enter size (e.g. 145 80 12) or pattern...")
-
-    # --- BRIDGESTONE MASTER DATA (242 ROWS) ---
+# 2. Caching Logic
+# This function only runs once and stores the result in memory.
+# This makes searching feel much faster.
+@st.cache_data
+def load_master_data():
+    # --- BRIDGESTONE (242 ROWS) ---
     bridgestone_master = {
         "Brand": ["Bridgestone"] * 242,
         "Pattern": (
@@ -47,7 +30,7 @@ if check_password():
         "MRP": [3061, 3544, 3450, 3825, 3783, 3293, 3685, 3776, 4322, 3940, 4089, 4080, 4274, 4296, 4452, 4623, 4789, 4801, 4820, 4520, 5234, 5694, 4470, 4659, 5349, 4240, 4421, 4652, 5040, 4958, 6312, 6375, 6096, 6313, 6295, 7392, 5751, 5970, 5849, 6065, 6066, 6133, 7561, 6678, 5463, 7295, 7367, 7296, 6606, 6606, 6363, 6412, 6652, 6651, 6834, 6784, 6784, 7028, 7028, 7445, 7690, 7924, 7520, 7795, 7883, 8221, 7900, 7938, 8219, 8465, 8355, 8176, 8300, 8300, 8580, 8430, 8460, 8375, 8406, 8575, 8530, 8968, 9362, 8891, 9165, 10351, 9962, 9068, 8588, 8398, 12229, 9555, 9235, 10940, 12720, 12931, 10907, 10193, 9806, 10193, 11716, 11180, 10404, 12791, 13043, 11664, 11780, 13177, 13049, 12969, 12614, 12665, 14551, 14631, 14849, 14585, 14583, 14582, 15146, 14076, 14872, 14223, 14985, 15453, 16463, 16224, 19728, 21799, 21439, 22217, 22661, 15844, 22092, 22661, 16867, 13424, 19364, 16464, 20006, 24537, 27883, 23633, 22250, 30039, 30537, 25261, 29706, 29533, 34803, 34182, 41624, 31195, 11768, 15398, 15396, 16845, 16846, 18101, 18103, 18130, 24085, 21729, 25479, 24714, 23988, 29981, 34545, 32228, 33039, 34551, 39381, 41241, 5869, 6826, 6643, 7141, 7127, 7508, 7256, 7580, 8301, 8434, 9294, 7844, 10083, 9749, 10046, 11286, 9291, 8919, 12697, 10212, 11691, 13490, 13009, 11284, 10897, 10898, 11142, 13695, 13998, 13946, 13635, 13417, 15934, 22287, 15041, 14620, 22853, 22913, 17290, 23539, 17670, 21448, 21010, 23207, 22692, 28354, 26973, 30698, 27315, 27210, 29447, 27653, 30004, 8720, 10714, 15706, 16081, 16205, 17153, 17702, 14254, 21084, 22036, 3641, 4574, 5123, 6260, 7283, 7746, 10412]
     }
 
-    # --- FIRESTONE MASTER DATA (30 ROWS) ---
+    # --- FIRESTONE (30 ROWS) ---
     firestone_master = {
         "Brand": ["Firestone"] * 30,
         "Pattern": [
@@ -79,105 +62,93 @@ if check_password():
         ]
     }
 
-    # --- JK TYRE MASTER DATA (42 ROWS) ---
-    # Sizes reformatted from "145/70/12" to "145 70 R12"
-    jk_master = {
-        "Brand": ["JK Tyre"] * 42,
-        "Pattern": [
-            "TYRE AND TUBE", "TUBELESS", "TUBELESS", "TYRE AND TUBE", "ULTIMA SPORT", 
-            "ULTIMA NEO", "TAXIMAX", "TAXIMAX", "ULTIMA HI LIFE", "TAXIMAX", 
-            "TAXIMAX", "TAXIMAX", "TAXIMAX", "TAXIMAX", "UX ROYALE", 
-            "TAXIMAX", "TUBELESS XPC", "UX ROYALE", "TAXIMAX", "TAXIMAX", 
-            "UX ROYALE", "UX TOURING", "RANGER HT", "STEEL KING TLS", "STEEL KING TUBE", 
-            "AT", "BRUTE TTF", "UX TOURING", "UX ROYALE", "UXROYAL WITH SENSOR", 
-            "HPE", "UX ROYALE", "TAXIMAX", "UX TOURING", "RANGER HT", 
-            "UX ROYALE", "AT", "ELANZO SUPER", "UX ROYALE", "RANGER HT", 
-            "RANGER WITH SENSOR", "RANGER HT"
-        ],
-        "Type": ["TT", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", 
-                 "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", 
-                 "TL", "TL", "TL", "TL", "TT", "TL", "TT", "TL", "TL", "TL", 
-                 "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", 
-                 "TL", "TL"],
-        "Tyre Size": [
-            "145 70 R12", "145 70 R12", "145 80 R12", "145 80 R12", "165 70 R12", 
-            "155 65 R14", "155 70 R13", "155 80 R13", "165 65 R13", "165 65 R14", 
-            "165 70 R14", "165 80 R14", "175 65 R14", "175 70 R14", "185 65 R14", 
-            "185 70 R14", "185 R 14", "175 65 R15", "185 60 R15", "185 65 R15", 
-            "195 65 R15", "205 65 R15", "215 75 R15", "215 75 R15", "215 75 R15", 
-            "215 75 R15", "215 75 R15", "195 55 R16", "195 55 R16", "195 55 R16", 
-            "195 60 R16", "205 60 R16", "205 65 R16", "215 60 R16", "215 65 R16", 
-            "225 60 R16", "235 70 R16", "245 75 R16", "215 60 R17", "235 65 R17", 
-            "235 65 R17", "265 65 R17"
-        ],
-        "Consumer Price": [
-            2310, 2150, 2340, 2470, 2500, 2610, 2900, 2970, 2900, 2960, 2760, 2810, 3490, 3640, 3320, 
-            3490, 4840, 3400, 3740, 3920, 4160, 4720, 4910, 6450, 6970, 5020, 6350, 4620, 4930, 5150, 
-            4730, 5070, 4640, 4740, 6350, 5020, 5900, 5630, 4820, 8220, 9150, 8740
-        ],
-        "MRP": [2310, 2150, 2340, 2470, 2500, 2610, 2900, 2970, 2900, 2960, 2760, 2810, 3490, 3640, 3320, 
-                3490, 4840, 3400, 3740, 3920, 4160, 4720, 4910, 6450, 6970, 5020, 6350, 4620, 4930, 5150, 
-                4730, 5070, 4640, 4740, 6350, 5020, 5900, 5630, 4820, 8220, 9150, 8740]
-    }
-
-    # --- COMPLETE APOLLO DATASET ---
-    # consumer_price = selling_price + 6%
-    # mrp = consumer_price + 8%
+    # --- APOLLO (FIXED TO 246 ROWS) ---
     apollo_master = {
         "Brand": ["Apollo"] * 246,
+        "Type": ["TL"] * 246,
         "Tyre Size": [
             "135 70 R12 65S", "145 70 R12 69T", "145 R12 86S", "145 80 R12 74T", "145 80 R12 74T", "155 65 R12 71S", "155 70 R12 73T", "145 R12 80S", "145 80 R13 75T", "155 R13 90S", "155 65 R13 73T", "155 70 R13 75H", "155 70 R13 75T", "155 80 R13 79T", "165 65 R13 77T", "165 70 R13 79T", "175 70 R13 82H", "175 70 R13 82T", "155 R13 89S", "155 65 R14 75T", "155 65 R14 75T", "155 70 R14 77T", "155 70 R14 77T", "165 65 R14 79T", "165 70 R14 81T", "165 70 R14 81T", "165 80 R14 85T", "165 80 R14 85T", "165 80 R14 85T", "165 80 R14 85T", "175 65 R14 82T", "175 65 R14 82T", "175 65 R14 82T", "175 65 R14 82H", "175 70 R14 84H", "175 70 R14 84T", "175 70 R14 84T", "175 70 R14 84T", "175 70 R14 84H", "185 60 R14 82H", "185 65 R14 86H", "185 65 R14 86H", "185 70 R14 88H", "185 70 R14 88H", "185 70 R14 88T", "185 70 R14 88T", "195 60 R14 86H", "195 70 R14 91H", "175 R14 96T", "175 65 R14 90T", "185 R14 102S", "185 R14 102R", "195 R14 106S", "175 65 R14 82T", "175 65 R14 86T", "175 65 R14 86T", "185 55 R15 82H", "185 70 R15 89H", "195 55 R15 85H", "195 R15 107S", "175 65 R15 84H", "185 60 R15 84H", "185 60 R15 84T", "185 60 R15 88H", "185 60 R15 88T", "185 65 R15 88T", "185 65 R15 88H", "185 65 R15 88H", "185 65 R15 88H", "185 65 R15 88H", "195 60 R15 88H", "195 60 R15 88H", "195 60 R15 88H", "195 65 R15 91H", "195 65 R15 91H", "195 65 R15 91H", "195 65 R15 91H", "195 65 R15 91V", "205 60 R15 91V", "205 65 R15 94T", "205 65 R15 94H", "205 65 R15 99S", "205 65 R15 94T", "215 75 R15 100S", "215 75 R15 100T", "215 75 R15 100T", "215 75 R15 115S", "215 75 R15 115S", "225 70 R15 100S", "225 70 R15 100T", "235 75 R15 105S", "235 75 R15 105T", "235 75 R15 105S", "255 70 R15 108S", "255 70 R15 108T", "265 70 R15 112S", "265 70 R15 112T", "265 70 R15 112T", "195 R15 107S", "195 R15 107S", "31X10.5 R15 109S", "205 60 R15 91H", "215 75 R15 100S", "215 75 R15 100T", "195 55 R15 85H", "195 R15 107S", "185 65 R15 88H", "205 65 R16 95H", "205 60 R16 92H", "215 60 R16 95H", "185 55 R16 83H", "195 55 R16 87H", "195 55 R16 87H", "195 55 R16 87V", "195 55 R16 87H", "195 55 R16 87H", "195 55 R16 87V", "195 55 R16 87V", "195 60 R16 89H", "195 60 R16 89H", "195 60 R16 89H", "205 55 R16 91V", "205 55 R16 91H", "205 55 R16 91W", "205 60 R16 92V", "205 65 R16 95T", "205 65 R16 95H", "205 65 R16 95S", "205 65 R16 95S", "205 80 R16 104S", "215 55 R16 97W", "215 60 R16 95H", "215 60 R16 95H", "215 60 R16 95H", "215 60 R16 95H", "215 60 R16 95H", "215 60 R16 95H", "235 60 R16 100H", "235 60 R16 100H", "235 60 R16 100H", "215 65 R16 98H", "215 65 R16 98H", "215 65 R16 98H", "215 65 R16 98T", "215 65 R16 98H", "215 65 R16 98H", "215 65 R16 98H", "215 70 R16 100H", "215 70 R16 100H", "215 65 R16 98H", "225 55 R16 95W", "235 70 R16 105H", "235 70 R16 105H", "215 75 R16 113S", "235 70 R16 105H", "235 70 R16 105H", "235 70 R16 105H", "235 70 R16 105H", "235 70 R16 105S", "245 70 R16 111S", "245 70 R16 111T", "245 70 R16 111T", "245 75 R16 115T", "255 65 R16 109S", "255 65 R16 109S", "255 65 R16 109T", "265 70 R16 112H", "265 70 R16 112T", "275 70 R16 114T", "215 60 R16 95H", "215 60 R16 95H", "225 60 R16 98V", "205 60 R16 92H", "205 65 R16 95H", "195 55 R16 87V", "195 55 R16 87H", "215 60 R16 95H", "195 60 R16 93V", "215 60 R16 99V", "185 85 R16 105S", "185 85 R16 105Q", "215 60 R17 96H", "205 40 R17 84W", "205 50 R17 93H", "205 50 R17 93H", "215 55 R17 94W", "215 40 R17 87W", "215 45 R17 91W", "215 55 R17 94H", "215 60 R17 96H", "225 45 R17 91W", "225 45 R17 94W", "225 50 R17 98W", "225 55 R17 101Y", "225 60 R17 99H", "225 60 R17 99H", "235 40 R17 94W", "235 55 R17 99Y", "235 65 R17 104H", "235 65 R17 104H", "235 65 R17 104H", "235 65 R17 104H", "235 65 R17 104H", "235 65 R17 104H", "235 65 R17 104H", "235 65 R17 108H", "235 65 R17 104H", "245 45 R17 99Y", "255 60 R17 110H", "255 60 R17 110H", "265 65 R17 112H", "265 65 R17 112H", "265 65 R17 112H", "265 65 R17 112S", "265 70 R17 115T", "225 60 R17 99H", "205 55 R17 91H", "215 60 R17 96H", "225 65 R17 102H", "215 50 R17 95V", "215 55 R17 98V", "245 65 R17 107H", "215 60 R17 96H", "215 60 R17 96H", "215 60 R17 96H", "255 55 R18 109Y", "255 40 R18 99Y", "255 35 R18 94Y", "255 40 R18 99Y", "215 55 R18 95H", "225 40 R18 92Y", "225 50 R18 95H", "235 40 R18 91W", "235 45 R18 98Y", "255 45 R18 103Y", "235 60 R18 103H", "235 60 R18 103H", "235 60 R18 107V", "245 40 R18 97Y", "245 40 R18 97Y", "245 45 R18 100Y", "245 50 R18 104W", "255 55 R18 109V", "265 60 R18 114H", "265 60 R18 110H", "265 60 R18 114H", "275 35 R18 95Y", "225 50 R18 95H", "245 40 R18 97Y", "245 40 R18 97Y", "255 60 R18 108H", "255 60 R18 108H", "235 50 R18 101W", "235 50 R18 101Y", "235 35 R19 91Y", "235 35 R19 91W", "255 35 R19 96Y", "245 40 R19 98W", "275 35 R19 100Y", "235 55 R19 105H", "245 35 R19 93Y", "255 40 R19 100Y", "245 50 R19 105W", "255 50 R19 107Y", "275 40 R19 105Y", "275 40 R20 106Y", "255 45 R20 101Y", "245 40 R20 99Y", "245 45 R20 103W"
         ],
         "Pattern": [
             "Amazer 3G", "Amazer 4G Life", "Altrust Go", "Amazer XP", "Amazer 4G Life", "Amazer 3G", "Amazer XL", "Amazer XL", "Amazer 4G Life", "Altrust Go", "Amazer 4G Life", "Alnac", "Amazer 4G Life", "Amazer 4G Life", "Amazer 4G Life", "Amazer 4G Life", "Alnac", "Amazer 4G Life", "Amazer XL", "Amazer 4G Life", "Amazer XP", "Alnac", "Amazer 4G Life", "Amazer 4G Life", "Amazer 4G Life", "Amazer 4G Eco", "Amazer 4G Life", "Amazer 3G", "Amazer 3G Maxx", "Amazer XP", "Amazer 3G Maxx", "Amazer 4G Life", "Amazer XP", "Alnac", "Alnac", "Amazer 4G Life", "Amazer XP", "Alnac", "Alnac", "Alnac 4G", "Alnac 4GS", "Amazer XP", "Alnac 4G", "Alnac 4G", "Amazer 4G Life", "Amazer XP", "Alnac 4G", "Alnac", "Quantum", "Qtm Plus", "Altrust", "Quantum", "Qtm Plus", "Amazer XP", "Amazer XP", "Amazer XP", "Alnac 4G", "Alnac 4G", "Alnac 4G", "Altrust", "Alnac 4GS", "Alnac 4G", "Alnac", "Amazer XP", "Amazer 4G Life", "Amazer 4G Life", "Alnac 4G", "Alnac 4G", "Alnac 4GS", "Alnac 4GS", "Alnac 4G", "Alnac", "Alnac 4GS", "Alnac 4G", "Alnac 4G", "Alnac 4G SK", "Alnac 4GS", "Manchester United", "Alnac 4G", "Amazer 4G Life", "Alnac 4G", "Apterra H/LS", "Apterra H/Ls", "Apterra H/T", "Apterra H/T2", "Apterra HT2", "Altrust", "Altrust", "Apterra A/T", "Apterra AT2", "Apterra H/T", "Apterra AT2", "Apterra H/T", "Apterra H/T", "Apterra H/T", "Apterra H/T", "Apterra H/T", "Apterra AT2", "Altrust LT", "Qtm Plus", "Apterra AT", "Alnac 4G", "Apterra H/T", "Apterra H/T2", "Alnac 4G", "Altrust STD", "Alnac 4G", "Apterra Cross", "Apterra Cross", "Apterra Cross", "Alnac 4G", "Alnac 4G", "Alnac 4G VW", "Alnac 4G", "Alnac 4G", "Alnac 4G VW", "Alnac 4G", "Alnac 4G HY", "Alnac 4G QXI", "Alnac 4G T1", "Manchester United", "Alnac 4G", "Alnac", "Aspire 4G", "Alnac 4G", "Amazer 4G Life", "Alnac 4G S201", "Apterra H/LS", "Apterra H/LS", "Quantum", "Aspire 4G", "Manchester United", "Alnac 4GS MS", "Alnac 4GS MS", "Alnac 4GS", "Apterra H/P", "Alnac 4G TA", "Apterra AT2", "Apterra H/T2", "Apterra HT2", "Apterra H/L", "Apterra H/P", "Apterra H/P", "Apterra H/LS", "Apterra Cross", "Apterra H/T2", "Apterra HT2", "Apterra H/P", "Apterra H/P", "Apterra H/P", "Aspire 4G+", "Apterra HT2", "Apterra AT2", "Apterra AT", "Apterra H/P", "Apterra HP", "Apterra H/T2", "Apterra AT2", "Apterra H/T", "Apterra H/T", "Apterra H/T2", "Apterra AT2", "Apterra AT2", "Apterra A/T", "Manchester United", "Apterra H/T", "Apterra H/T", "Apterra AT2", "Apterra H/T", "Alnac 4GS", "Alnac 4GS", "Alnac 4G", "Alnac 4G SK", "Alnac 4G HY", "Alnac 4G H1", "Alnac 4G", "Alnac 4GS MG1", "Amperion EV", "Amperion EV", "Altrust LT", "Amazer XL LT", "Apterra H/P", "Aspire", "Alnac 4G Ford", "Alnac 4G", "Aspire 4G SK", "Aspire", "Aspire", "Alnac 4G S201", "Apterra H/P", "Aspire", "Aspire 4G", "Aspire 4G", "Aspire 4G+", "Apterra HT2", "Apterra H/T2", "Aspire", "Aspire 4G", "Manchester United", "Apterra HT2", "Apterra AT2", "Apterra H/T2", "Apterra H/P", "Apterra HP", "Apterra H/L", "Apterra H/P", "Apterra H/P", "Aspire 4G", "Apterra HT2", "Apterra AT2", "Apterra HT2", "Apterra H/T2", "Apterra AT2", "Apterra H/T", "Apterra AT2", "Apterra H/P", "Alnac 4G", "Apterra H/P", "Apterra H/P", "Amperion EV", "Amperion EV", "Apterra H/T2", "Apterra Cross", "Apterra Cross", "Alnac 4G", "Aspire 4G", "Aspire 4G", "Aspire 4G", "Aspire 4G", "Apterra Cross", "Aspire", "Apterra H/P", "Aspire", "Aspire 4G+", "Aspire 4G", "Apterra H/P", "Apterra H/P", "Apterra H/T2", "Aspire 4G", "Aspire 4G+", "Aspire 4G+", "Aspire 4G", "Apterra H/P", "Apterra HT2", "Apterra AT2", "Apterra H/T2", "Aspire 4G+", "Apterra H/P", "Aspire 4G", "Aspire 4G+", "Apterra HT2", "Apterra H/T2", "Aspire 4G Plus", "Aspire 4G Plus", "Aspire 4G", "Aspire", "Aspire 4G", "Aspire 4G", "Aspire 4G", "Apterra H/T2", "Aspire 4G", "Aspire 4G", "Aspire 4G Plus", "Aspire 4G Plus", "Aspire 4G+", "Aspire 4G Plus", "Aspire 4G", "Aspire 4G Plus", "Aspire 4G Plus"
         ],
-        "Type": ["TL"] * 246,
         "Consumer Price": [2480, 2300, 2830, 2777, 2798, 2533, 2925, 3021, 3137, 3424, 3169, 3763, 3264, 3476, 3466, 3445, 4653, 4388, 3943, 3370, 3370, 3985, 3519, 3699, 3402, 3381, 3657, 3582, 4081, 3551, 4399, 4430, 4282, 4823, 5088, 4854, 4854, 5066, 5066, 4685, 4833, 4038, 4526, 4526, 4377, 4356, 5681, 5247, 4854, 4854, 4653, 4854, 5798, 4282, 4282, 4282, 5066, 5045, 5098, 5734, 4982, 4982, 4982, 4812, 4812, 4939, 5088, 5088, 5088, 5088, 6508, 5946, 6508, 5967, 5967, 5978, 5967, 5840, 6381, 5957, 6126, 6158, 6158, 5999, 5999, 7049, 6296, 6508, 7716, 7632, 7144, 7918, 7632, 8819, 8819, 8183, 8183, 8193, 5734, 6222, 9200, 6381, 5999, 5999, 5098, 5596, 5088, 6381, 7261, 7144, 5321, 6837, 6837, 6837, 6837, 6837, 6837, 6837, 6296, 6296, 7027, 7716, 7716, 7897, 6974, 6084, 6232, 6593, 6593, 5024, 9338, 7070, 6805, 6805, 6805, 8798, 6805, 8193, 8151, 9126, 8130, 8130, 8130, 8130, 8066, 8861, 9508, 9508, 9508, 8130, 8957, 8670, 8204, 8755, 7960, 5978, 7621, 8204, 7971, 8734, 7971, 8151, 7621, 8819, 9328, 8405, 9158, 14055, 8448, 6805, 6794, 8151, 6974, 6232, 6837, 6837, 6805, 7038, 7600, 5745, 6572, 7844, 9052, 8374, 8374, 10366, 7875, 7144, 9275, 7844, 9200, 10250, 9836, 9540, 9487, 9243, 10260, 10250, 14013, 11267, 11681, 10536, 9190, 9190, 6232, 9190, 9190, 11744, 14129, 13864, 13260, 10886, 12274, 11755, 13864, 12327, 7526, 7844, 11257, 8639, 9815, 10640, 6985, 6985, 7303, 14140, 18009, 15401, 18009, 9826, 10027, 12656, 12709, 14797, 14553, 12031, 12031, 11691, 16536, 14797, 11681, 12158, 11373, 15741, 14619, 12370, 15158, 12656, 16536, 14797, 11479, 11479, 17278, 16440, 15900, 12656, 16999, 19864, 15412, 16472, 13769, 15941, 16589, 15348, 17108, 16938, 19387, 24178, 27411],
         "MRP": [2678, 2484, 3056, 2999, 3022, 2735, 3159, 3262, 3388, 3698, 3422, 4064, 3525, 3754, 3743, 3721, 5025, 4739, 4258, 3640, 3640, 4304, 3801, 3995, 3674, 3651, 3950, 3869, 4407, 3835, 4751, 4784, 4625, 5209, 5495, 5242, 5242, 5471, 5471, 5060, 5220, 4361, 4888, 4888, 4727, 4704, 6135, 5667, 5242, 5242, 5025, 5242, 6262, 4625, 4625, 4625, 5471, 5449, 5506, 6193, 5381, 5381, 5381, 5197, 5197, 5334, 5495, 5495, 5495, 5495, 7029, 6422, 7029, 6444, 6444, 6456, 6444, 6307, 6891, 6434, 6616, 6651, 6651, 6479, 6479, 7613, 6799, 7029, 8333, 8243, 7716, 8551, 8243, 9525, 9525, 8838, 8838, 8848, 6193, 6720, 9936, 6891, 6479, 6479, 5506, 6044, 5495, 6891, 7842, 7716, 5747, 7384, 7384, 7384, 7384, 7384, 7384, 7384, 6799, 6799, 7589, 8333, 8333, 8529, 7532, 6571, 6731, 7120, 7120, 5426, 10085, 7636, 7349, 7349, 7349, 9502, 7349, 8848, 8803, 9856, 8780, 8780, 8780, 8780, 8711, 9570, 10269, 10269, 10269, 8780, 9674, 9364, 8860, 9455, 8597, 6456, 8231, 8860, 8609, 9433, 8609, 8803, 8231, 9525, 10074, 9077, 9891, 15179, 9124, 7349, 7338, 8803, 7532, 6731, 7384, 7384, 7349, 7601, 8208, 6205, 7098, 8472, 9776, 9044, 9044, 11195, 8505, 7716, 10017, 8472, 9936, 11070, 10623, 10303, 10246, 9982, 11081, 11070, 15134, 12168, 12615, 11379, 9925, 9925, 6731, 9925, 9925, 12684, 15259, 14973, 14321, 11757, 13256, 12695, 14973, 13313, 8128, 8472, 12158, 9330, 10600, 11491, 7544, 7544, 7887, 15271, 19450, 16633, 19450, 10612, 10829, 13668, 13726, 15981, 15717, 12993, 12993, 12626, 17859, 15981, 12615, 13131, 12283, 17000, 15789, 13360, 16371, 13668, 17859, 15981, 12397, 12397, 18660, 17755, 17172, 13668, 18359, 21453, 16645, 17790, 14871, 17216, 17916, 16576, 18477, 18293, 20938, 26112, 29604]
     }
-    
-    # --- COMPLETE CEAT DATASET (132 ROWS) ---
-    # Logic: Consumer Price = List Price; MRP = Consumer Price + 8%
-    ceat_master = {
-        "Brand": ["CEAT"] * 132,
-        "Pattern": [
-            "Milaze", "Milaze", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X5", "Milaze X5", "Energy Drive", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X5", "Milaze X5", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Fuel Smart", "Milaze X3", "SecuraDrive", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "SecuraDrive", "SecuraDrive", "SecuraDrive", "Milaze X5", "Milaze X5", "Milaze X5", "Milaze X5", "Milaze X5", "Milaze X5", "Milaze X5", "SecuraDrive", "SecuraDrive", "Milaze X3", "SecuraDrive", "SecuraDrive", "Milaze X3", "SecuraDrive", "SecuraDrive", "Energy Drive", "SecuraDrive", "Milaze X3", "F1 Steel BT", "Steel Plus LT", "Czar HT", "Steel Plus LT", "Milaze LT", "F1 Steel BT", "F1 Steel BT", "Milaze LT", "Milaze", "Milaze HD", "Milaze", "CrossDrive AT", "CrossDrive AT", "SecuraDrive SUV", "Milaze X5", "SecuraDrive", "SecuraDrive", "SecuraDrive", "SecuraDrive", "SecuraDrive", "SecuraDrive SUV", "Milaze X3", "SecuraDrive SUV", "SecuraDrive", "Czar HT", "Czar AT", "Czar AT", "SecuraDrive", "Czar AT", "Milaze LT", "Czar HP", "CrossDrive AT", "Czar AT", "Czar AT", "CrossDrive AT", "SportDrive", "SportDrive", "SportDrive", "SportDrive", "SportDrive", "SecuraDrive", "SecuraDrive SUV", "SecuraDrive", "SecuraDrive SUV", "SecuraDrive SUV", "Czar AT", "CrossDrive AT", "SecuraDrive", "Czar AT", "Czar AT", "Czar HP", "CrossDrive AT", "CrossDrive AT", "SecuraDrive SUV", "SportDrive", "Czar AT", "CrossDrive AT", "CrossDrive HT", "CrossDrive AT", "SportDrive SUV", "Czar AT", "Czar AT", "SportDrive SUV", "Sportdrive SUV", "Czar AT", "CrossDrive AT", "Sportdrive SUV", "SportDrive", "SportDrive", "SecuraDrive", "SportDrive", "Sportdrive", "Sportdrive SUV", "Sportdrive SUV", "SportDrive SUV", "CrossDrive AT", "Sportdrive SUV", "Sportdrive SUV", "SportDrive SUV"
-        ],
-        "Type": ["TL", "TL", "TL", "TT", "TL", "TT", "TL", "TT", "TT", "TT", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TT", "TT", "TL", "TL", "TT", "TL", "TL", "TT", "TL", "TL", "TT", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL"],
-        "Tyre Size": [
-            "135 70 R12 65S", "155 65 R12 71S", "145 70 R12 69T", "145 70 R12 69T", "145 80 R12 74T", "145 80 R12 74T", "145 80 R12 80R", "145 80 R12 80R", "145 70 R12 70R", "155 70 R13 71T", "155 70 R13 71T", "155 65 R13 75T", "155 80 R13 73T", "155 80 R13 75T", "155 80 R13 75T", "155 80 R13 79T", "165 65 R13 77T", "175 70 R13 82T", "155 80 R13 80R", "155 65 R13 65R", "165 70 R14 75T", "165 65 R14 79T", "165 65 R14 79T", "155 65 R14 81T", "165 70 R14 85S", "165 80 R14 85S", "165 80 R14 85T", "175 65 R14 82T", "175 65 R14 82T", "175 70 R14 84T", "185 65 R14 88T", "185 70 R14 88T", "185 70 R14 88H", "185 R 14 82T", "165 70 R14 81T", "165 80 R14 80R", "175 65 R14 65R", "165 70 R14 70R", "155 65 R14 65R", "165 65 R14 65R", "185 70 R14 70R", "175 65 R15 65R", "175 60 R15 81H", "175 65 R15 84H", "175 65 R15 84T", "185 60 R15 89H", "185 60 R15 88H", "185 65 R15 88T", "185 65 R15 84H", "195 55 R15 88V", "195 60 R15 88H", "195 60 R15 91V", "195 65 R15 94S", "205 65 R15 100S", "205 70 R15 106Q", "205 70 R15 100S", "215 75 R15 106Q", "215 75 R15 113S", "215 75 R15 100S", "235 75 R15 113S", "215 75 R15 113S", "215 75 R15 113S", "235 75 R15 113S", "235 70 R15 105S", "215 75 R15 100S", "215 75 R15 100S", "205 65 R15 100H", "195 55 R16 55R", "185 55 R16 83V", "195 55 R16 87V", "205 55 R16 91H", "205 60 R16 92H", "215 60 R16 92H", "215 60 R16 95H", "205 65 R16 94S", "215 65 R16 98H", "215 60 R16 95H", "235 70 R16 100S", "235 70 R16 105Q", "245 75 R16 111H", "225 60 R16 89V", "235 70 R16 105S", "245 75 R16 105Q", "215 65 R16 100H", "255 65 R16 106S", "245 75 R16 75R", "265 70 R16 70R", "255 65 R16 106S", "225 50 R17 99T", "215 45 R17 91Y", "205 45 R17 88Y", "215 50 R17 94Y", "225 45 R17 101W", "215 55 R17 91H", "235 55 R17 104H", "225 50 R17 94V", "215 60 R17 94V", "215 60 R17 96H", "265 65 R17 112S", "265 65 R17 112S", "215 60 R17 96H", "235 65 R17 104H", "265 65 R17 112S", "225 55 R17 99H", "235 65 R17 104T", "255 60 R17 112S", "215 55 R17 104H", "255 55 R18 99T", "265 60 R18 110S", "285 60 R18 110T", "255 65 R18 111H", "255 65 R18 111H", "255 55 R18 55R", "255 65 R18 65R", "265 60 R18 110H", "235 60 R18 60R", "245 60 R18 60R", "265 60 R18 110S", "285 60 R18 110T", "235 55 R19 105W", "225 55 R19 104W", "235 50 R19 97Y", "255 50 R19 100H", "255 50 R19 100Y", "255 45 R19 102Y", "255 50 R19 50R", "255 55 R19 55R", "235 55 R19 105W", "265 50 R20 109H", "245 45 R20 45R", "255 45 R20 45R", "275 40 R20 40R"
-        ],
-        "Consumer Price": [
-            2557, 3108, 2456, 2687, 2736, 2749, 2818, 2834, 2466, 3218, 3146, 3122, 3344, 3368, 3456, 3359, 3738, 4591, 3463, 3444, 3385, 3905, 3905, 3203, 3154, 3659, 3876, 4365, 4365, 4778, 4729, 4394, 4738, 4496, 3587, 3690, 4493, 3297, 3481, 4018, 4524, 4951, 4101, 5157, 4818, 5069, 5126, 4750, 5327, 6363, 4951, 6137, 6151, 5688, 6055, 6076, 5704, 6077, 5663, 6300, 6077, 5974, 5974, 7374, 5966, 6060, 6304, 5663, 5218, 6507, 7010, 6765, 6137, 6137, 6151, 7991, 6044, 5977, 5246, 7230, 6092, 7523, 5837, 5704, 8074, 7230, 6166, 8074, 12752, 9486, 8740, 11939, 11768, 6942, 10544, 6222, 6222, 6589, 12005, 13153, 6589, 12083, 11886, 8116, 11119, 13153, 10310, 12752, 14849, 16745, 9143, 9267, 13008, 8839, 13779, 14317, 10779, 14849, 16745, 19297, 14395, 14531, 9139, 15228, 11381, 17254, 16545, 15020, 12394, 27671, 20072, 15588
-        ],
-        "MRP": [
-            2761, 3356, 2652, 2901, 2954, 2968, 3043, 3060, 2663, 3475, 3397, 3371, 3611, 3637, 3732, 3627, 4037, 4958, 3740, 3719, 3655, 4217, 4217, 3459, 3406, 3951, 4186, 4714, 4714, 5160, 5107, 4745, 5117, 4855, 3873, 3985, 4852, 3560, 3759, 4339, 4885, 5347, 4429, 5569, 5203, 5474, 5536, 5130, 5753, 6872, 5347, 6627, 6643, 6143, 6539, 6562, 6160, 6563, 6116, 6804, 6563, 6451, 6451, 7963, 6443, 6544, 6808, 6116, 5635, 7027, 7570, 7306, 6627, 6627, 6643, 8630, 6527, 6455, 5665, 7808, 6579, 8124, 6303, 6160, 8719, 7808, 6659, 8719, 13772, 10244, 9439, 12894, 12709, 7497, 11387, 6719, 6719, 7116, 12965, 14205, 7116, 13049, 12836, 8765, 12008, 14205, 11134, 13772, 16036, 18084, 9874, 10008, 14048, 9546, 14881, 15462, 11641, 16036, 18084, 20840, 15546, 15693, 9870, 16446, 12291, 18634, 17868, 16221, 13385, 29884, 21677, 16835
-        ]
+
+    # Combine into a single massive DataFrame for easier global searching
+    # (Optional: If you want to show tables separately, you can return them separately)
+    return {
+        "Bridgestone": pd.DataFrame(bridgestone_master),
+        "Firestone": pd.DataFrame(firestone_master),
+        "Apollo": pd.DataFrame(apollo_master)
     }
+
+# 3. Password Protection Logic
+def check_password():
+    if "password_correct" not in st.session_state:
+        st.session_state["password_correct"] = False
     
-    # --- DISPLAY LOGIC ---
-    def show_brand_table(title, data_dict):
-        df = pd.DataFrame(data_dict)
+    if not st.session_state["password_correct"]:
+        cols = st.columns([1, 2, 1])
+        with cols[1]:
+            st.info("🔒 Secure Master Access")
+            pwd = st.text_input("Enter Credentials:", type="password")
+            if st.button("Unlock Master Data", use_container_width=True):
+                if pwd == st.secrets.get("password", "admin123"):
+                    st.session_state["password_correct"] = True
+                    st.rerun()
+                else: 
+                    st.error("❌ Incorrect password")
+        return False
+    return True
+
+# --- MAIN APP EXECUTION ---
+if check_password():
+    st.title("Tyres Master Price List")
+    st.caption("Bridgestone, Firestone, JK Tyre, Ceat, Apollo & Yokohama • Effective Sep 2025")
+
+    # Load cached data
+    data_frames = load_master_data()
+
+    # --- GLOBAL SEARCH ---
+    search = st.text_input("🔍 Global Search:", placeholder="Enter size (e.g. 145 80 12) or pattern...")
+
+    # Logic to display filtered results
+    def display_data(brand_name, df):
         if search:
-            mask = (df["Tyre Size"].str.contains(search, case=False, na=False)) | \
-                   (df["Pattern"].str.contains(search, case=False, na=False)) | \
-                   (df["Brand"].str.contains(search, case=False, na=False))
+            # Flexible search across all text columns
+            mask = df.apply(lambda row: row.astype(str).str.contains(search, case=False).any(), axis=1)
             filt = df[mask]
-        else: filt = df
-        
+        else:
+            filt = df
+
         if not filt.empty:
-            st.subheader(f"🏷️ {title}")
-            st.dataframe(filt, use_container_width=True, hide_index=True,
+            st.subheader(f"🏷️ {brand_name}")
+            st.dataframe(
+                filt, 
+                use_container_width=True, 
+                hide_index=True,
                 column_config={
-                    "Pattern": st.column_config.Column(width="medium"),
-                    "Consumer Price": st.column_config.NumberColumn("Consumer Price (₹)", format="₹%d"),
-                    "MRP": st.column_config.NumberColumn("MRP (₹)", format="₹%d")
-                })
+                    "Consumer Price": st.column_config.NumberColumn("Consumer Price", format="₹%d"),
+                    "MRP": st.column_config.NumberColumn("MRP", format="₹%d")
+                }
+            )
             st.markdown("---")
+        elif not search:
+            st.warning(f"No data found for {brand_name}")
 
-    show_brand_table("Bridgestone Master Data", bridgestone_master)
-    show_brand_table("Firestone Master Data", firestone_master)
-    show_brand_table("JK Tyre Master Data", jk_master)
-    show_brand_table("Apollo Master Data", apollo_master)
-    show_brand_table("Ceat Master Data", ceat_master)
+    # Render each brand table
+    for brand, df in data_frames.items():
+        display_data(brand, df)
 
+    # Sidebar Tools
+    with st.sidebar:
+        st.header("Admin Tools")
+        if st.button("Log Out"):
+            st.session_state["password_correct"] = False
+            st.rerun()
+        
+        st.divider()
+        st.markdown("### Search Tips")
+        st.info("Type a size like '145 80 12' or a pattern like 'Sturdo' to filter immediately.")
