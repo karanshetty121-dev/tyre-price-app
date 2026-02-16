@@ -233,4 +233,4 @@ ceat_master = {
     show_brand_table("Firestone Master Data", firestone_master)
     show_brand_table("Apollo Master Data", apollo_master)
     show_brand_table("JK Master Data", jk_master)
-    show_brand_table("Ceat Master Data", ceat_master)
+    show_brand_table("CEAT Master Data", ceat_master)
