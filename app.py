@@ -6,7 +6,7 @@ st.set_page_config(page_title="MOTO FINEZ Master Data", layout="wide")
 
 # 2. Main Title
 st.title("Tyres Master Price List")
-st.caption("Bridgestone & Firestone • Effective 22nd Sep 2025")
+st.caption("Bridgestone, Firestone, Apollo, JK & Goodyear • Updated March 2026")
 
 # 3. Password Protection Logic
 def check_password():
@@ -117,7 +117,52 @@ if check_password():
             2359, 2736, 2519, 2748, 2907, 2748, 2748, 2942, 3046, 3126, 3126, 3022, 3263, 3160, 3377, 3412, 3492, 3492, 3492, 3412, 3275, 3984, 3434, 3583, 3880, 3880, 3377, 3389, 3663, 3663, 3663, 4453, 4453, 4602, 4167, 4213, 4213, 4465, 4487, 4522, 4373, 4739, 4763, 4957, 4957, 4957, 5403, 5243, 6674, 6674, 7190, 5896, 5896, 5896, 5896, 5552, 6617, 7739, 6617, 6583, 6227, 6342, 6113, 6239, 6296, 6205, 7716, 7212, 7464, 6113, 4888, 5941, 5941, 6067, 6583, 6194, 5884, 5930, 5941, 5953, 6090, 6388, 6170, 7419, 7716, 7029, 7086, 6194, 6170, 10109, 7476, 9765, 8723, 10017, 10040, 10578, 11082, 8163, 10395, 9833, 9193, 9204, 9330, 11264
         ]
     }
- 
+
+    # --- GOODYEAR (Integrated from March 2026 List) ---
+       gooodyear_master = {
+            "Brand": ["Goodyear"] * 75,
+            "Tyre Size": [
+                "145/70 R12", "145/80 R12", "145/70 R13", "145/80 R13", "155/65 R13", "155/70 R13", "155/80 R13", "175/70 R13",
+                "155/65 R14", "165/65 R14", "165/70 R14", "165/80 R14", "175/65 R14", "175/70 R14", "185/65 R14", "185/70 R14",
+                "175/60 R15", "175/65 R15", "185/60 R15", "185/65 R15", "185/70 R15", "195/60 R15", "195/65 R15", "205/65 R15", "215/75 R15", "235/75 R15",
+                "185/55 R16", "185/60 R16", "195/55 R16", "195/60 R16", "205/55 R16", "205/60 R16", "205/65 R16", "215/60 R16", "215/65 R16", "225/55 R16", "235/70 R16", "245/70 R16",
+                "205/50 R17", "205/55 R17", "215/55 R17", "215/60 R17", "225/45 R17", "225/50 R17", "225/55 R17", "225/60 R17", "225/65 R17", "235/55 R17", "235/65 R17", "245/45 R17", "245/65 R17", "265/65 R17",
+                "215/55 R18", "225/50 R18", "225/55 R18", "235/45 R18", "235/50 R18", "235/55 R18", "235/60 R18", "245/45 R18", "245/50 R18", "245/60 R18", "255/55 R18", "255/60 R18", "265/60 R18", "285/60 R18",
+                "235/55 R19", "245/45 R19", "245/55 R19", "255/50 R19", "255/55 R19", "275/40 R19",
+                "245/50 R20"
+            ],
+            "Pattern": [
+                "Ducaro Hi-Miler", "Ducaro Hi-Miler", "Assurance Duraplus 2", "Assurance Duraplus 2", "Assurance Duraplus 2", "Assurance Duraplus 2", "Assurance Duraplus 2", "Assurance Duraplus 2",
+                "Assurance Duraplus 2", "Goodyear DP-C1", "DP-M1", "Assu Maxguard", "Assu Triplemax 2", "Assurance Triplemax 2", "Assurance Triplemax 2", "Assu Maxguard",
+                "Assurance Triplemax", "Assu Maxguard", "Assurance Maxguard", "Assu Maxguard XL", "Assu Maxguard SUV", "Assurance Triplemax 2", "Assu Maxguard SUV XL", "Assurance Duraplus 2 XL", "Assu Maxguard SUV", "WRL AT Silenttrac XL",
+                "Assu Maxguard", "Assu Maxguard", "Assu Maxguard", "Assu Maxguard SUV XL", "Assu Maxguard", "Assu Maxguard SUV XL", "Assu Maxguard", "Assu Maxguard", "WRL AT Silenttrac", "Assu Comforttred", "Assu Maxguard SUV", "WRL AT Silenttrac XL",
+                "Assu Triplemax 2 XL", "Assu Maxguard SUV XL", "Assu Maxguard", "Assu Maxguard SUV XL", "Assu Comforttred XL", "Assu Comforttred XL", "Assu Comforttred XL", "Effigrip Perf SUV XL", "Effigrip Perf SUV", "Assu Comforttred XL", "Assu Maxguard SUV XL", "Assu Comforttred XL", "Assu Maxguard SUV XL", "Assu Maxguard SUV",
+                "Effigrip Perf SUV XL", "Assu Maxguard SUV", "Effigrip Perf SUV XL", "Assu Comforttred XL", "Effigrip Perf SUV XL", "Effigrip Perf SUV", "Assu Maxguard SUV XL", "Assu Comforttred XL", "Effigrip MOE ROF", "ElectricDrive", "Effigrip Perf SUV XL", "Assu Maxguard SUV XL", "Assu Maxguard SUV XL", "WRL AT Silenttrac",
+                "Effigrip Perf SUV XL", "Effigrip MOE XL ROF", "ElectricDrive", "Effigrip Perf SUV XL", "Effigrip Perf SUV XL", "Effigrip MOE ROF",
+                "ElectricDrive XL"
+            ],
+            "Type": ["TL"] * 75,
+            "Consumer Price": [
+                2740, 3010, 3430, 3430, 3550, 3620, 3710, 4970,
+                3880, 4820, 3710, 4110, 5240, 5400, 5020, 5190,
+                5090, 5580, 5660, 6010, 5680, 6520, 6510, 6820, 6720, 8220,
+                6680, 6340, 7950, 7470, 8460, 7430, 7140, 8140, 10110, 11050, 8550, 10760,
+                9960, 10030, 11290, 10370, 12270, 12620, 12550, 11740, 12250, 13820, 12660, 13390, 12740, 14080,
+                12910, 14540, 13210, 19900, 19650, 20690, 14970, 16240, 24950, 20710, 17620, 14500, 17440, 18790,
+                19680, 28070, 20840, 20810, 19220, 30210,
+                21640
+            ],
+            "MRP": [
+                2960, 3250, 3700, 3700, 3830, 3910, 4010, 5370,
+                4190, 5210, 4010, 4440, 5660, 5830, 5420, 5610,
+                5600, 6140, 6230, 6610, 6250, 7170, 7160, 7500, 7390, 9040,
+                7350, 6970, 8750, 8220, 9310, 8170, 7850, 8950, 11120, 12160, 9410, 11840,
+                11160, 11230, 12640, 11610, 13740, 14130, 14060, 13150, 13720, 15480, 14180, 15000, 14270, 15770,
+                14460, 16280, 14800, 22290, 22010, 23170, 16770, 18190, 27940, 23200, 19730, 16240, 19530, 21040,
+                22040, 31440, 23340, 23310, 21530, 33840,
+                24240
+            ]
+        })
     # --- DISPLAY LOGIC ---
     def show_brand_table(title, data_dict):
         df = pd.DataFrame(data_dict)
@@ -140,3 +185,4 @@ if check_password():
     show_brand_table("Firestone Master Data", firestone_master)
     show_brand_table("Apollo Master Data", apollo_master)
     show_brand_table("JK Master Data", jk_master)
+    show_brand_table("Goodyear Master Data", goodyear_master)
