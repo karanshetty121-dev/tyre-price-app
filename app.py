@@ -162,7 +162,9 @@ if check_password():
                 22040, 31440, 23340, 23310, 21530, 33840,
                 24240
             ]
-        })
+        }
+    )
+    
     # --- DISPLAY LOGIC ---
     def show_brand_table(title, data_dict):
         df = pd.DataFrame(data_dict)
