@@ -163,8 +163,6 @@ if check_password():
                 24240
             ]
         }
-    )
-    
     # --- DISPLAY LOGIC ---
     def show_brand_table(title, data_dict):
         df = pd.DataFrame(data_dict)
