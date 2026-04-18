@@ -330,5 +330,5 @@ if check_password():
     show_brand_table("JK Master Data", jk_master)
     show_brand_table("Goodyear Master Data", goodyear_master)
     show_brand_table("Ceat Master Data", ceat_master)
-    show_brand_table("Ceat1 Master Data", ceat1_master)
+    show_brand_table("Ceat Master Data", ceat_master)
 
