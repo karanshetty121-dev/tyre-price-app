@@ -175,8 +175,8 @@ if check_password():
 
  # --- JK TYRE CAR & JEEP RADIAL DATASET WITH SPEED/LOAD INDEX ---
     # Logic: CP = Base + 6% | MRP = CP + 8% | TL/TT used for type
-    goodyear_master = {
-        "Brand": ["Goodyear"] * 114,
+    ceat_master = {
+        "Brand": ["Ceat"] * 114,
         "Tyre Size": [
             "145/70R12", "145/80R12", "145/80R12", "145/70R13", "145/70R13", "145/80R13", "155/65R13", "155/70R13", "155/80R13", "175/70R13",
             "155/65R14", "155/65R14", "165/65R14", "165/65R14", "165/70R14", "165/70R14", "165/70R14", "165/80R14", "165/80R14", "165/80R14",
@@ -251,5 +251,5 @@ if check_password():
     show_brand_table("Apollo Master Data", apollo_master)
     show_brand_table("JK Master Data", jk_master)
     show_brand_table("Goodyear Master Data", goodyear_master)
-    show_brand_table("Goodyear Master Data", goodyear_master)
+    show_brand_table("Ceat Master Data", ceat_master)
 
