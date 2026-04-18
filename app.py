@@ -172,7 +172,88 @@ if check_password():
              10940, 10920, 12400, 12670, 12500, 9600, 9380, 9820, 12080
          ]
     }
-    
+
+   
+ceat_master = {
+        "Brand": ["Ceat"] * 157,
+        "Tyre Size": [
+            "135 70 R12 65S", "145 70 R12 69T", "145 70 R12 69T", "145 70 R12", "145 80 R12 74T", "145 80 R12 74T", "145 80 R12 74T", "145 80 R12 74T", "155 65 R12 71S", "145 70 R13 71T",
+            "145 70 R13 71T", "145 80 R13 75T", "145 80 R13 75T", "155 65 R13 73T", "155 65 R13 73T", "155 70 R13 75T", "155 70 R13 75T", "155 70 R13 75T", "155 70 R13 75T", "155 80 R13 79T",
+            "155 80 R13 79T", "165 65 R13 77T", "165 65 R13 77T", "175 70 R13 82T", "155 65 R14 75T", "155 65 R14 79T", "165 65 R14 79T", "165 65 R14 79T", "165 70 R14 81T", "165 70 R14 81T",
+            "165 70 R14 81T", "165 70 R14 81T", "165 80 R14 85T R", "165 80 R14 85S", "165 80 R14 85S", "165 80 R14 85S", "165 80 R14 85T", "175 65 R14 82H", "175 65 R14 82T", "175 65 R14 82T",
+            "175 65 R14 82T", "175 70 R14 84T", "VALUE_ERROR_01", "185 65 R14 86T SW", "185 70 R14 88T", "185 70 R14 88T", "185 70 R14 88H", "175 60 R15 81H", "175 65 R15 84T", "175 65 R15 84T",
+            "175 65 R15 84H", "185 60 R15 84H", "185 65 R15 88T", "185 65 R15 88T", "185 65 R15 88H R", "185 65 R15 Dzire", "185 70 R15 89H TN", "185 70 R15 89H T", "195 60 R15 88V", "195 65 R15 91H P",
+            "195 65 R15 91H", "195 R15 106Q", "195 R15 106Q", "205 60 R15 91V", "205 65 R15 94S", "215 75 R15 100S", "215 75 R15 100S", "215 75 R15 100S", "215 75 R15 100S", "215 75 R15 100S",
+            "215 75 R15 115/113S AL", "215 75 R15 115/113S MM", "215 75 R15 113S", "215 75 R15 115/113S", "215 75 R15 100H MM", "235 75 R15 105S", "185 55 R16 83V", "185 85 R16 105Q", "195 55 R16 87H", "195 55 R16 87V",
+            "195 60 R16 89V", "205 55 R16 91H S", "205 60 R16 92H", "205 60 R16 92H SK", "205 65 R16 95S TWI", "205 65 R16 95H",
+            # Page 3
+            "205 65 R16 95H", "215 60 R16 95H", "215 60 R16 95H", "215 65 R16 98H", "215 70 R16 100H", "235 70 R16 106S", "VALUE_ERROR_02", "235 70 R16 105S", "235 70 R16 100S", "245 75 R16 111H MM",
+            "205 45 R17 88Y XL", "205 50 R17 93W", "205 55 R17 91H", "215 45 R17 91Y XL", "215 50 R17 91V", "215 55 R17 94V MM", "215 55 R17 94V KIA", "215 55 R17 94V", "215 55 R17", "215 60 R17 96H",
+            "215 60 R17 96H MSIL", "215 60 R17 96H", "215 60 R17 96H P", "225 45 R17 94Y XL", "225 50 R17 98Y XL", "225 55 R17 101W XL", "225 60 R17 99H", "225 60 R17 99H", "225 65 R17 102H", "235 55 R17 103V XL",
+            "235 55 R17 99V", "235 65 R17 104T", "235 65 R17 104H", "235 65 R17 104H", "235 65 R17 104H DOM", "245 45 R17 99Y XL", "245 65 R17 107H MM", "265 65 R17 112S",
+            # Page 4
+            "265 65 R17 112S", "205 45 R17 88Y XL CALM", "215 45 R17 91Y XL CALM", "215 50 R17 95Y XL CALM", "225 45 R17 94Y XL CALM", "225 50 R17 98Y XL CALM", "225 55 R17 101W XL CALM", "245 45 R17 99Y XL CALM",
+            "215 55 R18 95H MG", "215 55 R18 95H HYN", "225 40 R18 92Y XL", "225 50 R18 99W XL", "225 55 R18 102W XL", "235 50 R18 101V XL", "235 55 R18 104W XL", "235 60 R18 103H XUV7", "VALUE_ERROR_03",
+            "235 60 R18 107W XL", "245 40 R18 97Y XL", "245 45 R18 100Y XL", "245 50 R18 104W XL", "255 60 R18 108H MM", "255 65 R18 111H MM", "255 65 R18 111H W502", "255 65 R18 111H", "265 60 R18 110T",
+            "265 60 R18 110H", "265 60 R18 110S", "225 40 R18 92Y XL RFT", "225 40 R18 92Y XL CALM", "225 50 R18 99W XL CALM", "225 55 R18 102W XL CALM", "235 50 R18 101V XL CALM", "235 55 R18 104W XL CALM",
+            "235 60 R18 107W XL CALM", "245 40 R18 97Y XL CALM", "245 45 R18 100Y XL CALM", "245 50 R18 104W XL CALM", "255 55 R18 109W XL CALM", "235 55 R19 105W XL", "245 45 R19 102Y XL", "255 50 R19 107W XL",
+            # Page 5
+            "255 55 R19 111W XL", "255 60 R19 109H MM", "235 55 R19 105W XL CALM", "245 45 R19 102Y XL CALM", "255 50 R19 107W XL CALM", "255 55 R19 111W XL CALM", "245 45 R20 103W XL", "255 45 R20 105W XL",
+            "275 45 R20 110Y XL", "245 45 R20 103W XL CALM", "255 45 R20 105W XL CALM", "275 45 R20 110Y XL CALM", "275 45 ZR21 110Y XL CALM", "285 45 ZR21 113Y XL CALM", "315 40 ZR21 115Y XL CALM"
+        ],
+        "Type": [
+            "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TT", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TT", "TL",
+            "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TT", "TL",
+            "TL", "TL", "NA", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
+            "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TT", "TL", "TT", "TT", "TL", "TL", "TT", "TL", "TT", "TL", "TL",
+            "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "NA", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
+            "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
+            "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
+            "TL", "TL", "NA", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL"
+        ],
+        "Pattern": [
+            "Milaze", "Milaze X3", "Milaze X3", "Energy Drive EV", "Milaze X3", "Milaze X3", "Milaze X5", "Milaze X5", "Milaze", "Milaze X3",
+            "Milaze X3", "Milaze X3", "Milaze X5", "Milaze X3", "Milaze X5", "Milaze X3", "Milaze X3", "Milaze X5", "Milaze X5", "Milaze X3",
+            "Milaze X5", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X3", "Milaze X5", "Milaze X3", "Milaze X5", "Fuelsmarrt", "Milaze X3",
+            "Milaze X5", "SecuraDrive", "Fuelsmarrt", "Milaze X3", "Milaze X3", "Milaze X5", "SecuraDrive SD004", "Energy Drive EV", "Milaze X3", "Milaze X3",
+            "Milaze X5", "Milaze X3", "HEADER", "Milaze X3", "Milaze X3", "Milaze X5", "SecuraDrive", "SecuraDrive", "Milaze X3", "Milaze X5",
+            "SecuraDrive", "SecuraDrive", "Milaze X3", "Milaze X5", "SecuraDrive", "SecuraDrive SD004", "Energy Drive", "SecuraDrive", "SecuraDrive", "Energy Drive",
+            "SecuraDrive", "STEEL PLUS LT", "STEEL PLUS LT", "SecuraDrive", "Milaze X3", "Crossdrive AT", "Crossdrive AT", "CZAR HT", "F1 STEEL BT", "F1 STEEL BT",
+            "Milaze HD", "Milaze HD", "Milaze LT", "Milaze", "SecuraDrive SUV", "Milaze", "SecuraDrive", "Milaze LT", "Milaze X5", "SecuraDrive",
+            "SecuraDrive", "SecuraDrive", "SecuraDrive", "SecuraDrive SD004", "Milaze X3", "SecuraDrive SUV", "SecuraDrive", "Energy Drive EV", "SecuraDrive", "SecuraDrive SUV",
+            "CZAR HP", "Crossdrive AT", "HEADER", "CZAR AT", "CZAR HT", "CZAR AT", "SportDrive", "SecuraDrive", "SecuraDrive SD004", "SportDrive",
+            "SecuraDrive", "SecuraDrive SD004", "SecuraDrive SD004", "SecuraDrive SUV", "SecuraDrive", "SecuraDrive SD004", "SecuraDrive SD004", "SecuraDrive SUV", "SecuraDrive", "SportDrive",
+            "SportDrive", "SportDrive", "CZAR HP", "SecuraDrive SUV", "CZAR HP", "SecuraDrive", "SecuraDrive", "CrossDrive AT", "CZAR AT", "CZAR HP",
+            "SecuraDrive SUV", "SportDrive", "SecuraDrive SUV", "CrossDrive AT", "CZAR AT", "SportDrive", "SportDrive", "SportDrive", "SportDrive", "SportDrive",
+            "SportDrive", "SportDrive", "SecuraDrive SD004", "SecuraDrive", "SportDrive", "SportDrive", "SportDrive", "SportDrive SUV", "SportDrive SUV", "SecuraDrive SUV",
+            "HEADER", "SportDrive SUV", "SportDrive", "SportDrive", "SportDrive", "CrossDrive HT", "CrossDrive AT", "CrossDrive HT", "CZAR AT", "CrossDrive AT",
+            "CZAR AT", "CZAR AT", "SportDrive RFT", "SportDrive", "SportDrive", "SportDrive", "SportDrive SUV", "SportDrive SUV", "SportDrive SUV", "SportDrive",
+            "SportDrive", "SportDrive", "SportDrive SUV", "SportDrive SUV", "SportDrive", "SportDrive", "SportDrive SUV", "SportDrive SUV", "CrossDrive AT", "SportDrive SUV",
+            "SportDrive SUV", "SportDrive SUV", "SportDrive SUV", "SportDrive SUV", "SportDrive SUV", "SportDrive SUV", "SportDrive SUV", "SportDrive SUV", "SportDrive SUV"
+        ],
+        "Consumer Price": [
+            2538, 2667, 2437, 2035, 2657, 2699, 2770, 2788, 3085, 3194,
+            3122, 3099, 3164, 3319, 3385, 3429, 3343, 3403, 3492, 3334,
+            3403, 3487, 3711, 4557, 3360, 3420, 3876, 3949, 2954, 3149,
+            3240, 3434, 3641, 2936, 3508, 3662, 3357, 4124, 4081, 4332,
+            4416, 4742, 0, 4693, 4362, 4446, 4536, 3926, 4781, 4866,
+            4937, 5100, 4714, 4716, 4908, 4908, 4305, 4854, 6093, 4501,
+            5020, 5662, 6009, 5991, 6106, 5712, 5803, 6031, 5621, 5645,
+            5929, 6031, 6031, 5930, 5615, 7235, 4997, 5793, 5504, 5936,
+            5833, 6713, 6478, 6478, 6106, 5286, 5345, 5704, 5787, 7651,
+            5662, 7730, 0, 7466, 5932, 5287, 8674, 6735, 5945, 9414,
+            6946, 5920, 5920, 6304, 6304, 6540, 6540, 5950, 6540, 11850,
+            11754, 11679, 8056, 7501, 11758, 9346, 9346, 11036, 11873, 11892,
+            9287, 12657, 10853, 13054, 11797, 8549, 9246, 10107, 11631, 11532,
+            11350, 12420, 7006, 7360, 11028, 12988, 13848, 19151, 15412, 11028,
+            0, 14210, 14422, 15114, 14287, 14084, 8254, 7033, 8773, 16620,
+            13675, 14737, 20729, 13211, 13745, 14286, 18413, 14817, 13663, 12988,
+            13503, 13796, 16993, 14907, 13184, 17124, 16421, 8996, 14333, 20706,
+            16464, 16210, 27464, 19922, 22483, 26405, 19154, 21617, 28534, 33218,
+            30876
+        ],
+    }
+
     # --- DISPLAY LOGIC ---
     def show_brand_table(title, data_dict):
         df = pd.DataFrame(data_dict)
@@ -196,3 +277,5 @@ if check_password():
     show_brand_table("Apollo Master Data", apollo_master)
     show_brand_table("JK Master Data", jk_master)
     show_brand_table("Goodyear Master Data", goodyear_master)
+    show_brand_table("Ceat Master Data", ceat_master)
+
