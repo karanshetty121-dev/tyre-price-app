@@ -175,7 +175,7 @@ if check_password():
 
            # --- JK TYRE CAR & JEEP RADIAL DATASET WITH SPEED/LOAD INDEX ---
     # Logic: CP = Base + 6% | MRP = CP + 8% | TL/TT used for type
-     ceat_master = {
+    ceat_master = {
         "Brand": ["Ceat"] * 114,
         "Tyre Size": [
             "145/70R12", "145/80R12", "145/80R12", "145/70R13", "145/70R13", "145/80R13", "155/65R13", "155/70R13", "155/80R13", "175/70R13",
@@ -228,8 +228,8 @@ if check_password():
          ]
     }
 
-    ceat1_master = {
-        "Brand": ["Ceat1"] * 157,
+    ceat_master = {
+        "Brand": ["Ceat"] * 157,
         "Tyre Size": [
             "135 70 R12 65S", "145 70 R12 69T", "145 70 R12 69T", "145 70 R12", "145 80 R12 74T", "145 80 R12 74T", "145 80 R12 74T", "145 80 R12 74T", "155 65 R12 71S", "145 70 R13 71T",
             "145 70 R13 71T", "145 80 R13 75T", "145 80 R13 75T", "155 65 R13 73T", "155 65 R13 73T", "155 70 R13 75T", "155 70 R13 75T", "155 70 R13 75T", "155 70 R13 75T", "155 80 R13 79T",
