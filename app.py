@@ -206,7 +206,7 @@ if check_password():
             "SportDrive", "SportDrive", "CZAR HP", "SecuraDrive SUV",
         ],
         "Type": [
-            'NA', 'TT', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 
+            "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TT", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TT", "TL",
             'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 
             'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TT', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TT', 'TT', 'TT', 
             'TL', 'TL', 'TL', 'TL', 'TT', 'TL', 'TT', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 
