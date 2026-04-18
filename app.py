@@ -206,7 +206,7 @@ if check_password():
             "SportDrive", "SportDrive", "CZAR HP", "SecuraDrive SUV",
         ],
         "Type": [
-            'TL', 'TT', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TT', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TT', 'TT', 'TT', 'TL', 'TL', 'TL', 'TL', 'TT', 'TL', 'TT', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL''TL', 'TT', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL',
+            'TL', 'TT', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TT', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TT', 'TT', 'TT', 'TL', 'TL', 'TL', 'TL', 'TT', 'TL', 'TT', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL', 'TL','TL', 'TT', 'TL', 'TL', 'TT', 'TL', 'TL', 'TL', 'TL', 'TL',
         ],
         "Consumer Price": [
              2790, 3070, 3070, 3500, 3500, 3500, 3620, 3690, 3780, 5070, 3960, 3960, 4920, 4920, 3780, 
