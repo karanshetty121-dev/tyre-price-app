@@ -173,6 +173,8 @@ if check_password():
          ]
     }
 
+           # --- JK TYRE CAR & JEEP RADIAL DATASET WITH SPEED/LOAD INDEX ---
+    # Logic: CP = Base + 6% | MRP = CP + 8% | TL/TT used for type
     ceat_master = {
         "Brand": ["Ceat"] * 157,
         "Tyre Size": [
