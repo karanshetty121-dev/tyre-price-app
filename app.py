@@ -208,9 +208,9 @@ if check_password():
         "Type": [
             "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TT", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TT", "TL",
             "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TT", "TL",
-            "TL", "TL", "NA", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
+            "TL", "TL", "tt", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
             "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TT", "TL", "TT", "TT", "TL", "TL", "TT", "TL", "TT", "TL", "TL",
-            "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "NA", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
+            "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "tt", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
             "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL", "TL",
             "TL", "TL", "TL", "TL", 
          ],   
