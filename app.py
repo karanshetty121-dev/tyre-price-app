@@ -205,14 +205,7 @@ if check_password():
             "SecuraDrive", "SecuraDrive SD004", "SecuraDrive SD004", "SecuraDrive SUV", "SecuraDrive", "SecuraDrive SD004", "SecuraDrive SD004", "SecuraDrive SUV", "SecuraDrive", "SportDrive",
             "SportDrive", "SportDrive", "CZAR HP", "SecuraDrive SUV",
         ],
-        "Type": [
-            "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL",
-            "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL",
-            "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL",
-            "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL",
-            "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL",
-            "TL", "TT", "TL", "TL", "TL", "TT", "TL", "TL", "TL", "TL", "TL", "TT", "TL", "TL",
-        ],
+        "Type": ["TL"] * 114,
         "Consumer Price": [
              2790, 3070, 3070, 3500, 3500, 3500, 3620, 3690, 3780, 5070, 3960, 3960, 4920, 4920, 3780, 
              3780, 3900, 4190, 4170, 4170, 5340, 5340, 5210, 5210, 5510, 5450, 5450, 5120, 5290, 5450, 
