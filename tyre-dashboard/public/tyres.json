@@ -1,0 +1,7002 @@
+[
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "135 70 R12 65T",
+    "Type": "TL",
+    "Consumer Price": 2850,
+    "MRP": 3061
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP100",
+    "Tyre Size": "145 70 R12 69S",
+    "Type": "TL",
+    "Consumer Price": 3300,
+    "MRP": 3544
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S322",
+    "Tyre Size": "145 70 R12 695",
+    "Type": "TL",
+    "Consumer Price": 3200,
+    "MRP": 3450
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "ER60",
+    "Tyre Size": "145 80 R12 74H",
+    "Type": "TL",
+    "Consumer Price": 3550,
+    "MRP": 3825
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "248",
+    "Tyre Size": "145 80 R12 74S",
+    "Type": "TL",
+    "Consumer Price": 3550,
+    "MRP": 3783
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S248",
+    "Tyre Size": "145 80 R12 745",
+    "Type": "TL",
+    "Consumer Price": 3050,
+    "MRP": 3293
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "145 80 R12 74T",
+    "Type": "TL",
+    "Consumer Price": 3450,
+    "MRP": 3685
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "155 65 R12 71T",
+    "Type": "TL",
+    "Consumer Price": 3500,
+    "MRP": 3776
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "G3",
+    "Tyre Size": "165 60 R12 71H",
+    "Type": "TL",
+    "Consumer Price": 4050,
+    "MRP": 4322
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "145 70 R13 071T",
+    "Type": "TL",
+    "Consumer Price": 3650,
+    "MRP": 3940
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "145 70 R13 71T",
+    "Type": "TL",
+    "Consumer Price": 3800,
+    "MRP": 4089
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "145 80 R13 75T",
+    "Type": "TL",
+    "Consumer Price": 3800,
+    "MRP": 4080
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "155 65 R13 73T",
+    "Type": "TL",
+    "Consumer Price": 4000,
+    "MRP": 4274
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "155 70 R13 075T",
+    "Type": "TL",
+    "Consumer Price": 4000,
+    "MRP": 4296
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "155 70 R13 75T",
+    "Type": "TL",
+    "Consumer Price": 4150,
+    "MRP": 4452
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "155 80 R13 079T",
+    "Type": "TL",
+    "Consumer Price": 4300,
+    "MRP": 4623
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "155 80 R13 79T",
+    "Type": "TL",
+    "Consumer Price": 4450,
+    "MRP": 4789
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "L607",
+    "Tyre Size": "155 R13 LT 90 89Q",
+    "Type": "TL",
+    "Consumer Price": 4450,
+    "MRP": 4801
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "MY02",
+    "Tyre Size": "165 60 R13 73H",
+    "Type": "TL",
+    "Consumer Price": 4500,
+    "MRP": 4820
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "165 65 R13 77T",
+    "Type": "TL",
+    "Consumer Price": 4200,
+    "MRP": 4520
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "MY02",
+    "Tyre Size": "175 60 R13 77H",
+    "Type": "TL",
+    "Consumer Price": 4850,
+    "MRP": 5234
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "175 70 R13 82T",
+    "Type": "TL",
+    "Consumer Price": 5300,
+    "MRP": 5694
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "155 65 R14 75T",
+    "Type": "TL",
+    "Consumer Price": 4150,
+    "MRP": 4470
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "155 70 R14 77T",
+    "Type": "TL",
+    "Consumer Price": 4350,
+    "MRP": 4659
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "165 65 R14 79H",
+    "Type": "TL",
+    "Consumer Price": 5000,
+    "MRP": 5349
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "165 70 R14 81S",
+    "Type": "TL",
+    "Consumer Price": 3950,
+    "MRP": 4240
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "165 70 R14 81T",
+    "Type": "TL",
+    "Consumer Price": 4100,
+    "MRP": 4421
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Consumer Price": 4350,
+    "MRP": 4652
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S248",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Consumer Price": 4700,
+    "MRP": 5040
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Consumer Price": 4600,
+    "MRP": 4958
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B250",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Consumer Price": 5850,
+    "MRP": 6312
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B250 Enliten",
+    "Tyre Size": "175 65 R14 86T",
+    "Type": "TL",
+    "Consumer Price": 5950,
+    "MRP": 6375
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Consumer Price": 5650,
+    "MRP": 6096
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Consumer Price": 5850,
+    "MRP": 6313
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "175 70 R14 84T",
+    "Type": "TL",
+    "Consumer Price": 5850,
+    "MRP": 6295
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "L607",
+    "Tyre Size": "175 R14 C 96 94Q",
+    "Type": "TL",
+    "Consumer Price": 6850,
+    "MRP": 7392
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "185 65 R14 86T",
+    "Type": "TL",
+    "Consumer Price": 5350,
+    "MRP": 5751
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "185 65 R14 86T",
+    "Type": "TL",
+    "Consumer Price": 5550,
+    "MRP": 5970
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "185 70 R14 088T",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5849
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B250",
+    "Tyre Size": "185 70 R14 88T",
+    "Type": "TL",
+    "Consumer Price": 5650,
+    "MRP": 6065
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "185 70 R14 88T",
+    "Type": "TL",
+    "Consumer Price": 5650,
+    "MRP": 6066
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "ER60",
+    "Tyre Size": "185 70 R14 88H",
+    "Type": "TL",
+    "Consumer Price": 5700,
+    "MRP": 6133
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "RE88",
+    "Tyre Size": "195 70 R14 95H",
+    "Type": "TL",
+    "Consumer Price": 7050,
+    "MRP": 7561
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "G3",
+    "Tyre Size": "205 60 R14 89H",
+    "Type": "TL",
+    "Consumer Price": 6200,
+    "MRP": 6678
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B800",
+    "Tyre Size": "165 80 R15 87S",
+    "Type": "TL",
+    "Consumer Price": 5100,
+    "MRP": 5463
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B250",
+    "Tyre Size": "175 60 R15 81H",
+    "Type": "TL",
+    "Consumer Price": 6800,
+    "MRP": 7295
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B250 Enliten",
+    "Tyre Size": "175 60 R15 81H",
+    "Type": "TL",
+    "Consumer Price": 6850,
+    "MRP": 7367
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "175 60 R15 81H",
+    "Type": "TL",
+    "Consumer Price": 6800,
+    "MRP": 7296
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B250",
+    "Tyre Size": "175 65 R15 84T",
+    "Type": "TL",
+    "Consumer Price": 6150,
+    "MRP": 6606
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "175 65 R15 84T",
+    "Type": "TL",
+    "Consumer Price": 6150,
+    "MRP": 6606
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "175 65 R15 84H",
+    "Type": "TL",
+    "Consumer Price": 5900,
+    "MRP": 6363
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "185 60 R15 084T",
+    "Type": "TL",
+    "Consumer Price": 5950,
+    "MRP": 6412
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B250",
+    "Tyre Size": "185 60 R15 88T",
+    "Type": "TL",
+    "Consumer Price": 6200,
+    "MRP": 6652
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "185 60 R15 84T",
+    "Type": "TL",
+    "Consumer Price": 6200,
+    "MRP": 6651
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "ER300",
+    "Tyre Size": "185 60 R15 84H",
+    "Type": "TL",
+    "Consumer Price": 6350,
+    "MRP": 6834
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "185 65 R15 88T",
+    "Type": "TL",
+    "Consumer Price": 6300,
+    "MRP": 6784
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Consumer Price": 6300,
+    "MRP": 6784
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B250",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Consumer Price": 6550,
+    "MRP": 7028
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Consumer Price": 6550,
+    "MRP": 7028
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "195 60 R15 88T",
+    "Type": "TL",
+    "Consumer Price": 6900,
+    "MRP": 7445
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "195 60 R15 88T",
+    "Type": "TL",
+    "Consumer Price": 7150,
+    "MRP": 7690
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "195 65 R15 91H",
+    "Type": "TL",
+    "Consumer Price": 7350,
+    "MRP": 7924
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "195 65 R15 91T",
+    "Type": "TL",
+    "Consumer Price": 7000,
+    "MRP": 7520
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "195 65 R15 91H",
+    "Type": "TL",
+    "Consumer Price": 7250,
+    "MRP": 7795
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "HL 852",
+    "Tyre Size": "195 80 R15 96S",
+    "Type": "TL",
+    "Consumer Price": 7350,
+    "MRP": 7883
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D689",
+    "Tyre Size": "195 R15 LT 106 105Q",
+    "Type": "TL",
+    "Consumer Price": 7650,
+    "MRP": 8221
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "R623",
+    "Tyre Size": "195 80 R15 LT 107/105Q",
+    "Type": "TL",
+    "Consumer Price": 7350,
+    "MRP": 7900
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "205 65 R15 94T",
+    "Type": "TL",
+    "Consumer Price": 7350,
+    "MRP": 7938
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B390",
+    "Tyre Size": "205 65 R15 94S",
+    "Type": "TL",
+    "Consumer Price": 7650,
+    "MRP": 8219
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B390",
+    "Tyre Size": "205 65 R15 99S",
+    "Type": "TL",
+    "Consumer Price": 7850,
+    "MRP": 8465
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "ER60",
+    "Tyre Size": "205 65 R15 94H",
+    "Type": "TL",
+    "Consumer Price": 7750,
+    "MRP": 8355
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "R623",
+    "Tyre Size": "215 70 R15C 109 107S",
+    "Type": "TL",
+    "Consumer Price": 7600,
+    "MRP": 8176
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D689",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Consumer Price": 7700,
+    "MRP": 8300
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D689",
+    "Tyre Size": "215 75 R15 100 97Q",
+    "Type": "TL",
+    "Consumer Price": 7700,
+    "MRP": 8300
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D689",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Consumer Price": 7950,
+    "MRP": 8580
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "P.Cab",
+    "Tyre Size": "215 75 R15 106S",
+    "Type": "TL",
+    "Consumer Price": 7850,
+    "MRP": 8430
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D693II",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Consumer Price": 7850,
+    "MRP": 8460
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D684II",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Consumer Price": 7800,
+    "MRP": 8375
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D689",
+    "Tyre Size": "235 75 R15 105S",
+    "Type": "TL",
+    "Consumer Price": 7800,
+    "MRP": 8406
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D689",
+    "Tyre Size": "235 75 R15 105S",
+    "Type": "TL",
+    "Consumer Price": 7950,
+    "MRP": 8575
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "185 55 R16 83H",
+    "Type": "TL",
+    "Consumer Price": 8000,
+    "MRP": 8530
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "195 55 R16 87V",
+    "Type": "TL",
+    "Consumer Price": 8400,
+    "MRP": 8968
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "195 55 R16 87H",
+    "Type": "TL",
+    "Consumer Price": 8800,
+    "MRP": 9362
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "195 60 R16 89H",
+    "Type": "TL",
+    "Consumer Price": 8350,
+    "MRP": 8891
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "195 60 R16 89H",
+    "Type": "TL",
+    "Consumer Price": 8600,
+    "MRP": 9165
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Sturdo",
+    "Tyre Size": "205 55 R16 91H",
+    "Type": "TL",
+    "Consumer Price": 9700,
+    "MRP": 10351
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "205 55 R16 91T",
+    "Type": "TL",
+    "Consumer Price": 9350,
+    "MRP": 9962
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "G3",
+    "Tyre Size": "205 60 R16 92H",
+    "Type": "TL",
+    "Consumer Price": 8500,
+    "MRP": 9068
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "DHP",
+    "Tyre Size": "205 65 R16 95H",
+    "Type": "TL",
+    "Consumer Price": 8050,
+    "MRP": 8588
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "B390",
+    "Tyre Size": "205 65 R16 95S",
+    "Type": "TL",
+    "Consumer Price": 7850,
+    "MRP": 8398
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005",
+    "Tyre Size": "215 55 R16 93V",
+    "Type": "TL",
+    "Consumer Price": 11450,
+    "MRP": 12229
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Consumer Price": 8950,
+    "MRP": 9555
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "215 60 R16 95T",
+    "Type": "TL",
+    "Consumer Price": 8650,
+    "MRP": 9235
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "215 65 R16 98H",
+    "Type": "TL",
+    "Consumer Price": 10250,
+    "MRP": 10940
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "225 50 R16 92W",
+    "Type": "TL",
+    "Consumer Price": 11900,
+    "MRP": 12720
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005A",
+    "Tyre Size": "225 55 R16 99V",
+    "Type": "TL",
+    "Consumer Price": 12100,
+    "MRP": 12931
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005",
+    "Tyre Size": "225 60 R16 98V",
+    "Type": "TL",
+    "Consumer Price": 10200,
+    "MRP": 10907
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D689",
+    "Tyre Size": "235 70 R16 105S",
+    "Type": "TL",
+    "Consumer Price": 9550,
+    "MRP": 10193
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP850",
+    "Tyre Size": "235 70 R16 106H",
+    "Type": "TL",
+    "Consumer Price": 9200,
+    "MRP": 9806
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D689",
+    "Tyre Size": "235 70 R16 109S",
+    "Type": "TL",
+    "Consumer Price": 9550,
+    "MRP": 10193
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "205 40 R17 84Y",
+    "Type": "TL",
+    "Consumer Price": 10950,
+    "MRP": 11716
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP150",
+    "Tyre Size": "205 50 R17 93H",
+    "Type": "TL",
+    "Consumer Price": 10450,
+    "MRP": 11180
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "215 45 R17 91Y",
+    "Type": "TL",
+    "Consumer Price": 9750,
+    "MRP": 10404
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "215 55 R17 94V",
+    "Type": "TL",
+    "Consumer Price": 12000,
+    "MRP": 12791
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005A",
+    "Tyre Size": "215 55 R17 94V",
+    "Type": "TL",
+    "Consumer Price": 12200,
+    "MRP": 13043
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "DHP",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Consumer Price": 10950,
+    "MRP": 11664
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "DHP Enliten",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Consumer Price": 11050,
+    "MRP": 11780
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005A",
+    "Tyre Size": "225 45 R17 91W",
+    "Type": "TL",
+    "Consumer Price": 12350,
+    "MRP": 13177
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005A",
+    "Tyre Size": "225 50 R17 98W",
+    "Type": "TL",
+    "Consumer Price": 12200,
+    "MRP": 13049
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005A",
+    "Tyre Size": "225 55 R17 97W",
+    "Type": "TL",
+    "Consumer Price": 12150,
+    "MRP": 12969
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "225 60 R17 99H",
+    "Type": "TL",
+    "Consumer Price": 11800,
+    "MRP": 12614
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP850",
+    "Tyre Size": "225 65 R17 102H",
+    "Type": "TL",
+    "Consumer Price": 11850,
+    "MRP": 12665
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "235 45 R17 97Y",
+    "Type": "TL",
+    "Consumer Price": 13650,
+    "MRP": 14551
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza 001",
+    "Tyre Size": "235 55 R17 99V",
+    "Type": "TL",
+    "Consumer Price": 13700,
+    "MRP": 14631
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D684",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Consumer Price": 13900,
+    "MRP": 14849
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP850",
+    "Tyre Size": "235 65 R17 108H",
+    "Type": "TL",
+    "Consumer Price": 13650,
+    "MRP": 14585
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP850",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Consumer Price": 13650,
+    "MRP": 14583
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Ecopia HL",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Consumer Price": 13650,
+    "MRP": 14582
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "245 40 R17 91Y",
+    "Type": "TL",
+    "Consumer Price": 14200,
+    "MRP": 15146
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005A",
+    "Tyre Size": "245 45 R17 95W",
+    "Type": "TL",
+    "Consumer Price": 13200,
+    "MRP": 14076
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Ecopia HL",
+    "Tyre Size": "245 65 R17 107H",
+    "Type": "TL",
+    "Consumer Price": 13950,
+    "MRP": 14872
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D840",
+    "Tyre Size": "255 65 R17 110S",
+    "Type": "TL",
+    "Consumer Price": 13300,
+    "MRP": 14223
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP850",
+    "Tyre Size": "265 65 R17 112H",
+    "Type": "TL",
+    "Consumer Price": 14050,
+    "MRP": 14985
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D693",
+    "Tyre Size": "265 65 R17 112S",
+    "Type": "TL",
+    "Consumer Price": 14450,
+    "MRP": 15453
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S007A",
+    "Tyre Size": "225 45 R18 95Y",
+    "Type": "TL",
+    "Consumer Price": 15400,
+    "MRP": 16463
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "225 55 R18 98V",
+    "Type": "TL",
+    "Consumer Price": 15200,
+    "MRP": 16224
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler HL 33",
+    "Tyre Size": "225 60 R18 100H",
+    "Type": "TL",
+    "Consumer Price": 18450,
+    "MRP": 19728
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005",
+    "Tyre Size": "235 45 R18 94W",
+    "Type": "TL",
+    "Consumer Price": 20400,
+    "MRP": 21799
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T001",
+    "Tyre Size": "235 50 R18 101W",
+    "Type": "TL",
+    "Consumer Price": 20050,
+    "MRP": 21439
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D684",
+    "Tyre Size": "235 55 R18 100V",
+    "Type": "TL",
+    "Consumer Price": 20800,
+    "MRP": 22217
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza Enliten",
+    "Tyre Size": "235 55 R18 100V",
+    "Type": "TL",
+    "Consumer Price": 21200,
+    "MRP": 22661
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "EP850",
+    "Tyre Size": "235 60 R18 103V",
+    "Type": "TL",
+    "Consumer Price": 14850,
+    "MRP": 15844
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler HL33",
+    "Tyre Size": "235 65 R18 106V",
+    "Type": "TL",
+    "Consumer Price": 20650,
+    "MRP": 22092
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "245 40 R18 97Y",
+    "Type": "TL",
+    "Consumer Price": 21200,
+    "MRP": 22661
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "RE050A",
+    "Tyre Size": "245 45 R18 100V",
+    "Type": "TL",
+    "Consumer Price": 15800,
+    "MRP": 16867
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza Sports",
+    "Tyre Size": "245 60 R18 109H",
+    "Type": "TL",
+    "Consumer Price": 12550,
+    "MRP": 13424
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza 001",
+    "Tyre Size": "255 55 R18 109W",
+    "Type": "TL",
+    "Consumer Price": 18100,
+    "MRP": 19364
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Ecopia HL",
+    "Tyre Size": "255 60 R18 108H",
+    "Type": "TL",
+    "Consumer Price": 15400,
+    "MRP": 16464
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D684",
+    "Tyre Size": "265 60 R18 110H",
+    "Type": "TL",
+    "Consumer Price": 18700,
+    "MRP": 20006
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D693",
+    "Tyre Size": "265 65 R18 114V",
+    "Type": "TL",
+    "Consumer Price": 22950,
+    "MRP": 24537
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "RE050",
+    "Tyre Size": "245 40 R19 94W",
+    "Type": "TL",
+    "Consumer Price": 26350,
+    "MRP": 27883
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "245 45 R19 98Y",
+    "Type": "TL",
+    "Consumer Price": 22300,
+    "MRP": 23633
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza 001",
+    "Tyre Size": "255 50 R19 107W",
+    "Type": "TL",
+    "Consumer Price": 21000,
+    "MRP": 22250
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "RE050",
+    "Tyre Size": "275 35 R19 96W",
+    "Type": "TL",
+    "Consumer Price": 28350,
+    "MRP": 30039
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "275 40 R19 105Y",
+    "Type": "TL",
+    "Consumer Price": 28850,
+    "MRP": 30537
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza 001",
+    "Tyre Size": "275 55 R19 111V",
+    "Type": "TL",
+    "Consumer Price": 23850,
+    "MRP": 25261
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S007A",
+    "Tyre Size": "245 35 R20 95Y",
+    "Type": "TL",
+    "Consumer Price": 28050,
+    "MRP": 29706
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "D693",
+    "Tyre Size": "265 55 R20 113V",
+    "Type": "TL",
+    "Consumer Price": 27900,
+    "MRP": 29533
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S007A",
+    "Tyre Size": "275 35 R20 102Y",
+    "Type": "TL",
+    "Consumer Price": 32850,
+    "MRP": 34803
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza 001",
+    "Tyre Size": "275 40 R20 106Y",
+    "Type": "TL",
+    "Consumer Price": 32250,
+    "MRP": 34182
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S007A",
+    "Tyre Size": "295 30 R20 101Y",
+    "Type": "TL",
+    "Consumer Price": 39300,
+    "MRP": 41624
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza 001",
+    "Tyre Size": "235 50 R21 101W",
+    "Type": "TL",
+    "Consumer Price": 29450,
+    "MRP": 31195
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "205 55 R16 91V",
+    "Type": "TL",
+    "Consumer Price": 11150,
+    "MRP": 11768
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "5001",
+    "Tyre Size": "225 50 R16 92W",
+    "Type": "TL",
+    "Consumer Price": 14550,
+    "MRP": 15398
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "RE050",
+    "Tyre Size": "225 50 R16 92V",
+    "Type": "TL",
+    "Consumer Price": 14550,
+    "MRP": 15396
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "5001",
+    "Tyre Size": "225 45 R17 91W",
+    "Type": "TL",
+    "Consumer Price": 15900,
+    "MRP": 16845
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "RE050",
+    "Tyre Size": "225 45 R17 91Y",
+    "Type": "TL",
+    "Consumer Price": 15900,
+    "MRP": 16846
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "5001",
+    "Tyre Size": "225 50 R17 94W",
+    "Type": "TL",
+    "Consumer Price": 17100,
+    "MRP": 18101
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "RE050",
+    "Tyre Size": "225 50 R17 94Y",
+    "Type": "TL",
+    "Consumer Price": 17100,
+    "MRP": 18103
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "225 55 R17 97Y",
+    "Type": "TL",
+    "Consumer Price": 17150,
+    "MRP": 18130
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "225 50 R18 95W",
+    "Type": "TL",
+    "Consumer Price": 22750,
+    "MRP": 24085
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza 001",
+    "Tyre Size": "235 60 R18 103H",
+    "Type": "TL",
+    "Consumer Price": 20500,
+    "MRP": 21729
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "RE050",
+    "Tyre Size": "245 40 R18 93Y",
+    "Type": "TL",
+    "Consumer Price": 24050,
+    "MRP": 25479
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "5001",
+    "Tyre Size": "245 45 R18 96W",
+    "Type": "TL",
+    "Consumer Price": 23350,
+    "MRP": 24714
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "245 50 R18 100Y",
+    "Type": "TL",
+    "Consumer Price": 22650,
+    "MRP": 23988
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "245 45 R19 98Y",
+    "Type": "TL",
+    "Consumer Price": 28550,
+    "MRP": 29981
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "5001",
+    "Tyre Size": "275 35 R19 96W",
+    "Type": "TL",
+    "Consumer Price": 32900,
+    "MRP": 34545
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "5001",
+    "Tyre Size": "275 40 R19 101Y",
+    "Type": "TL",
+    "Consumer Price": 30700,
+    "MRP": 32228
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Alenza 001",
+    "Tyre Size": "235 50 R20 100V",
+    "Type": "TL",
+    "Consumer Price": 31500,
+    "MRP": 33039
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "T005",
+    "Tyre Size": "245 45 R20 99Y",
+    "Type": "TL",
+    "Consumer Price": 32900,
+    "MRP": 34551
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "S001",
+    "Tyre Size": "245 40 R21 96Y",
+    "Type": "TL",
+    "Consumer Price": 37850,
+    "MRP": 39381
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "5001",
+    "Tyre Size": "275 35 R21 99Y",
+    "Type": "TL",
+    "Consumer Price": 39650,
+    "MRP": 41241
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "165 65 R14 79H",
+    "Type": "TL",
+    "Consumer Price": 5350,
+    "MRP": 5869
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Consumer Price": 6200,
+    "MRP": 6826
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "185 70 R14 88T",
+    "Type": "TL",
+    "Consumer Price": 6050,
+    "MRP": 6643
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "175 65 R15 84T",
+    "Type": "TL",
+    "Consumer Price": 6500,
+    "MRP": 7141
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "185 60 R15 84T",
+    "Type": "TL",
+    "Consumer Price": 6500,
+    "MRP": 7127
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Consumer Price": 6850,
+    "MRP": 7508
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "185 70 R15 89H",
+    "Type": "TL",
+    "Consumer Price": 6650,
+    "MRP": 7256
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "195 55 R15 85V",
+    "Type": "TL",
+    "Consumer Price": 6900,
+    "MRP": 7580
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "195 65 R15 91V",
+    "Type": "TL",
+    "Consumer Price": 7550,
+    "MRP": 8301
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "205 55 R15 88V",
+    "Type": "TL",
+    "Consumer Price": 7700,
+    "MRP": 8434
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "185 55 R16 83V",
+    "Type": "TL",
+    "Consumer Price": 8450,
+    "MRP": 9294
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "185 60 R16 86H",
+    "Type": "TL",
+    "Consumer Price": 7250,
+    "MRP": 7844
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "195 55 R16 87H",
+    "Type": "TL",
+    "Consumer Price": 9250,
+    "MRP": 10083
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "195 60 R16 93V",
+    "Type": "TL",
+    "Consumer Price": 8800,
+    "MRP": 9749
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "205 50 R16 87V",
+    "Type": "TL",
+    "Consumer Price": 9200,
+    "MRP": 10046
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "205 55 R16 91W",
+    "Type": "TL",
+    "Consumer Price": 10350,
+    "MRP": 11286
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "205 60 R16 92V",
+    "Type": "TL",
+    "Consumer Price": 8550,
+    "MRP": 9291
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "205 65 R16 95H",
+    "Type": "TL",
+    "Consumer Price": 8200,
+    "MRP": 8919
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "215 55 R16 97W",
+    "Type": "TL",
+    "Consumer Price": 11550,
+    "MRP": 12697
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "215 60 R16 99V",
+    "Type": "TL",
+    "Consumer Price": 9300,
+    "MRP": 10212
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "215 65 R16 98V",
+    "Type": "TL",
+    "Consumer Price": 10650,
+    "MRP": 11691
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "225 50 R16 92W",
+    "Type": "TL",
+    "Consumer Price": 12300,
+    "MRP": 13490
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "225 55 R16 99Y",
+    "Type": "TL",
+    "Consumer Price": 11850,
+    "MRP": 13009
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "225 60 R16 102W",
+    "Type": "TL",
+    "Consumer Price": 10300,
+    "MRP": 11284
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "205 45 R17 88Y",
+    "Type": "TL",
+    "Consumer Price": 10000,
+    "MRP": 10897
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "205 55 R17 91H",
+    "Type": "TL",
+    "Consumer Price": 10000,
+    "MRP": 10898
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "215 45 R17 91W",
+    "Type": "TL",
+    "Consumer Price": 10100,
+    "MRP": 11142
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "215 55 R17 94W",
+    "Type": "TL",
+    "Consumer Price": 12400,
+    "MRP": 13695
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "225 45 R17 94W",
+    "Type": "TL",
+    "Consumer Price": 12700,
+    "MRP": 13998
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "225 50 R17 98Y",
+    "Type": "TL",
+    "Consumer Price": 12650,
+    "MRP": 13946
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "225 55 R17 101W",
+    "Type": "TL",
+    "Consumer Price": 12550,
+    "MRP": 13635
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "225 60 R17 99V",
+    "Type": "TL",
+    "Consumer Price": 12150,
+    "MRP": 13417
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "235 55 R17 103W",
+    "Type": "TL",
+    "Consumer Price": 14600,
+    "MRP": 15934
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "235 60 R17 102V",
+    "Type": "TL",
+    "Consumer Price": 20200,
+    "MRP": 22287
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "245 45 R17 99W",
+    "Type": "TL",
+    "Consumer Price": 13650,
+    "MRP": 15041
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "215 55 R18 95V",
+    "Type": "TL",
+    "Consumer Price": 13400,
+    "MRP": 14620
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "235 45 R18 98W",
+    "Type": "TL",
+    "Consumer Price": 20800,
+    "MRP": 22853
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "235 50 R18 97W",
+    "Type": "TL",
+    "Consumer Price": 21050,
+    "MRP": 22913
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "235 60 R18 107W",
+    "Type": "TL",
+    "Consumer Price": 15850,
+    "MRP": 17290
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "235 65 R18 106V",
+    "Type": "TL",
+    "Consumer Price": 21400,
+    "MRP": 23539
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "245 45 R18 100Y",
+    "Type": "TL",
+    "Consumer Price": 16100,
+    "MRP": 17670
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "255 55 R18 109W",
+    "Type": "TL",
+    "Consumer Price": 19700,
+    "MRP": 21448
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "235 55 R19 101W",
+    "Type": "TL",
+    "Consumer Price": 19650,
+    "MRP": 21010
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "255 50 R19 107W",
+    "Type": "TL",
+    "Consumer Price": 21650,
+    "MRP": 23207
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "255 55 R19 111Y",
+    "Type": "TL",
+    "Consumer Price": 21200,
+    "MRP": 22692
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "265 50 R19 110W",
+    "Type": "TL",
+    "Consumer Price": 26500,
+    "MRP": 28354
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "275 55 R19 111V",
+    "Type": "TL",
+    "Consumer Price": 25250,
+    "MRP": 26973
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "285 45 R19 107W",
+    "Type": "TL",
+    "Consumer Price": 28800,
+    "MRP": 30698
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "255 50 R20 109W",
+    "Type": "TL",
+    "Consumer Price": 25500,
+    "MRP": 27315
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "255 55 R20 110W",
+    "Type": "TL",
+    "Consumer Price": 25450,
+    "MRP": 27210
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "275 45 R20 110Y",
+    "Type": "TL",
+    "Consumer Price": 27500,
+    "MRP": 29447
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "275 50 R20 109W",
+    "Type": "TL",
+    "Consumer Price": 25850,
+    "MRP": 27653
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Turanza 6i",
+    "Tyre Size": "285 50 R20 116W",
+    "Type": "TL",
+    "Consumer Price": 27650,
+    "MRP": 30004
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "215 75 R15 100T",
+    "Type": "TL",
+    "Consumer Price": 7950,
+    "MRP": 8720
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "235 70 R16 106T",
+    "Type": "TL",
+    "Consumer Price": 9850,
+    "MRP": 10714
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "235 65 R17 108H",
+    "Type": "TL",
+    "Consumer Price": 14450,
+    "MRP": 15706
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "245 60 R17 108H",
+    "Type": "TL",
+    "Consumer Price": 15000,
+    "MRP": 16081
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "265 65 R17 112T",
+    "Type": "TL",
+    "Consumer Price": 14900,
+    "MRP": 16205
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "235 60 R18 107H",
+    "Type": "TL",
+    "Consumer Price": 15750,
+    "MRP": 17153
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "245 55 R18 103V",
+    "Type": "TL",
+    "Consumer Price": 16550,
+    "MRP": 17702
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "255 65 R18 111H",
+    "Type": "TL",
+    "Consumer Price": 13100,
+    "MRP": 14254
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "265 60 R18 114H",
+    "Type": "TL",
+    "Consumer Price": 19350,
+    "MRP": 21084
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Dueler A/T002",
+    "Tyre Size": "285 60 R18 116H",
+    "Type": "TL",
+    "Consumer Price": 20600,
+    "MRP": 22036
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Duravis R400",
+    "Tyre Size": "145 R12",
+    "Type": "TL",
+    "Consumer Price": 3400,
+    "MRP": 3641
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Duravis R400",
+    "Tyre Size": "155 R13",
+    "Type": "TL",
+    "Consumer Price": 4250,
+    "MRP": 4574
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Duravis R400",
+    "Tyre Size": "165 R14",
+    "Type": "TL",
+    "Consumer Price": 4850,
+    "MRP": 5123
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Duravis R400",
+    "Tyre Size": "185 R14",
+    "Type": "TL",
+    "Consumer Price": 5800,
+    "MRP": 6260
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Duravis R400",
+    "Tyre Size": "195 R15",
+    "Type": "TL",
+    "Consumer Price": 6750,
+    "MRP": 7283
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Duravis R400",
+    "Tyre Size": "215 75 R15",
+    "Type": "TL",
+    "Consumer Price": 7200,
+    "MRP": 7746
+  },
+  {
+    "Brand": "Bridgestone",
+    "Pattern": "Duravis R400 Plus",
+    "Tyre Size": "7.00 R15",
+    "Type": "TL",
+    "Consumer Price": 9650,
+    "MRP": 10412
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "145 80 R12",
+    "Type": "TL",
+    "Consumer Price": 2950,
+    "MRP": 3221
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "145 70 R13",
+    "Type": "TL",
+    "Consumer Price": 3050,
+    "MRP": 3404
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "145 80 R13",
+    "Type": "TL",
+    "Consumer Price": 3200,
+    "MRP": 3481
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "155 65 R13",
+    "Type": "TL",
+    "Consumer Price": 3400,
+    "MRP": 3649
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "155 70 R13",
+    "Type": "TL",
+    "Consumer Price": 3450,
+    "MRP": 3706
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "155 80 R13",
+    "Type": "TL",
+    "Consumer Price": 3650,
+    "MRP": 3838
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "165 65 R13",
+    "Type": "TL",
+    "Consumer Price": 3500,
+    "MRP": 3859
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "155 65 R14",
+    "Type": "TL",
+    "Consumer Price": 3350,
+    "MRP": 3768
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "165 65 R14",
+    "Type": "TL",
+    "Consumer Price": 3800,
+    "MRP": 4004
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "165 70 R14",
+    "Type": "TL",
+    "Consumer Price": 3450,
+    "MRP": 3773
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "165 80 R14",
+    "Type": "TL",
+    "Consumer Price": 3700,
+    "MRP": 4038
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 22",
+    "Tyre Size": "175 65 R14",
+    "Type": "TL",
+    "Consumer Price": 4700,
+    "MRP": 5040
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "175 70 R14",
+    "Type": "TL",
+    "Consumer Price": 4700,
+    "MRP": 5093
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "185 65 R14",
+    "Type": "TL",
+    "Consumer Price": 4550,
+    "MRP": 4908
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "185 70 R14",
+    "Type": "TL",
+    "Consumer Price": 4500,
+    "MRP": 4731
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "175 65 R15",
+    "Type": "TL",
+    "Consumer Price": 4800,
+    "MRP": 5117
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "185 60 R15",
+    "Type": "TL",
+    "Consumer Price": 4950,
+    "MRP": 5255
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "185 65 R15",
+    "Type": "TL",
+    "Consumer Price": 5000,
+    "MRP": 5331
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "195 60 R15",
+    "Type": "TL",
+    "Consumer Price": 5650,
+    "MRP": 6092
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "195 65 R15",
+    "Type": "TL",
+    "Consumer Price": 5500,
+    "MRP": 5913
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "205 65 R15",
+    "Type": "TL",
+    "Consumer Price": 6000,
+    "MRP": 6492
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Destination LE02",
+    "Tyre Size": "215 75 R15",
+    "Type": "TL",
+    "Consumer Price": 6100,
+    "MRP": 6593
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "195 55 R16",
+    "Type": "TL",
+    "Consumer Price": 6550,
+    "MRP": 6882
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "195 60 R16",
+    "Type": "TL",
+    "Consumer Price": 6350,
+    "MRP": 6652
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "205 60 R16",
+    "Type": "TL",
+    "Consumer Price": 6250,
+    "MRP": 6552
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 2z",
+    "Tyre Size": "205 65 R16",
+    "Type": "TL",
+    "Consumer Price": 6100,
+    "MRP": 6548
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Roadhawk 22",
+    "Tyre Size": "215 60 R16",
+    "Type": "TL",
+    "Consumer Price": 6650,
+    "MRP": 7147
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Destination LE02",
+    "Tyre Size": "215 65 R16",
+    "Type": "TL",
+    "Consumer Price": 8350,
+    "MRP": 8955
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Destination LE02",
+    "Tyre Size": "235 70 R16",
+    "Type": "TL",
+    "Consumer Price": 7700,
+    "MRP": 8255
+  },
+  {
+    "Brand": "Firestone",
+    "Pattern": "Destination LE02",
+    "Tyre Size": "225 60 R17",
+    "Type": "TL",
+    "Consumer Price": 9300,
+    "MRP": 10002
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "135 70 R12 65S",
+    "Type": "TL",
+    "Pattern": "Amazer 3G",
+    "Consumer Price": 2480,
+    "MRP": 2678
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "145 70 R12 69T",
+    "Type": "TT",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 2300,
+    "MRP": 2484
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "145 R12 86S",
+    "Type": "TL",
+    "Pattern": "Altrust Go",
+    "Consumer Price": 2830,
+    "MRP": 3056
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "145 80 R12 74T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 2777,
+    "MRP": 2999
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "145 80 R12 74T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 2798,
+    "MRP": 3022
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "145 80 R12 74T",
+    "Type": "TT",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 2533,
+    "MRP": 2736
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "145 80 R12 74T",
+    "Type": "TL",
+    "Pattern": "Amazer XL",
+    "Consumer Price": 2925,
+    "MRP": 3160
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 65 R12 71S",
+    "Type": "TL",
+    "Pattern": "Amazer 3G",
+    "Consumer Price": 3052,
+    "MRP": 3297
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 70 R12 73T",
+    "Type": "TL",
+    "Pattern": "Amazer XL",
+    "Consumer Price": 2957,
+    "MRP": 3194
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "145 R12 80S",
+    "Type": "TL",
+    "Pattern": "Amazer XL",
+    "Consumer Price": 3021,
+    "MRP": 3263
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "145 80 R13 75T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3137,
+    "MRP": 3388
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 R13 90S",
+    "Type": "TL",
+    "Pattern": "Altrust Go",
+    "Consumer Price": 3424,
+    "MRP": 3698
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 65 R13 73T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3169,
+    "MRP": 3423
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 70 R13 75H",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 3763,
+    "MRP": 4064
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 70 R13 75T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3264,
+    "MRP": 3525
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 80 R13 79T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3476,
+    "MRP": 3754
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 65 R13 77T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3466,
+    "MRP": 3743
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 70 R13 79T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3445,
+    "MRP": 3721
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 70 R13 82H",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 4653,
+    "MRP": 5025
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 70 R13 82T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 4388,
+    "MRP": 4739
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 R13 89S",
+    "Type": "TL",
+    "Pattern": "Amazer XL",
+    "Consumer Price": 3943,
+    "MRP": 4258
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 65 R14 75T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3370,
+    "MRP": 3640
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 65 R14 75T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 3370,
+    "MRP": 3640
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 70 R14 77T",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 3985,
+    "MRP": 4305
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "155 70 R14 77T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3519,
+    "MRP": 3801
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 65 R14 79T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3699,
+    "MRP": 3995
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 70 R14 81T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3402,
+    "MRP": 3675
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 70 R14 81T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Eco",
+    "Consumer Price": 3381,
+    "MRP": 3651
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 3657,
+    "MRP": 3950
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Pattern": "Amazer 3G",
+    "Consumer Price": 3582,
+    "MRP": 3870
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Pattern": "Amazer 3G Maxx",
+    "Consumer Price": 4081,
+    "MRP": 4407
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 3551,
+    "MRP": 3835
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Pattern": "Amazer 3G Maxx",
+    "Consumer Price": 4399,
+    "MRP": 4751
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 4430,
+    "MRP": 4785
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 4282,
+    "MRP": 4625
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R14 82H",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 4823,
+    "MRP": 5209
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 70 R14 84H",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 5088,
+    "MRP": 5495
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 70 R14 84T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 4854,
+    "MRP": 5242
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 70 R14 84T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 4854,
+    "MRP": 5242
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 70 R14 84T",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 5066,
+    "MRP": 5471
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 70 R14 84H",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 5066,
+    "MRP": 5471
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 60 R14 82H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 4685,
+    "MRP": 5060
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 65 R14 86H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 4833,
+    "MRP": 5221
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 65 R14 86H",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 4038,
+    "MRP": 4362
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 70 R14 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 4526,
+    "MRP": 4888
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 70 R14 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 4526,
+    "MRP": 4888
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 70 R14 88T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 4377,
+    "MRP": 4728
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 70 R14 88T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 4356,
+    "MRP": 4705
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 60 R14 86H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5681,
+    "MRP": 6137
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 70 R14 91H",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 5247,
+    "MRP": 5667
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 R14 96T",
+    "Type": "TL",
+    "Pattern": "Quantum",
+    "Consumer Price": 4854,
+    "MRP": 5242
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R14 90T",
+    "Type": "TL",
+    "Pattern": "Qtm Plus",
+    "Consumer Price": 4854,
+    "MRP": 5242
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 R14 102S",
+    "Type": "TL",
+    "Pattern": "Altrust",
+    "Consumer Price": 4653,
+    "MRP": 5025
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 R14 102R",
+    "Type": "TL",
+    "Pattern": "Quantum",
+    "Consumer Price": 4854,
+    "MRP": 5242
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 R14 106S",
+    "Type": "TL",
+    "Pattern": "Qtm Plus",
+    "Consumer Price": 5798,
+    "MRP": 6262
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 4282,
+    "MRP": 4625
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R14 86T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 4282,
+    "MRP": 4625
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R14 86T",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 4282,
+    "MRP": 4625
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 55 R15 82H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5066,
+    "MRP": 5471
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 70 R15 89H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5045,
+    "MRP": 5450
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R15 85H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5098,
+    "MRP": 5507
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 R15 107S",
+    "Type": "TL",
+    "Pattern": "Altrust",
+    "Consumer Price": 5734,
+    "MRP": 6193
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "175 65 R15 84H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 4982,
+    "MRP": 5381
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 60 R15 84H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 4982,
+    "MRP": 5381
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 60 R15 84T",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 4982,
+    "MRP": 5381
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 60 R15 88H",
+    "Type": "TL",
+    "Pattern": "Amazer XP",
+    "Consumer Price": 4812,
+    "MRP": 5197
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 60 R15 88T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 4812,
+    "MRP": 5197
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 65 R15 88T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 4939,
+    "MRP": 5335
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5088,
+    "MRP": 5495
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5088,
+    "MRP": 5495
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 5088,
+    "MRP": 5495
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 5088,
+    "MRP": 5495
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 60 R15 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6508,
+    "MRP": 7029
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 60 R15 88H",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 5946,
+    "MRP": 6422
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 60 R15 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 6508,
+    "MRP": 7029
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 65 R15 91H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5967,
+    "MRP": 6444
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 65 R15 91H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5967,
+    "MRP": 6444
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 65 R15 91H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G SK",
+    "Consumer Price": 5978,
+    "MRP": 6456
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 65 R15 91H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 5967,
+    "MRP": 6444
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 65 R15 91V",
+    "Type": "TL",
+    "Pattern": "Manchester United",
+    "Consumer Price": 5840,
+    "MRP": 6307
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 60 R15 91V",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6381,
+    "MRP": 6891
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R15 94T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 5957,
+    "MRP": 6434
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R15 94H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6126,
+    "MRP": 6616
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R15 99S",
+    "Type": "TL",
+    "Pattern": "Apterra H/LS",
+    "Consumer Price": 6158,
+    "MRP": 6651
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R15 94T",
+    "Type": "TL",
+    "Pattern": "Apterra H/Ls",
+    "Consumer Price": 6158,
+    "MRP": 6651
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 5999,
+    "MRP": 6479
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 75 R15 100T",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 5999,
+    "MRP": 6479
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 75 R15 100T",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 7049,
+    "MRP": 7613
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 75 R15 115S",
+    "Type": "TL",
+    "Pattern": "Altrust",
+    "Consumer Price": 6296,
+    "MRP": 6799
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 75 R15 115S",
+    "Type": "TL",
+    "Pattern": "Altrust",
+    "Consumer Price": 6508,
+    "MRP": 7029
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 70 R15 100S",
+    "Type": "TL",
+    "Pattern": "Apterra A/T",
+    "Consumer Price": 7716,
+    "MRP": 8333
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 70 R15 100T",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 7632,
+    "MRP": 8243
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 75 R15 105S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 7144,
+    "MRP": 7716
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 75 R15 105T",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 7918,
+    "MRP": 8551
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 75 R15 105S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 7632,
+    "MRP": 8243
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 70 R15 108S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 8819,
+    "MRP": 9525
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 70 R15 108T",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 8819,
+    "MRP": 9525
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 70 R15 112S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 8183,
+    "MRP": 8838
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 70 R15 112T",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 8183,
+    "MRP": 8838
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 70 R15 112T",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 8193,
+    "MRP": 8850
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 R15 107S",
+    "Type": "TL",
+    "Pattern": "Altrust LT",
+    "Consumer Price": 5734,
+    "MRP": 6193
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 R15 107S",
+    "Type": "TL",
+    "Pattern": "Qtm Plus",
+    "Consumer Price": 6222,
+    "MRP": 6720
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "31X10.5 R15 109S",
+    "Type": "TL",
+    "Pattern": "Apterra AT",
+    "Consumer Price": 9200,
+    "MRP": 9936
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 60 R15 91H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6381,
+    "MRP": 6891
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 5999,
+    "MRP": 6479
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 75 R15 100T",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 5999,
+    "MRP": 6479
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R15 85H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5098,
+    "MRP": 5507
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 R15 107S",
+    "Type": "TL",
+    "Pattern": "Altrust STD",
+    "Consumer Price": 5596,
+    "MRP": 6045
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5088,
+    "MRP": 5495
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R16 95H",
+    "Type": "TL",
+    "Pattern": "Apterra Cross",
+    "Consumer Price": 6381,
+    "MRP": 6891
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 60 R16 92H",
+    "Type": "TL",
+    "Pattern": "Apterra Cross",
+    "Consumer Price": 7261,
+    "MRP": 7842
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Apterra Cross",
+    "Consumer Price": 7144,
+    "MRP": 7716
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 55 R16 83H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 5321,
+    "MRP": 5747
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G VW",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87V",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G VW",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87V",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87V",
+    "Type": "TL",
+    "Pattern": "Alnac 4G HY",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 60 R16 89H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G QXI",
+    "Consumer Price": 6296,
+    "MRP": 6799
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 60 R16 89H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G T1",
+    "Consumer Price": 6296,
+    "MRP": 6799
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 60 R16 89H",
+    "Type": "TL",
+    "Pattern": "Manchester United",
+    "Consumer Price": 7027,
+    "MRP": 7590
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 55 R16 91V",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 7716,
+    "MRP": 8333
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 55 R16 91H",
+    "Type": "TL",
+    "Pattern": "Alnac",
+    "Consumer Price": 7716,
+    "MRP": 8333
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 55 R16 91W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 7897,
+    "MRP": 8529
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 60 R16 92V",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6974,
+    "MRP": 7533
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R16 95T",
+    "Type": "TL",
+    "Pattern": "Amazer 4G Life",
+    "Consumer Price": 6084,
+    "MRP": 6571
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G S201",
+    "Consumer Price": 6232,
+    "MRP": 6732
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R16 95S",
+    "Type": "TL",
+    "Pattern": "Apterra H/LS",
+    "Consumer Price": 6593,
+    "MRP": 7120
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R16 95S",
+    "Type": "TL",
+    "Pattern": "Apterra H/LS",
+    "Consumer Price": 6593,
+    "MRP": 7120
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 80 R16 104S",
+    "Type": "TL",
+    "Pattern": "Quantum",
+    "Consumer Price": 5024,
+    "MRP": 5426
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 55 R16 97W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 9338,
+    "MRP": 10086
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Manchester United",
+    "Consumer Price": 7070,
+    "MRP": 7636
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS MS",
+    "Consumer Price": 6805,
+    "MRP": 7349
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS MS",
+    "Consumer Price": 6805,
+    "MRP": 7349
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 6805,
+    "MRP": 7349
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 8798,
+    "MRP": 9502
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G TA",
+    "Consumer Price": 6805,
+    "MRP": 7349
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 60 R16 100H",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 8193,
+    "MRP": 8850
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 60 R16 100H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 8151,
+    "MRP": 8803
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 60 R16 100H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 9126,
+    "MRP": 9857
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 65 R16 98H",
+    "Type": "TL",
+    "Pattern": "Apterra H/L",
+    "Consumer Price": 8130,
+    "MRP": 8780
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 65 R16 98H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 8130,
+    "MRP": 8780
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 65 R16 98H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 8130,
+    "MRP": 8780
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 65 R16 98T",
+    "Type": "TL",
+    "Pattern": "Apterra H/LS",
+    "Consumer Price": 8130,
+    "MRP": 8780
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 65 R16 98H",
+    "Type": "TL",
+    "Pattern": "Apterra Cross",
+    "Consumer Price": 8066,
+    "MRP": 8712
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 65 R16 98H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 8861,
+    "MRP": 9571
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 65 R16 98H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 9508,
+    "MRP": 10269
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 70 R16 100H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 9508,
+    "MRP": 10269
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 70 R16 100H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 9508,
+    "MRP": 10269
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 65 R16 98H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 8130,
+    "MRP": 8780
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 55 R16 95W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G+",
+    "Consumer Price": 8957,
+    "MRP": 9674
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 70 R16 105H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 8670,
+    "MRP": 9365
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 70 R16 105H",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 8204,
+    "MRP": 8860
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 75 R16 113S",
+    "Type": "TL",
+    "Pattern": "Apterra AT",
+    "Consumer Price": 8755,
+    "MRP": 9456
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 70 R16 105H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 7960,
+    "MRP": 8598
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 70 R16 105H",
+    "Type": "TL",
+    "Pattern": "Apterra HP",
+    "Consumer Price": 5978,
+    "MRP": 6456
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 70 R16 105H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 7621,
+    "MRP": 8231
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 70 R16 105H",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 8204,
+    "MRP": 8860
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 70 R16 105S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 7971,
+    "MRP": 8609
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 70 R16 111S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 8734,
+    "MRP": 9433
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 70 R16 111T",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 7971,
+    "MRP": 8609
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 70 R16 111T",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 8151,
+    "MRP": 8803
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 75 R16 115T",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 7621,
+    "MRP": 8231
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 65 R16 109S",
+    "Type": "TL",
+    "Pattern": "Apterra A/T",
+    "Consumer Price": 8819,
+    "MRP": 9525
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 65 R16 109S",
+    "Type": "TL",
+    "Pattern": "Manchester United",
+    "Consumer Price": 9328,
+    "MRP": 10074
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 65 R16 109T",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 8405,
+    "MRP": 9078
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 70 R16 112H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 9158,
+    "MRP": 9891
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 70 R16 112T",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 14055,
+    "MRP": 15180
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "275 70 R16 114T",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 8448,
+    "MRP": 9124
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 6805,
+    "MRP": 7349
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS",
+    "Consumer Price": 6794,
+    "MRP": 7339
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 60 R16 98V",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 8151,
+    "MRP": 8803
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 60 R16 92H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G SK",
+    "Consumer Price": 6974,
+    "MRP": 7533
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 65 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G HY",
+    "Consumer Price": 6232,
+    "MRP": 6732
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87V",
+    "Type": "TL",
+    "Pattern": "Alnac 4G H1",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 55 R16 87H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 6837,
+    "MRP": 7384
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 95H",
+    "Type": "TL",
+    "Pattern": "Alnac 4GS MG1",
+    "Consumer Price": 6805,
+    "MRP": 7349
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "195 60 R16 93V",
+    "Type": "TL",
+    "Pattern": "Amperion EV",
+    "Consumer Price": 7038,
+    "MRP": 7601
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R16 99V",
+    "Type": "TL",
+    "Pattern": "Amperion EV",
+    "Consumer Price": 7600,
+    "MRP": 8208
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 85 R16 105S",
+    "Type": "TL",
+    "Pattern": "Altrust LT",
+    "Consumer Price": 5745,
+    "MRP": 6205
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "185 85 R16 105Q",
+    "Type": "TL",
+    "Pattern": "Amazer XL LT",
+    "Consumer Price": 6572,
+    "MRP": 7098
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 7844,
+    "MRP": 8472
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 40 R17 84W",
+    "Type": "TL",
+    "Pattern": "Aspire",
+    "Consumer Price": 9052,
+    "MRP": 9776
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 50 R17 93H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G Ford",
+    "Consumer Price": 8374,
+    "MRP": 9044
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 50 R17 93H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 8374,
+    "MRP": 9044
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 55 R17 94W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G SK",
+    "Consumer Price": 10366,
+    "MRP": 11195
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 40 R17 87W",
+    "Type": "TL",
+    "Pattern": "Aspire",
+    "Consumer Price": 7875,
+    "MRP": 8505
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 45 R17 91W",
+    "Type": "TL",
+    "Pattern": "Aspire",
+    "Consumer Price": 7144,
+    "MRP": 7716
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 55 R17 94H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G S201",
+    "Consumer Price": 9275,
+    "MRP": 10017
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 7844,
+    "MRP": 8472
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 45 R17 91W",
+    "Type": "TL",
+    "Pattern": "Aspire",
+    "Consumer Price": 9200,
+    "MRP": 9936
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 45 R17 94W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 10250,
+    "MRP": 11070
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 50 R17 98W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 9836,
+    "MRP": 10623
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 55 R17 101Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G+",
+    "Consumer Price": 9540,
+    "MRP": 10303
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 60 R17 99H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 9487,
+    "MRP": 10246
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 60 R17 99H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 9243,
+    "MRP": 9982
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 40 R17 94W",
+    "Type": "TL",
+    "Pattern": "Aspire",
+    "Consumer Price": 10260,
+    "MRP": 11081
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 55 R17 99Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 10250,
+    "MRP": 11070
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "Manchester United",
+    "Consumer Price": 14013,
+    "MRP": 15134
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 11267,
+    "MRP": 12168
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 11681,
+    "MRP": 12615
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 10536,
+    "MRP": 11379
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 9190,
+    "MRP": 9925
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "Apterra HP",
+    "Consumer Price": 9190,
+    "MRP": 9925
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "Apterra H/L",
+    "Consumer Price": 6232,
+    "MRP": 6732
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 108H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 9190,
+    "MRP": 9925
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 9190,
+    "MRP": 9925
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 45 R17 99Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 11744,
+    "MRP": 12684
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 60 R17 110H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 14129,
+    "MRP": 15259
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 60 R17 110H",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 13864,
+    "MRP": 14973
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 65 R17 112H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 13260,
+    "MRP": 14321
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 65 R17 112H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 10886,
+    "MRP": 11757
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 65 R17 112H",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 12274,
+    "MRP": 13256
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 65 R17 112S",
+    "Type": "TL",
+    "Pattern": "Apterra H/T",
+    "Consumer Price": 11755,
+    "MRP": 12695
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 70 R17 115T",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 13864,
+    "MRP": 14973
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 60 R17 99H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 12327,
+    "MRP": 13313
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "205 55 R17 91H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 7526,
+    "MRP": 8128
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 7844,
+    "MRP": 8472
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 65 R17 102H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 11257,
+    "MRP": 12158
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 50 R17 95V",
+    "Type": "TL",
+    "Pattern": "Amperion EV",
+    "Consumer Price": 8639,
+    "MRP": 9330
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 55 R17 98V",
+    "Type": "TL",
+    "Pattern": "Amperion EV",
+    "Consumer Price": 9815,
+    "MRP": 10600
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 65 R17 107H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 10640,
+    "MRP": 11491
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Pattern": "Apterra Cross",
+    "Consumer Price": 6985,
+    "MRP": 7544
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Pattern": "Apterra Cross",
+    "Consumer Price": 6985,
+    "MRP": 7544
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Pattern": "Alnac 4G",
+    "Consumer Price": 7303,
+    "MRP": 7887
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 55 R18 109Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 14140,
+    "MRP": 15271
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 40 R18 99Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 18009,
+    "MRP": 19450
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 35 R18 94Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 15401,
+    "MRP": 16633
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 40 R18 99Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 18009,
+    "MRP": 19450
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "215 55 R18 95H",
+    "Type": "TL",
+    "Pattern": "Apterra Cross",
+    "Consumer Price": 9826,
+    "MRP": 10612
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 40 R18 92Y",
+    "Type": "TL",
+    "Pattern": "Aspire",
+    "Consumer Price": 10027,
+    "MRP": 10829
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 50 R18 95H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 12656,
+    "MRP": 13668
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 40 R18 91W",
+    "Type": "TL",
+    "Pattern": "Aspire",
+    "Consumer Price": 12709,
+    "MRP": 13726
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 45 R18 98Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G+",
+    "Consumer Price": 14797,
+    "MRP": 15981
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 45 R18 103Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 14553,
+    "MRP": 15717
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 60 R18 103H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 12031,
+    "MRP": 12993
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 60 R18 103H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 12031,
+    "MRP": 12993
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 60 R18 107V",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 11691,
+    "MRP": 12626
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 40 R18 97Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 16536,
+    "MRP": 17859
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 40 R18 97Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G+",
+    "Consumer Price": 14797,
+    "MRP": 15981
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 45 R18 100Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G+",
+    "Consumer Price": 11681,
+    "MRP": 12615
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 50 R18 104W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 12158,
+    "MRP": 13131
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 55 R18 109V",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 11373,
+    "MRP": 12283
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 60 R18 114H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 15741,
+    "MRP": 17000
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 60 R18 110H",
+    "Type": "TL",
+    "Pattern": "Apterra AT2",
+    "Consumer Price": 14619,
+    "MRP": 15789
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "265 60 R18 114H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 12370,
+    "MRP": 13360
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "275 35 R18 95Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G+",
+    "Consumer Price": 15158,
+    "MRP": 16371
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "225 50 R18 95H",
+    "Type": "TL",
+    "Pattern": "Apterra H/P",
+    "Consumer Price": 12656,
+    "MRP": 13668
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 40 R18 97Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 16536,
+    "MRP": 17859
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 40 R18 97Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G+",
+    "Consumer Price": 14797,
+    "MRP": 15981
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 60 R18 108H",
+    "Type": "TL",
+    "Pattern": "Apterra HT2",
+    "Consumer Price": 11479,
+    "MRP": 12397
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 60 R18 108H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 11479,
+    "MRP": 12397
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 50 R18 101W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G Plus",
+    "Consumer Price": 17278,
+    "MRP": 18660
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 50 R18 101Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G Plus",
+    "Consumer Price": 16440,
+    "MRP": 17755
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 35 R19 91Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 15900,
+    "MRP": 17172
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 35 R19 91W",
+    "Type": "TL",
+    "Pattern": "Aspire",
+    "Consumer Price": 12656,
+    "MRP": 13668
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 35 R19 96Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 16999,
+    "MRP": 18359
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 40 R19 98W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 19864,
+    "MRP": 21453
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "275 35 R19 100Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 15412,
+    "MRP": 16645
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "235 55 R19 105H",
+    "Type": "TL",
+    "Pattern": "Apterra H/T2",
+    "Consumer Price": 16472,
+    "MRP": 17790
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 35 R19 93Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 13769,
+    "MRP": 14871
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 40 R19 100Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 15941,
+    "MRP": 17216
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 50 R19 105W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G Plus",
+    "Consumer Price": 16589,
+    "MRP": 17916
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 50 R19 107Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G Plus",
+    "Consumer Price": 15348,
+    "MRP": 16576
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "275 40 R19 105Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G+",
+    "Consumer Price": 17108,
+    "MRP": 18477
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "275 40 R20 106Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G Plus",
+    "Consumer Price": 16938,
+    "MRP": 18293
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "255 45 R20 101Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G",
+    "Consumer Price": 19387,
+    "MRP": 20938
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 40 R20 99Y",
+    "Type": "TL",
+    "Pattern": "Aspire 4G Plus",
+    "Consumer Price": 24178,
+    "MRP": 26112
+  },
+  {
+    "Brand": "Apollo",
+    "Tyre Size": "245 45 R20 103W",
+    "Type": "TL",
+    "Pattern": "Aspire 4G Plus",
+    "Consumer Price": 27411,
+    "MRP": 29604
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "135 70 R12 65S",
+    "Type": "TL",
+    "Pattern": "ULTIMA LXT",
+    "Consumer Price": 2184,
+    "MRP": 2359
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 70 R12 69T",
+    "Type": "TT",
+    "Pattern": "HILIFE",
+    "Consumer Price": 2533,
+    "MRP": 2736
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 70 R12 69S",
+    "Type": "TL",
+    "Pattern": "HILIFE",
+    "Consumer Price": 2332,
+    "MRP": 2519
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 80 R12 74T",
+    "Type": "TL",
+    "Pattern": "ULTIMA HILIFE",
+    "Consumer Price": 2544,
+    "MRP": 2748
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 80 R12 74T",
+    "Type": "TT",
+    "Pattern": "ULTIMA HILIFE",
+    "Consumer Price": 2692,
+    "MRP": 2907
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 80 R12 74T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 2544,
+    "MRP": 2748
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 65 R12 71S",
+    "Type": "TL",
+    "Pattern": "ULTIMA LXT",
+    "Consumer Price": 2544,
+    "MRP": 2748
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 70 R12 77T",
+    "Type": "TL",
+    "Pattern": "ULTIMA SPORTS",
+    "Consumer Price": 2724,
+    "MRP": 2942
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 70 R13 71T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 2820,
+    "MRP": 3046
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 80 R13 75T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 2894,
+    "MRP": 3126
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 80 R13 75T",
+    "Type": "TL",
+    "Pattern": "ULTIMA HILIFE",
+    "Consumer Price": 2894,
+    "MRP": 3126
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "145 80 R13 75T",
+    "Type": "TL",
+    "Pattern": "ULTIMA NEO",
+    "Consumer Price": 2798,
+    "MRP": 3022
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 65 R13 73T",
+    "Type": "TL",
+    "Pattern": "ULTIMA NEO",
+    "Consumer Price": 3021,
+    "MRP": 3263
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 65 R13 73T",
+    "Type": "TL",
+    "Pattern": "HILIFE",
+    "Consumer Price": 2926,
+    "MRP": 3160
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 70 R13 75T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 3127,
+    "MRP": 3377
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 70 R13 75T",
+    "Type": "TL",
+    "Pattern": "ULTIMA HILIFE",
+    "Consumer Price": 3159,
+    "MRP": 3412
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 80 R13 79T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 3233,
+    "MRP": 3492
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 80 R13 79T",
+    "Type": "TL",
+    "Pattern": "ULTIMA HILIFE",
+    "Consumer Price": 3233,
+    "MRP": 3492
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 80 R13 79T",
+    "Type": "TL",
+    "Pattern": "ULTIMA NEO",
+    "Consumer Price": 3233,
+    "MRP": 3492
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 65 R13 77T",
+    "Type": "TL",
+    "Pattern": "ULTIMA HILIFE",
+    "Consumer Price": 3159,
+    "MRP": 3412
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "175 60 R13 77H",
+    "Type": "TL",
+    "Pattern": "ULTIMA SPORTS",
+    "Consumer Price": 3032,
+    "MRP": 3275
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "175 70 R13 82T",
+    "Type": "TL",
+    "Pattern": "ULTIMA NEO",
+    "Consumer Price": 3689,
+    "MRP": 3984
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 65 R14 75T",
+    "Type": "TL",
+    "Pattern": "ULTIMA NEO",
+    "Consumer Price": 3180,
+    "MRP": 3434
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "155 70 R14 77T",
+    "Type": "TL",
+    "Pattern": "VECTRA",
+    "Consumer Price": 3318,
+    "MRP": 3583
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 65 R14 79T",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 3593,
+    "MRP": 3880
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 65 R14 79T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 3593,
+    "MRP": 3880
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 70 R14 81T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 3127,
+    "MRP": 3377
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 70 R14 81T",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 3138,
+    "MRP": 3389
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 3392,
+    "MRP": 3663
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 3392,
+    "MRP": 3663
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "165 80 R14 85T",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 3392,
+    "MRP": 3663
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 4123,
+    "MRP": 4453
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "175 65 R14 82T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 4123,
+    "MRP": 4453
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "175 70 R14 84T",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 4261,
+    "MRP": 4602
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 60 R14 82H",
+    "Type": "TL",
+    "Pattern": "ULTIMA SPORTS",
+    "Consumer Price": 3858,
+    "MRP": 4167
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 65 R14 86H",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 3901,
+    "MRP": 4213
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 65 R14 86H",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 3901,
+    "MRP": 4213
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 70 R14 88T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 4134,
+    "MRP": 4465
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 70 R14 88H",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 4155,
+    "MRP": 4487
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "175 60 R15 81H",
+    "Type": "TL",
+    "Pattern": "_UX TOURING_81H",
+    "Consumer Price": 4187,
+    "MRP": 4522
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "175 65 R15 84T",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 4049,
+    "MRP": 4373
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 60 R15 84T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 4388,
+    "MRP": 4739
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 60 R15 84H",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 4410,
+    "MRP": 4763
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 65 R15 88T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 4590,
+    "MRP": 4957
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 4590,
+    "MRP": 4957
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 65 R15 88H",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 4590,
+    "MRP": 4957
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "195 60 R15 88V",
+    "Type": "TL",
+    "Pattern": "UX1",
+    "Consumer Price": 5003,
+    "MRP": 5403
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "195 65 R15 91H",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 4855,
+    "MRP": 5243
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "195 80 R15 96S",
+    "Type": "TT",
+    "Pattern": "BRUTE",
+    "Consumer Price": 6180,
+    "MRP": 6674
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "195 80 R15 96S",
+    "Type": "TT",
+    "Pattern": "RANGER BRT",
+    "Consumer Price": 6180,
+    "MRP": 6674
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 60 R15 91V",
+    "Type": "TL",
+    "Pattern": "UX1",
+    "Consumer Price": 6657,
+    "MRP": 7190
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 65 R15 94V",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 5459,
+    "MRP": 5896
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 65 R15 94H",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 5459,
+    "MRP": 5896
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 65 R15 94T",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 5459,
+    "MRP": 5896
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 65 R15 94V",
+    "Type": "TL",
+    "Pattern": "ZEPHYR",
+    "Consumer Price": 5459,
+    "MRP": 5896
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 70 R15 96H",
+    "Type": "TL",
+    "Pattern": "RANGER A/T",
+    "Consumer Price": 5141,
+    "MRP": 5552
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 70 R15 98H",
+    "Type": "TL",
+    "Pattern": "RANGER A/T",
+    "Consumer Price": 6127,
+    "MRP": 6617
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TT",
+    "Pattern": "BRUTE 10PR",
+    "Consumer Price": 7166,
+    "MRP": 7739
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TT",
+    "Pattern": "BRUTE 4X4",
+    "Consumer Price": 6127,
+    "MRP": 6617
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TT",
+    "Pattern": "BRUTE SB",
+    "Consumer Price": 6095,
+    "MRP": 6583
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Pattern": "RANGER A/T",
+    "Consumer Price": 5766,
+    "MRP": 6227
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Pattern": "RANGER A/T RWL",
+    "Consumer Price": 5872,
+    "MRP": 6342
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Pattern": "RANGER H/T",
+    "Consumer Price": 5660,
+    "MRP": 6113
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Pattern": "RANGER H/T RWL",
+    "Consumer Price": 5777,
+    "MRP": 6239
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TT",
+    "Pattern": "RANGER X-AT",
+    "Consumer Price": 5830,
+    "MRP": 6296
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 75 R15 100S",
+    "Type": "TL",
+    "Pattern": "RANGER X-AT",
+    "Consumer Price": 5745,
+    "MRP": 6205
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 75 R15 105S",
+    "Type": "TT",
+    "Pattern": "BRUTE 4X4",
+    "Consumer Price": 7144,
+    "MRP": 7716
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 75 R15 105S",
+    "Type": "TL",
+    "Pattern": "RANGER H/T",
+    "Consumer Price": 6678,
+    "MRP": 7212
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 75 R15 105S",
+    "Type": "TL",
+    "Pattern": "RANGER X-A/T",
+    "Consumer Price": 6911,
+    "MRP": 7464
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 85 R16 105Q",
+    "Type": "TT",
+    "Pattern": "BRUTE",
+    "Consumer Price": 5660,
+    "MRP": 6113
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "185 55 R16 83V",
+    "Type": "TL",
+    "Pattern": "UX Royale",
+    "Consumer Price": 4526,
+    "MRP": 4888
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "195 55 R16 87V",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 5501,
+    "MRP": 5941
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "195 60 R16 89H",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 5501,
+    "MRP": 5941
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "195 60 R16 89H",
+    "Type": "TL",
+    "Pattern": "RANGER HPE",
+    "Consumer Price": 5618,
+    "MRP": 6067
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 55 R16 91V",
+    "Type": "TL",
+    "Pattern": "UX Royale",
+    "Consumer Price": 6095,
+    "MRP": 6583
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 60 R16 92H",
+    "Type": "TL",
+    "Pattern": "RANGER H/T",
+    "Consumer Price": 5735,
+    "MRP": 6194
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 60 R16 92V",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 5448,
+    "MRP": 5884
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 65 R16 95T",
+    "Type": "TL",
+    "Pattern": "TAXIMAX",
+    "Consumer Price": 5491,
+    "MRP": 5930
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 65 R16 95H",
+    "Type": "TL",
+    "Pattern": "UX TOURING",
+    "Consumer Price": 5501,
+    "MRP": 5941
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "205 65 R16 95V",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 5512,
+    "MRP": 5953
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 60 R16 95V",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 5639,
+    "MRP": 6090
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "225 60 R16 98V",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 5915,
+    "MRP": 6388
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 65 R16 103H",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 5713,
+    "MRP": 6170
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 70 R16 106S",
+    "Type": "TL",
+    "Pattern": "RANGER A/T",
+    "Consumer Price": 6869,
+    "MRP": 7419
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 70 R16 106S",
+    "Type": "TT",
+    "Pattern": "BRUTE 4*4",
+    "Consumer Price": 7144,
+    "MRP": 7716
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "245 75 R16 111S",
+    "Type": "TL",
+    "Pattern": "ELANZO SUPRA",
+    "Consumer Price": 6508,
+    "MRP": 7029
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 55 R17 94V",
+    "Type": "TL",
+    "Pattern": "UX1",
+    "Consumer Price": 6561,
+    "MRP": 7086
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 55 R17 94V",
+    "Type": "TL",
+    "Pattern": "_UX ROYALE_",
+    "Consumer Price": 5735,
+    "MRP": 6194
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 60 R17 96H",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 5713,
+    "MRP": 6170
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "225 50 R17 94V",
+    "Type": "TL",
+    "Pattern": "UX1",
+    "Consumer Price": 9360,
+    "MRP": 10109
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "225 60 R17 99V",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 6922,
+    "MRP": 7476
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "225 65 R17 102H",
+    "Type": "TL",
+    "Pattern": "RANGER H/T",
+    "Consumer Price": 9042,
+    "MRP": 9765
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 55 R17 99V",
+    "Type": "TL",
+    "Pattern": "UX1",
+    "Consumer Price": 8077,
+    "MRP": 8723
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "RANGER HT RWL",
+    "Consumer Price": 9275,
+    "MRP": 10017
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 65 R17 104H",
+    "Type": "TL",
+    "Pattern": "RANGER X-AT RWL",
+    "Consumer Price": 9296,
+    "MRP": 10040
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "265 65 R17 112H",
+    "Type": "TL",
+    "Pattern": "RANGER H/T",
+    "Consumer Price": 9794,
+    "MRP": 10578
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "265 70 R17 115T",
+    "Type": "TL",
+    "Pattern": "RANGER M/T",
+    "Consumer Price": 10261,
+    "MRP": 11082
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "215 55 R18 95V",
+    "Type": "TL",
+    "Pattern": "UX ROYALE",
+    "Consumer Price": 7558,
+    "MRP": 8163
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "235 60 R18 103H",
+    "Type": "TL",
+    "Pattern": "RANGER HT",
+    "Consumer Price": 9625,
+    "MRP": 10395
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "255 60 R18 108H",
+    "Type": "TL",
+    "Pattern": "RANGER H/T",
+    "Consumer Price": 9105,
+    "MRP": 9833
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "255 65 R18 111H",
+    "Type": "TL",
+    "Pattern": "RANGER HT2",
+    "Consumer Price": 8512,
+    "MRP": 9193
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "255 65 R18 111H",
+    "Type": "TL",
+    "Pattern": "RANGER AT",
+    "Consumer Price": 8522,
+    "MRP": 9204
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "255 65 R18 111H",
+    "Type": "TL",
+    "Pattern": "RANGER AT RWL",
+    "Consumer Price": 8639,
+    "MRP": 9330
+  },
+  {
+    "Brand": "JK",
+    "Tyre Size": "265 60 R18 110H",
+    "Type": "TL",
+    "Pattern": "RANGER H/T",
+    "Consumer Price": 10430,
+    "MRP": 11264
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "145/70R12",
+    "Pattern": "DUCARO HI-MILER",
+    "Type": "TL",
+    "Consumer Price": 2790,
+    "MRP": 3020
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "145/80R12",
+    "Pattern": "DUCARO HI-MILER",
+    "Type": "TL",
+    "Consumer Price": 3070,
+    "MRP": 3320
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "145/80R12",
+    "Pattern": "DUCARO HI-MILER",
+    "Type": "TL",
+    "Consumer Price": 3070,
+    "MRP": 3320
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "145/70R13",
+    "Pattern": "ASSURANCE DURAPLUS 2",
+    "Type": "TL",
+    "Consumer Price": 3500,
+    "MRP": 3770
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "145/70R13",
+    "Pattern": "GPS 2",
+    "Type": "TL",
+    "Consumer Price": 3500,
+    "MRP": 3770
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "145/80R13",
+    "Pattern": "ASSURANCE DURAPLUS 2",
+    "Type": "TL",
+    "Consumer Price": 3500,
+    "MRP": 3770
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "155/65R13",
+    "Pattern": "ASSURANCE DURAPLUS 2",
+    "Type": "TL",
+    "Consumer Price": 3620,
+    "MRP": 3910
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "155/70R13",
+    "Pattern": "ASSURANCE DURAPLUS 2",
+    "Type": "TL",
+    "Consumer Price": 3690,
+    "MRP": 3990
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "155/80R13",
+    "Pattern": "ASSURANCE DURAPLUS 2",
+    "Type": "TL",
+    "Consumer Price": 3780,
+    "MRP": 4090
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/70R13",
+    "Pattern": "ASSURANCE DURAPLUS 2",
+    "Type": "TL",
+    "Consumer Price": 5070,
+    "MRP": 5480
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "155/65R14",
+    "Pattern": "ASSURANCE DURAPLUS 2",
+    "Type": "TL",
+    "Consumer Price": 3960,
+    "MRP": 4270
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "155/65R14",
+    "Pattern": "GT-3 SZI",
+    "Type": "TL",
+    "Consumer Price": 3960,
+    "MRP": 4270
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "165/65R14",
+    "Pattern": "GOODYEAR DP-C1",
+    "Type": "TL",
+    "Consumer Price": 4920,
+    "MRP": 5310
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "165/65R14",
+    "Pattern": "GOODYEAR DP-C1",
+    "Type": "TL",
+    "Consumer Price": 4920,
+    "MRP": 5310
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "165/70R14",
+    "Pattern": "DP-MI",
+    "Type": "TL",
+    "Consumer Price": 3780,
+    "MRP": 4090
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "165/70R14",
+    "Pattern": "DP-M1",
+    "Type": "TL",
+    "Consumer Price": 3780,
+    "MRP": 4090
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "165/70R14",
+    "Pattern": "ASSURANCE TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 3900,
+    "MRP": 4210
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "165/80R14",
+    "Pattern": "ASSU MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 4190,
+    "MRP": 4530
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "165/80R14",
+    "Pattern": "ASSURANCE DURAPLUS 2",
+    "Type": "TL",
+    "Consumer Price": 4170,
+    "MRP": 4510
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "165/80R14",
+    "Pattern": "DURAPLUS",
+    "Type": "TL",
+    "Consumer Price": 4170,
+    "MRP": 4510
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R14",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 5340,
+    "MRP": 5770
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R14",
+    "Pattern": "ASSURANCE TRIPLEMAX 2",
+    "Type": "TL",
+    "Consumer Price": 5340,
+    "MRP": 5770
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R14",
+    "Pattern": "ASSURANCE DURAPLUS",
+    "Type": "TL",
+    "Consumer Price": 5210,
+    "MRP": 5630
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R14",
+    "Pattern": "DURAPLUS N-CCC",
+    "Type": "TL",
+    "Consumer Price": 5210,
+    "MRP": 5630
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/70R14",
+    "Pattern": "ASSURANCE TRIPLEMAX 2",
+    "Type": "TL",
+    "Consumer Price": 5510,
+    "MRP": 5950
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/70R14",
+    "Pattern": "DURAPLUS",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5890
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/70R14",
+    "Pattern": "DURAPLUS",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5890
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/65R14",
+    "Pattern": "ASSURANCE TRIPLEMAX 2",
+    "Type": "TL",
+    "Consumer Price": 5120,
+    "MRP": 5530
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/70R14",
+    "Pattern": "ASSU MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 5290,
+    "MRP": 5720
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/70R14",
+    "Pattern": "ASSU TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5890
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/70R14",
+    "Pattern": "ASSURANCE DURAPLUS",
+    "Type": "TL",
+    "Consumer Price": 5380,
+    "MRP": 5800
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/70R14",
+    "Pattern": "ASSURANCE TRIPLEMAX 2",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5890
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/70R14",
+    "Pattern": "DURAPLUS",
+    "Type": "TL",
+    "Consumer Price": 5380,
+    "MRP": 5800
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/60R15",
+    "Pattern": "ASSURANCE TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 5190,
+    "MRP": 5710
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R15",
+    "Pattern": "ASSU MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 5690,
+    "MRP": 6260
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R15",
+    "Pattern": "ASSURANCE TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5990
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R15",
+    "Pattern": "ASSURANCE TRIPLEMAX 2",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5990
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R15",
+    "Pattern": "ASSU MAXGUARD XL",
+    "Type": "TL",
+    "Consumer Price": 5690,
+    "MRP": 6260
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "175/65R15",
+    "Pattern": "ASSU MAXGUARD XL",
+    "Type": "TL",
+    "Consumer Price": 5690,
+    "MRP": 6260
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/60R15",
+    "Pattern": "ASSU TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5990
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/60R15",
+    "Pattern": "ASSURANCE MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 5770,
+    "MRP": 6350
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/60R15",
+    "Pattern": "ASSURANCE TRIPLEMAX 2",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5990
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/60R15",
+    "Pattern": "ASSURANCE TRIPLEMAX 2",
+    "Type": "TL",
+    "Consumer Price": 5450,
+    "MRP": 5990
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/60R15",
+    "Pattern": "ASSU MAXGUARD XL",
+    "Type": "TL",
+    "Consumer Price": 5770,
+    "MRP": 6350
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/60R15",
+    "Pattern": "ASSU MAXGUARD XL",
+    "Type": "TL",
+    "Consumer Price": 5770,
+    "MRP": 6350
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/65R15",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 5770,
+    "MRP": 6350
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/65R15",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 5770,
+    "MRP": 6350
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/65R15",
+    "Pattern": "ASSURANCE TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 5770,
+    "MRP": 6350
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/65R15",
+    "Pattern": "DURAPLUS",
+    "Type": "TL",
+    "Consumer Price": 5580,
+    "MRP": 6140
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/65R15",
+    "Pattern": "DURAPLUS",
+    "Type": "TL",
+    "Consumer Price": 5580,
+    "MRP": 6140
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/65R15",
+    "Pattern": "ASSU MAXGUARD XL",
+    "Type": "TL",
+    "Consumer Price": 6130,
+    "MRP": 6740
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/65R15",
+    "Pattern": "ASSU MAXGUARD XL",
+    "Type": "TL",
+    "Consumer Price": 6130,
+    "MRP": 6740
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/70R15",
+    "Pattern": "ASSU MAXGUARD SUV",
+    "Type": "TL",
+    "Consumer Price": 5790,
+    "MRP": 6380
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/60R15",
+    "Pattern": "ASSURANCE TRIPLEMAX 2",
+    "Type": "TL",
+    "Consumer Price": 6650,
+    "MRP": 7310
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/65R15",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 6660,
+    "MRP": 7320
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/65R15",
+    "Pattern": "ASSURANCE TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 6660,
+    "MRP": 7320
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/65R15",
+    "Pattern": "ASSURANCE TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 6660,
+    "MRP": 7320
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/65R15",
+    "Pattern": "ASSU MAXGUARD SUV XL",
+    "Type": "TL",
+    "Consumer Price": 6640,
+    "MRP": 7300
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/65R15",
+    "Pattern": "ASSURANCE DURAPLUS 2 XL",
+    "Type": "TL",
+    "Consumer Price": 6960,
+    "MRP": 7650
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/75R15",
+    "Pattern": "ASSU MAXGUARD SUV",
+    "Type": "TL",
+    "Consumer Price": 6850,
+    "MRP": 7540
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/75R15",
+    "Pattern": "WRL TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 6490,
+    "MRP": 7140
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/75R15",
+    "Pattern": "WRL TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 6490,
+    "MRP": 7140
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/75R15",
+    "Pattern": "WRL AT SILENTTRAC",
+    "Type": "TL",
+    "Consumer Price": 7460,
+    "MRP": 8200
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/75R15",
+    "Pattern": "WRL RT/S",
+    "Type": "TL",
+    "Consumer Price": 6560,
+    "MRP": 7210
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/75R15",
+    "Pattern": "WRL RT/S TT",
+    "Type": "TL",
+    "Consumer Price": 6690,
+    "MRP": 7360
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "235/75R15",
+    "Pattern": "WRL RT/S",
+    "Type": "TL",
+    "Consumer Price": 7780,
+    "MRP": 8560
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "235/75R15",
+    "Pattern": "WRL RT/S",
+    "Type": "TL",
+    "Consumer Price": 7780,
+    "MRP": 8560
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "235/75R15",
+    "Pattern": "WRL RT/S TT",
+    "Type": "TL",
+    "Consumer Price": 7710,
+    "MRP": 8490
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "235/75R15",
+    "Pattern": "WRL RT/S TT",
+    "Type": "TL",
+    "Consumer Price": 7700,
+    "MRP": 8480
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "235/75R15",
+    "Pattern": "WRL AT SILENTTRAC XL",
+    "Type": "TL",
+    "Consumer Price": 8380,
+    "MRP": 9220
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/55R16",
+    "Pattern": "ASSU MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 6810,
+    "MRP": 7500
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/55R16",
+    "Pattern": "ASSU TRIPLEMAX2 XL",
+    "Type": "TL",
+    "Consumer Price": 6580,
+    "MRP": 7240
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/60R16",
+    "Pattern": "ASSU MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 6470,
+    "MRP": 7110
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "185/60R16",
+    "Pattern": "ASSU TRIPLEMAX2 FP",
+    "Type": "TL",
+    "Consumer Price": 6420,
+    "MRP": 7060
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/55R16",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 7410,
+    "MRP": 8150
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/55R16",
+    "Pattern": "ASSURANCE TRIPLEMAX FP",
+    "Type": "TL",
+    "Consumer Price": 7410,
+    "MRP": 8150
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/55R16",
+    "Pattern": "ASSU MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 8110,
+    "MRP": 8920
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/55R16",
+    "Pattern": "ASSURANCE MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 8110,
+    "MRP": 8920
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/60R16",
+    "Pattern": "ASSU TRIPLEMAX",
+    "Type": "TL",
+    "Consumer Price": 7870,
+    "MRP": 8660
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/60R16",
+    "Pattern": "ASSURANCE TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 7870,
+    "MRP": 8660
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/60R16",
+    "Pattern": "ASSURANCE TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 7870,
+    "MRP": 8660
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/60R16",
+    "Pattern": "ASSURANCE TRIPLEMAX2 MS",
+    "Type": "TL",
+    "Consumer Price": 7870,
+    "MRP": 8660
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "195/60R16",
+    "Pattern": "ASSU MAXGUARD SUV XL",
+    "Type": "TL",
+    "Consumer Price": 7620,
+    "MRP": 8380
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/55R16",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 9060,
+    "MRP": 9970
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/55R16",
+    "Pattern": "ASSU TRIPLEMAX2 FP",
+    "Type": "TL",
+    "Consumer Price": 9060,
+    "MRP": 9970
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/55R16",
+    "Pattern": "ASSU MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 8630,
+    "MRP": 9500
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/55R16",
+    "Pattern": "EAGLE NCT5 FP RHD",
+    "Type": "TL",
+    "Consumer Price": 9360,
+    "MRP": 10300
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/55R16",
+    "Pattern": "ASSU COMFORTTRED XL",
+    "Type": "TL",
+    "Consumer Price": 8900,
+    "MRP": 9790
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/60R16",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 7580,
+    "MRP": 8330
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/60R16",
+    "Pattern": "ASSURANCE FP",
+    "Type": "TL",
+    "Consumer Price": 7340,
+    "MRP": 8080
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/60R16",
+    "Pattern": "ASSURANCE MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 7690,
+    "MRP": 8460
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/60R16",
+    "Pattern": "ASSU MAXGUARD SUV XL",
+    "Type": "TL",
+    "Consumer Price": 7580,
+    "MRP": 8330
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/65R16",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 6960,
+    "MRP": 7650
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/65R16",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 6960,
+    "MRP": 7650
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/65R16",
+    "Pattern": "ASSURANCE MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 7280,
+    "MRP": 8010
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/65R16",
+    "Pattern": "ASSU MAXGUARD SUV XL",
+    "Type": "TL",
+    "Consumer Price": 7280,
+    "MRP": 8010
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/80R16",
+    "Pattern": "WRL D-SPORT",
+    "Type": "TL",
+    "Consumer Price": 7560,
+    "MRP": 8310
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "205/80R16",
+    "Pattern": "WRL D-Sport 6PR",
+    "Type": "TL",
+    "Consumer Price": 7560,
+    "MRP": 8310
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/60R16",
+    "Pattern": "ASSU MAXGUARD",
+    "Type": "TL",
+    "Consumer Price": 8300,
+    "MRP": 9130
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/60R16",
+    "Pattern": "ASSU TRIPLEMAX2",
+    "Type": "TL",
+    "Consumer Price": 8440,
+    "MRP": 9280
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/60R16",
+    "Pattern": "EFFIGRIP PERF",
+    "Type": "TL",
+    "Consumer Price": 9210,
+    "MRP": 10130
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/60R16",
+    "Pattern": "ASSURANCE MAXGUARD FP",
+    "Type": "TL",
+    "Consumer Price": 8300,
+    "MRP": 9130
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/60R16",
+    "Pattern": "ASSU MAXGUARD SUV XL",
+    "Type": "TL",
+    "Consumer Price": 8180,
+    "MRP": 9000
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/65R16",
+    "Pattern": "WRL AT SILENTTRAC",
+    "Type": "TL",
+    "Consumer Price": 10310,
+    "MRP": 11340
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/65R16",
+    "Pattern": "EFFIGRIP PERF SUV",
+    "Type": "TL",
+    "Consumer Price": 9930,
+    "MRP": 10920
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/65R16",
+    "Pattern": "EFFIGRIP PERF SUV FP",
+    "Type": "TL",
+    "Consumer Price": 9940,
+    "MRP": 10940
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "215/65R16",
+    "Pattern": "EFFIGRIP PERF SUV FP",
+    "Type": "TL",
+    "Consumer Price": 9930,
+    "MRP": 10920
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "225/55R16",
+    "Pattern": "ASSU COMFORTTRED FP",
+    "Type": "TL",
+    "Consumer Price": 11270,
+    "MRP": 12400
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "225/55R16",
+    "Pattern": "EFFICIENTGRIP FP",
+    "Type": "TL",
+    "Consumer Price": 11520,
+    "MRP": 12670
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "225/55R16",
+    "Pattern": "ASSU COMFORTTRED XL FP",
+    "Type": "TL",
+    "Consumer Price": 11360,
+    "MRP": 12500
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "235/70R16",
+    "Pattern": "ASSU MAXGUARD SUV",
+    "Type": "TL",
+    "Consumer Price": 8720,
+    "MRP": 9600
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "235/70R16",
+    "Pattern": "WRL TRIPLEMAX FP",
+    "Type": "TL",
+    "Consumer Price": 8530,
+    "MRP": 9380
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "235/70R16",
+    "Pattern": "WRL AT SILENTTRAC",
+    "Type": "TL",
+    "Consumer Price": 8920,
+    "MRP": 9820
+  },
+  {
+    "Brand": "Goodyear",
+    "Tyre Size": "245/70R16",
+    "Pattern": "WRL AT SILENTTRAC XL",
+    "Type": "TL",
+    "Consumer Price": 10980,
+    "MRP": 12080
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "135 70 R12 65S",
+    "Pattern": "Milaze",
+    "Type": "TL",
+    "Consumer Price": 2538,
+    "MRP": 2741
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 70 R12 69T",
+    "Pattern": "Milaze X3",
+    "Type": "TT",
+    "Consumer Price": 2667,
+    "MRP": 2880
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 70 R12 69T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 2437,
+    "MRP": 2632
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 70 R12",
+    "Pattern": "Energy Drive EV",
+    "Type": "TL",
+    "Consumer Price": 2035,
+    "MRP": 2198
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 80 R12 74T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 2657,
+    "MRP": 2870
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 80 R12 74T",
+    "Pattern": "Milaze X3",
+    "Type": "TT",
+    "Consumer Price": 2699,
+    "MRP": 2915
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 80 R12 74T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 2770,
+    "MRP": 2992
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 80 R12 74T",
+    "Pattern": "Milaze X5",
+    "Type": "TT",
+    "Consumer Price": 2788,
+    "MRP": 3011
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 65 R12 71S",
+    "Pattern": "Milaze",
+    "Type": "TL",
+    "Consumer Price": 3085,
+    "MRP": 3332
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 70 R13 71T",
+    "Pattern": "Milaze X3",
+    "Type": "TT",
+    "Consumer Price": 3194,
+    "MRP": 3450
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 70 R13 71T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3122,
+    "MRP": 3372
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 80 R13 75T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3099,
+    "MRP": 3347
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "145 80 R13 75T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 3164,
+    "MRP": 3417
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 65 R13 73T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3319,
+    "MRP": 3585
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 65 R13 73T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 3385,
+    "MRP": 3656
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 70 R13 75T",
+    "Pattern": "Milaze X3",
+    "Type": "TT",
+    "Consumer Price": 3429,
+    "MRP": 3703
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 70 R13 75T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3343,
+    "MRP": 3610
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 70 R13 75T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 3403,
+    "MRP": 3675
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 70 R13 75T",
+    "Pattern": "Milaze X5",
+    "Type": "TT",
+    "Consumer Price": 3492,
+    "MRP": 3771
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 80 R13 79T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3334,
+    "MRP": 3601
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 80 R13 79T",
+    "Pattern": "Milaze X5",
+    "Type": "TT",
+    "Consumer Price": 3403,
+    "MRP": 3675
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 65 R13 77T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3487,
+    "MRP": 3766
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 65 R13 77T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3711,
+    "MRP": 4008
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 70 R13 82T",
+    "Pattern": "Milaze X3",
+    "Type": "TT",
+    "Consumer Price": 4557,
+    "MRP": 4922
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 65 R14 75T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3360,
+    "MRP": 3629
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "155 65 R14 79T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 3420,
+    "MRP": 3694
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 65 R14 79T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3876,
+    "MRP": 4186
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 65 R14 79T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 3949,
+    "MRP": 4265
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 70 R14 81T",
+    "Pattern": "Fuelsmarrt",
+    "Type": "TL",
+    "Consumer Price": 2954,
+    "MRP": 3190
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 70 R14 81T",
+    "Pattern": "Milaze X3",
+    "Type": "TT",
+    "Consumer Price": 3149,
+    "MRP": 3401
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 70 R14 81T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 3240,
+    "MRP": 3499
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 70 R14 81T",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 3434,
+    "MRP": 3709
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 80 R14 85T R",
+    "Pattern": "Fuelsmarrt",
+    "Type": "TL",
+    "Consumer Price": 3641,
+    "MRP": 3932
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 80 R14 85S",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 2936,
+    "MRP": 3171
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 80 R14 85S",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 3508,
+    "MRP": 3789
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 80 R14 85S",
+    "Pattern": "Milaze X5",
+    "Type": "TT",
+    "Consumer Price": 3662,
+    "MRP": 3955
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "165 80 R14 85T",
+    "Pattern": "SecuraDrive SD004",
+    "Type": "TL",
+    "Consumer Price": 3357,
+    "MRP": 3626
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 65 R14 82H",
+    "Pattern": "Energy Drive EV",
+    "Type": "TL",
+    "Consumer Price": 4124,
+    "MRP": 4454
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 65 R14 82T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 4081,
+    "MRP": 4407
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 65 R14 82T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 4332,
+    "MRP": 4679
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 65 R14 82T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 4416,
+    "MRP": 4769
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 70 R14 84T",
+    "Pattern": "Milaze X3",
+    "Type": "TT",
+    "Consumer Price": 4742,
+    "MRP": 5121
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "VALUE_ERROR_01",
+    "Pattern": "HEADER",
+    "Type": "TL",
+    "Consumer Price": 0,
+    "MRP": 0
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 65 R14 86T SW",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 4693,
+    "MRP": 5068
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 70 R14 88T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 4362,
+    "MRP": 4711
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 70 R14 88T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 4446,
+    "MRP": 4802
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 70 R14 88H",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 4536,
+    "MRP": 4899
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 60 R15 81H",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 3926,
+    "MRP": 4240
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 65 R15 84T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 4781,
+    "MRP": 5163
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 65 R15 84T",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 4866,
+    "MRP": 5255
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "175 65 R15 84H",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 4937,
+    "MRP": 5332
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 60 R15 84H",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 5100,
+    "MRP": 5508
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 65 R15 88T",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 4714,
+    "MRP": 5091
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 65 R15 88T",
+    "Pattern": "Milaze X5",
+    "Type": "TT",
+    "Consumer Price": 4716,
+    "MRP": 5093
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 65 R15 88H R",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 4908,
+    "MRP": 5301
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 65 R15 Dzire",
+    "Pattern": "SecuraDrive SD004",
+    "Type": "TL",
+    "Consumer Price": 4908,
+    "MRP": 5301
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 70 R15 89H TN",
+    "Pattern": "Energy Drive",
+    "Type": "TL",
+    "Consumer Price": 4305,
+    "MRP": 4649
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 70 R15 89H T",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 4854,
+    "MRP": 5242
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "195 60 R15 88V",
+    "Pattern": "SecuraDrive",
+    "Type": "TT",
+    "Consumer Price": 6093,
+    "MRP": 6580
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "195 65 R15 91H P",
+    "Pattern": "Energy Drive",
+    "Type": "TL",
+    "Consumer Price": 4501,
+    "MRP": 4861
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "195 65 R15 91H",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 5020,
+    "MRP": 5422
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "195 R15 106Q",
+    "Pattern": "STEEL PLUS LT",
+    "Type": "TL",
+    "Consumer Price": 5662,
+    "MRP": 6115
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "195 R15 106Q",
+    "Pattern": "STEEL PLUS LT",
+    "Type": "TT",
+    "Consumer Price": 6009,
+    "MRP": 6490
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 60 R15 91V",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 5991,
+    "MRP": 6470
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 65 R15 94S",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 6106,
+    "MRP": 6594
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 100S",
+    "Pattern": "Crossdrive AT",
+    "Type": "TL",
+    "Consumer Price": 5712,
+    "MRP": 6169
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 100S",
+    "Pattern": "Crossdrive AT",
+    "Type": "TL",
+    "Consumer Price": 5803,
+    "MRP": 6267
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 100S",
+    "Pattern": "CZAR HT",
+    "Type": "TL",
+    "Consumer Price": 6031,
+    "MRP": 6513
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 100S",
+    "Pattern": "F1 STEEL BT",
+    "Type": "TL",
+    "Consumer Price": 5621,
+    "MRP": 6071
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 100S",
+    "Pattern": "F1 STEEL BT",
+    "Type": "TL",
+    "Consumer Price": 5645,
+    "MRP": 6097
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 115/113S AL",
+    "Pattern": "Milaze HD",
+    "Type": "TL",
+    "Consumer Price": 5929,
+    "MRP": 6403
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 115/113S MM",
+    "Pattern": "Milaze HD",
+    "Type": "TL",
+    "Consumer Price": 6031,
+    "MRP": 6513
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 113S",
+    "Pattern": "Milaze LT",
+    "Type": "TL",
+    "Consumer Price": 6031,
+    "MRP": 6513
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 115/113S",
+    "Pattern": "Milaze",
+    "Type": "TL",
+    "Consumer Price": 5930,
+    "MRP": 6404
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 75 R15 100H MM",
+    "Pattern": "SecuraDrive SUV",
+    "Type": "TL",
+    "Consumer Price": 5615,
+    "MRP": 6064
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "235 75 R15 105S",
+    "Pattern": "Milaze",
+    "Type": "TL",
+    "Consumer Price": 7235,
+    "MRP": 7814
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 55 R16 83V",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 4997,
+    "MRP": 5397
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "185 85 R16 105Q",
+    "Pattern": "Milaze LT",
+    "Type": "TL",
+    "Consumer Price": 5793,
+    "MRP": 6256
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "195 55 R16 87H",
+    "Pattern": "Milaze X5",
+    "Type": "TL",
+    "Consumer Price": 5504,
+    "MRP": 5944
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "195 55 R16 87V",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 5936,
+    "MRP": 6411
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "195 60 R16 89V",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 5833,
+    "MRP": 6300
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 55 R16 91H S",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 6713,
+    "MRP": 7250
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 60 R16 92H",
+    "Pattern": "SecuraDrive",
+    "Type": "NA",
+    "Consumer Price": 6478,
+    "MRP": 6996
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 60 R16 92H SK",
+    "Pattern": "SecuraDrive SD004",
+    "Type": "TL",
+    "Consumer Price": 6478,
+    "MRP": 6996
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 65 R16 95S TWI",
+    "Pattern": "Milaze X3",
+    "Type": "TL",
+    "Consumer Price": 6106,
+    "MRP": 6594
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 65 R16 95H",
+    "Pattern": "SecuraDrive SUV",
+    "Type": "TL",
+    "Consumer Price": 5286,
+    "MRP": 5709
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 65 R16 95H",
+    "Pattern": "SecuraDrive",
+    "Type": "TT",
+    "Consumer Price": 5345,
+    "MRP": 5773
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 60 R16 95H",
+    "Pattern": "Energy Drive EV",
+    "Type": "TL",
+    "Consumer Price": 5704,
+    "MRP": 6160
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 60 R16 95H",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 5787,
+    "MRP": 6250
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 65 R16 98H",
+    "Pattern": "SecuraDrive SUV",
+    "Type": "TT",
+    "Consumer Price": 7651,
+    "MRP": 8263
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 70 R16 100H",
+    "Pattern": "CZAR HP",
+    "Type": "TL",
+    "Consumer Price": 5662,
+    "MRP": 6115
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "235 70 R16 106S",
+    "Pattern": "Crossdrive AT",
+    "Type": "TT",
+    "Consumer Price": 7730,
+    "MRP": 8348
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "VALUE_ERROR_02",
+    "Pattern": "HEADER",
+    "Type": "TT",
+    "Consumer Price": 0,
+    "MRP": 0
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "235 70 R16 105S",
+    "Pattern": "CZAR AT",
+    "Type": "TL",
+    "Consumer Price": 7466,
+    "MRP": 8063
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "235 70 R16 100S",
+    "Pattern": "CZAR HT",
+    "Type": "TL",
+    "Consumer Price": 5932,
+    "MRP": 6407
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "245 75 R16 111H MM",
+    "Pattern": "CZAR AT",
+    "Type": "TT",
+    "Consumer Price": 5287,
+    "MRP": 5710
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 45 R17 88Y XL",
+    "Pattern": "SportDrive",
+    "Type": "TL",
+    "Consumer Price": 8674,
+    "MRP": 9368
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 50 R17 93W",
+    "Pattern": "SecuraDrive",
+    "Type": "TT",
+    "Consumer Price": 6735,
+    "MRP": 7274
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "205 55 R17 91H",
+    "Pattern": "SecuraDrive SD004",
+    "Type": "TL",
+    "Consumer Price": 5945,
+    "MRP": 6421
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 45 R17 91Y XL",
+    "Pattern": "SportDrive",
+    "Type": "TL",
+    "Consumer Price": 9414,
+    "MRP": 10167
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 50 R17 91V",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 6946,
+    "MRP": 7502
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 55 R17 94V MM",
+    "Pattern": "SecuraDrive SD004",
+    "Type": "TL",
+    "Consumer Price": 5920,
+    "MRP": 6394
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 55 R17 94V KIA",
+    "Pattern": "SecuraDrive SD004",
+    "Type": "TL",
+    "Consumer Price": 5920,
+    "MRP": 6394
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 55 R17 94V",
+    "Pattern": "SecuraDrive SUV",
+    "Type": "TL",
+    "Consumer Price": 6304,
+    "MRP": 7289
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 55 R17",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 6304,
+    "MRP": 6542
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 60 R17 96H",
+    "Pattern": "SecuraDrive SD004",
+    "Type": "TL",
+    "Consumer Price": 6540,
+    "MRP": 7289
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 60 R17 96H MSIL",
+    "Pattern": "SecuraDrive SD004",
+    "Type": "TL",
+    "Consumer Price": 6540,
+    "MRP": 6293
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 60 R17 96H",
+    "Pattern": "SecuraDrive SUV",
+    "Type": "TL",
+    "Consumer Price": 5950,
+    "MRP": 6577
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "215 60 R17 96H P",
+    "Pattern": "SecuraDrive",
+    "Type": "TL",
+    "Consumer Price": 6540,
+    "MRP": 7289
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "225 45 R17 94Y XL",
+    "Pattern": "SportDrive",
+    "Type": "TL",
+    "Consumer Price": 11850,
+    "MRP": 12798
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "225 50 R17 98Y XL",
+    "Pattern": "SportDrive",
+    "Type": "TL",
+    "Consumer Price": 11754,
+    "MRP": 12694
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "225 55 R17 101W XL",
+    "Pattern": "SportDrive",
+    "Type": "TL",
+    "Consumer Price": 11679,
+    "MRP": 12613
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "225 60 R17 99H",
+    "Pattern": "CZAR HP",
+    "Type": "NA",
+    "Consumer Price": 8056,
+    "MRP": 8700
+  },
+  {
+    "Brand": "Ceat",
+    "Tyre Size": "225 60 R17 99H225 65 R17 102H",
+    "Pattern": "SecuraDrive SUV",
+    "Type": "TL",
+    "Consumer Price": 7501,
+    "MRP": 8101
+  }
+]
