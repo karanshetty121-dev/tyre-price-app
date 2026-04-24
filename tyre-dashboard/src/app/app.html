@@ -1,200 +1,219 @@
 <div class="min-h-screen bg-[#0B0F1A] text-slate-200 font-sans selection:bg-emerald-500/30">
-  <!-- Top Progress/Decorative Bar -->
+  <!-- Top Progress Bar -->
   <div class="h-1 w-full bg-gradient-to-r from-emerald-500 via-teal-400 to-blue-500 opacity-80"></div>
 
-  <!-- Header Section -->
-  <header class="sticky top-0 z-50 border-b border-white/5 bg-[#0B0F1A]/80 backdrop-blur-xl">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
-      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-        <!-- Branding -->
-        <div class="flex items-center gap-5 group cursor-default">
-          <div class="relative">
-            <div class="absolute -inset-1 bg-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
-            <img src="/logo.png" alt="Icon" class="relative h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-110" onerror="this.style.display='none'">
-          </div>
-          <div class="flex flex-col">
-            <h1 class="text-3xl font-black tracking-tight text-white leading-none">
-              MOTO<span class="text-emerald-400">FINEZ</span>
-            </h1>
-            <div class="flex items-center gap-2 mt-1.5">
-              <span class="h-[1px] w-4 bg-emerald-500/50"></span>
-              <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-500">Master Price Intelligence</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Search Bar with Premium Styling -->
-        <div class="relative w-full md:w-[450px]">
-          <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
-            <svg class="h-5 w-5 text-emerald-500/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </div>
-          <input 
-            type="text" 
-            [ngModel]="searchQuery()"
-            (ngModelChange)="searchQuery.set($event)"
-            placeholder="Search size, pattern or brand..." 
-            class="block w-full pl-12 pr-4 py-3.5 bg-white/5 border border-white/10 rounded-2xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 focus:border-emerald-500/40 transition-all duration-300 shadow-2xl"
-          >
-          <div class="absolute inset-y-0 right-4 flex items-center">
-            <kbd class="hidden sm:inline-flex items-center px-2 py-1 text-xs font-semibold text-slate-600 bg-white/5 border border-white/10 rounded-lg">
-              ⌘K
-            </kbd>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    
-    <!-- State Management (Loading/Error) -->
-    <div *ngIf="loading()" class="flex flex-col items-center justify-center py-24">
-      <div class="relative h-16 w-16">
-        <div class="absolute inset-0 rounded-full border-4 border-white/5"></div>
-        <div class="absolute inset-0 rounded-full border-4 border-t-emerald-400 animate-spin"></div>
-      </div>
-      <p class="mt-6 text-slate-400 font-medium tracking-wide animate-pulse">Synchronizing dataset...</p>
-    </div>
-
-    <div *ngIf="error()" class="bg-red-500/10 border border-red-500/20 p-6 rounded-3xl backdrop-blur-sm">
-      <div class="flex items-center gap-4">
-        <div class="p-2 bg-red-500/20 rounded-xl">
-          <svg class="h-6 w-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-          </svg>
-        </div>
-        <p class="text-red-200 font-medium">{{ error() }}</p>
-      </div>
-    </div>
-
-    <div *ngIf="!loading() && !error()" class="space-y-10">
+  <!-- LOGIN SCREEN -->
+  <div *ngIf="!isLoggedIn()" class="flex items-center justify-center min-h-[calc(100vh-4px)] px-4">
+    <div class="max-w-md w-full space-y-8 bg-[#161B29] p-10 rounded-[2.5rem] border border-white/5 shadow-2xl relative overflow-hidden">
+      <!-- Decorative background blur -->
+      <div class="absolute -top-24 -right-24 h-48 w-48 bg-emerald-500/10 blur-[80px] rounded-full"></div>
       
-      <!-- Brand Selection Filters -->
-      <section>
-        <div class="flex items-center justify-between mb-6">
-          <h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Select Manufacturer</h2>
-          <div class="h-px flex-1 bg-white/5 ml-6"></div>
+      <div class="relative text-center">
+        <img src="/logo.png" alt="Icon" class="h-20 w-auto mx-auto mb-6" onerror="this.style.display='none'">
+        <h2 class="text-3xl font-black text-white tracking-tight">Access <span class="text-emerald-400">Intelligence</span></h2>
+        <p class="mt-2 text-slate-500 text-sm font-bold tracking-widest uppercase">MOTO FINEZ ENTERPRISE</p>
+      </div>
+
+      <form class="mt-8 space-y-6" (ngSubmit)="onLogin()">
+        <div class="space-y-4">
+          <div>
+            <label class="block text-xs font-black text-slate-500 uppercase tracking-widest ml-1 mb-2">Username</label>
+            <input 
+              name="username" type="text" required
+              [ngModel]="username()" (ngModelChange)="username.set($event)"
+              class="appearance-none block w-full px-4 py-3.5 bg-white/5 border border-white/10 rounded-2xl text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 transition-all duration-300"
+              placeholder="admin"
+            >
+          </div>
+          <div>
+            <label class="block text-xs font-black text-slate-500 uppercase tracking-widest ml-1 mb-2">Password</label>
+            <input 
+              name="password" type="password" required
+              [ngModel]="password()" (ngModelChange)="password.set($event)"
+              class="appearance-none block w-full px-4 py-3.5 bg-white/5 border border-white/10 rounded-2xl text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 transition-all duration-300"
+              placeholder="••••••••"
+            >
+          </div>
         </div>
-        <div class="flex flex-wrap gap-3">
-          <button 
-            *ngFor="let brand of brands()"
-            (click)="selectBrand(brand)"
-            [ngClass]="{
-              'px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 transform active:scale-95 shadow-lg': true,
-              'bg-emerald-500 text-[#0B0F1A] shadow-emerald-500/20 ring-4 ring-emerald-500/10': brand === selectedBrand(),
-              'bg-white/5 text-slate-400 hover:bg-white/10 hover:text-white border border-white/5': brand !== selectedBrand()
-            }"
-          >
-            {{ brand }}
+
+        <div *ngIf="loginError()" class="text-red-400 text-xs font-bold text-center bg-red-500/10 py-2 rounded-lg border border-red-500/20">
+          {{ loginError() }}
+        </div>
+
+        <div>
+          <button type="submit" 
+            class="group relative w-full flex justify-center py-4 px-4 border border-transparent text-sm font-black rounded-2xl text-[#0B0F1A] bg-emerald-400 hover:bg-emerald-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500 transition-all duration-300 shadow-xl shadow-emerald-500/10">
+            Authenticate Node
           </button>
         </div>
-      </section>
-
-      <!-- Data Display Section -->
-      <section class="space-y-6">
-        <div class="flex flex-col sm:flex-row justify-between items-end sm:items-center gap-4">
-          <div class="space-y-1">
-            <h3 class="text-2xl font-bold text-white">Inventory Catalog</h3>
-            <p class="text-sm text-slate-500">Live pricing analysis for <span class="text-emerald-400 font-bold">{{ selectedBrand() }}</span> network</p>
-          </div>
-          <div class="px-4 py-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-lg">
-            <span class="text-xs font-black text-emerald-400 uppercase tracking-tighter">
-              {{ filteredTyres().length }} Units Identified
-            </span>
-          </div>
-        </div>
-
-        <!-- High-Performance Grid/Table -->
-        <div class="bg-[#161B29] rounded-[2rem] border border-white/5 shadow-3xl overflow-hidden">
-          <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-white/5">
-              <thead>
-                <tr class="bg-white/[0.02]">
-                  <th class="px-8 py-5 text-left text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Manufacturer</th>
-                  <th class="px-8 py-5 text-left text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Design Pattern</th>
-                  <th class="px-8 py-5 text-left text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Dimension Spec</th>
-                  <th class="px-8 py-5 text-left text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Format</th>
-                  <th class="px-8 py-5 text-right text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Net Consumer</th>
-                  <th class="px-8 py-5 text-right text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Retail (MRP)</th>
-                </tr>
-              </thead>
-              <tbody class="divide-y divide-white/[0.03]">
-                <!-- Empty State -->
-                <tr *ngIf="filteredTyres().length === 0">
-                  <td colspan="6" class="px-8 py-24 text-center">
-                    <div class="flex flex-col items-center opacity-40">
-                      <svg class="h-16 w-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                      </svg>
-                      <p class="text-xl font-bold tracking-tight">No specifications found</p>
-                      <p class="text-sm mt-1">Try adjusting your search criteria or brand filter</p>
-                    </div>
-                  </td>
-                </tr>
-
-                <!-- Data Row -->
-                <tr *ngFor="let tyre of filteredTyres(); let i = index" 
-                    class="group hover:bg-white/[0.02] transition-colors duration-200">
-                  <td class="px-8 py-5">
-                    <div class="flex items-center gap-3">
-                      <div class="h-2 w-2 rounded-full bg-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                      <span class="text-sm font-bold text-slate-300">{{ tyre.Brand }}</span>
-                    </div>
-                  </td>
-                  <td class="px-8 py-5">
-                    <span class="text-sm text-slate-400 group-hover:text-slate-200 transition-colors">{{ tyre.Pattern }}</span>
-                  </td>
-                  <td class="px-8 py-5">
-                    <span class="text-sm font-black text-white tracking-tight">{{ tyre['Tyre Size'] }}</span>
-                  </td>
-                  <td class="px-8 py-5">
-                    <span class="px-2.5 py-1 rounded-md text-[10px] font-black tracking-widest uppercase border border-white/10 bg-white/5 text-slate-500 group-hover:text-slate-300 transition-colors">
-                      {{ tyre.Type || 'N/A' }}
-                    </span>
-                  </td>
-                  <td class="px-8 py-5 text-right">
-                    <div class="flex flex-col items-end">
-                      <span class="text-base font-black text-emerald-400 tabular-nums">
-                        {{ tyre['Consumer Price'] | currency:'INR':'symbol':'1.0-0' }}
-                      </span>
-                      <span class="text-[9px] text-emerald-500/40 uppercase font-bold tracking-widest mt-0.5">Dealer Net</span>
-                    </div>
-                  </td>
-                  <td class="px-8 py-5 text-right">
-                    <span class="text-sm font-bold text-slate-300 tabular-nums">
-                      {{ tyre.MRP | currency:'INR':'symbol':'1.0-0' }}
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
+      </form>
     </div>
+  </div>
 
-    <!-- Footer Stats -->
-    <footer class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 opacity-40 hover:opacity-100 transition-opacity duration-700">
-      <div class="text-[11px] font-bold uppercase tracking-[0.4em] text-slate-500">
-        © 2026 MOTO FINEZ Intelligence Systems
-      </div>
-      <div class="flex items-center gap-8">
-        <div class="flex flex-col items-end">
-          <span class="text-[10px] uppercase tracking-widest font-black text-slate-600">Enterprise Database</span>
-          <span class="text-xs text-slate-400 font-bold">Cloud-Synchronized</span>
-        </div>
-        <div class="h-10 w-[1px] bg-white/10"></div>
-        <div class="text-right">
-          <p class="text-[10px] uppercase tracking-widest font-black text-slate-600">Connectivity</p>
-          <div class="flex items-center gap-2 mt-1">
-            <div class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
-            <span class="text-xs text-emerald-400 font-bold">Node Online</span>
+  <!-- MAIN DASHBOARD -->
+  <ng-container *ngIf="isLoggedIn()">
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 border-b border-white/5 bg-[#0B0F1A]/80 backdrop-blur-xl">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+          <!-- Branding -->
+          <div class="flex items-center gap-5 group cursor-default">
+            <div class="relative">
+              <div class="absolute -inset-1 bg-emerald-500 rounded-full blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+              <img src="/logo.png" alt="Icon" class="relative h-12 w-auto object-contain transition-transform duration-500 group-hover:scale-110" onerror="this.style.display='none'">
+            </div>
+            <div class="flex flex-col">
+              <h1 class="text-3xl font-black tracking-tight text-white leading-none">
+                MOTO<span class="text-emerald-400">FINEZ</span>
+              </h1>
+              <div class="flex items-center gap-2 mt-1.5">
+                <span class="h-[1px] w-4 bg-emerald-500/50"></span>
+                <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-500">Master Price Intelligence</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Search Bar -->
+          <div class="relative w-full md:w-[450px] flex items-center gap-4">
+            <div class="relative flex-1">
+              <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+                <svg class="h-5 w-5 text-emerald-500/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+              </div>
+              <input 
+                type="text" 
+                [ngModel]="searchQuery()"
+                (ngModelChange)="searchQuery.set($event)"
+                placeholder="Search specs..." 
+                class="block w-full pl-12 pr-4 py-3 bg-white/5 border border-white/10 rounded-2xl text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 transition-all shadow-2xl"
+              >
+            </div>
+            
+            <!-- Logout Button -->
+            <button (click)="logout()" class="p-3 bg-white/5 border border-white/10 rounded-2xl text-slate-500 hover:text-red-400 hover:bg-red-400/10 transition-all duration-300" title="Logout">
+              <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+              </svg>
+            </button>
           </div>
         </div>
       </div>
-    </footer>
-  </main>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <!-- Loading / Error States -->
+      <div *ngIf="loading()" class="flex flex-col items-center justify-center py-24">
+        <div class="relative h-16 w-16">
+          <div class="absolute inset-0 rounded-full border-4 border-white/5"></div>
+          <div class="absolute inset-0 rounded-full border-4 border-t-emerald-400 animate-spin"></div>
+        </div>
+        <p class="mt-6 text-slate-400 font-medium tracking-wide animate-pulse">Synchronizing dataset...</p>
+      </div>
+
+      <div *ngIf="error()" class="bg-red-500/10 border border-red-500/20 p-6 rounded-3xl backdrop-blur-sm">
+        <div class="flex items-center gap-4">
+          <div class="p-2 bg-red-500/20 rounded-xl">
+            <svg class="h-6 w-6 text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+            </svg>
+          </div>
+          <p class="text-red-200 font-medium">{{ error() }}</p>
+        </div>
+      </div>
+
+      <div *ngIf="!loading() && !error()" class="space-y-10">
+        <!-- Brand Filters -->
+        <section>
+          <div class="flex items-center justify-between mb-6">
+            <h2 class="text-sm font-bold text-slate-400 uppercase tracking-widest">Select Manufacturer</h2>
+            <div class="h-px flex-1 bg-white/5 ml-6"></div>
+          </div>
+          <div class="flex flex-wrap gap-3">
+            <button 
+              *ngFor="let brand of brands()"
+              (click)="selectBrand(brand)"
+              [ngClass]="{
+                'px-6 py-2.5 rounded-full text-sm font-bold transition-all duration-300 transform active:scale-95 shadow-lg': true,
+                'bg-emerald-500 text-[#0B0F1A] shadow-emerald-500/20 ring-4 ring-emerald-500/10': brand === selectedBrand(),
+                'bg-white/5 text-slate-400 hover:bg-white/10 hover:text-white border border-white/5': brand !== selectedBrand()
+              }"
+            >
+              {{ brand }}
+            </button>
+          </div>
+        </section>
+
+        <!-- Data Section -->
+        <section class="space-y-6">
+          <div class="flex flex-col sm:flex-row justify-between items-end sm:items-center gap-4">
+            <div class="space-y-1">
+              <h3 class="text-2xl font-bold text-white">Inventory Catalog</h3>
+              <p class="text-sm text-slate-500">Live pricing analysis for <span class="text-emerald-400 font-bold">{{ selectedBrand() }}</span> network</p>
+            </div>
+            <div class="px-4 py-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-lg">
+              <span class="text-xs font-black text-emerald-400 uppercase tracking-tighter">
+                {{ filteredTyres().length }} Units Identified
+              </span>
+            </div>
+          </div>
+
+          <div class="bg-[#161B29] rounded-[2rem] border border-white/5 shadow-3xl overflow-hidden">
+            <div class="overflow-x-auto">
+              <table class="min-w-full divide-y divide-white/5">
+                <thead>
+                  <tr class="bg-white/[0.02]">
+                    <th class="px-8 py-5 text-left text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Manufacturer</th>
+                    <th class="px-8 py-5 text-left text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Design Pattern</th>
+                    <th class="px-8 py-5 text-left text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Dimension Spec</th>
+                    <th class="px-8 py-5 text-left text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Format</th>
+                    <th class="px-8 py-5 text-right text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Net Consumer</th>
+                    <th class="px-8 py-5 text-right text-[11px] font-black text-slate-500 uppercase tracking-[0.2em]">Retail (MRP)</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-white/[0.03]">
+                  <tr *ngIf="filteredTyres().length === 0">
+                    <td colspan="6" class="px-8 py-24 text-center">
+                      <div class="flex flex-col items-center opacity-40">
+                        <svg class="h-16 w-16 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                        <p class="text-xl font-bold tracking-tight">No specifications found</p>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr *ngFor="let tyre of filteredTyres(); let i = index" class="group hover:bg-white/[0.02] transition-colors duration-200">
+                    <td class="px-8 py-5 text-sm font-bold text-slate-300">{{ tyre.Brand }}</td>
+                    <td class="px-8 py-5 text-sm text-slate-400 group-hover:text-slate-200 transition-colors">{{ tyre.Pattern }}</td>
+                    <td class="px-8 py-5 text-sm font-black text-white tracking-tight">{{ tyre['Tyre Size'] }}</td>
+                    <td class="px-8 py-5">
+                      <span class="px-2.5 py-1 rounded-md text-[10px] font-black tracking-widest uppercase border border-white/10 bg-white/5 text-slate-500">
+                        {{ tyre.Type || 'N/A' }}
+                      </span>
+                    </td>
+                    <td class="px-8 py-5 text-right">
+                      <span class="text-base font-black text-emerald-400 tabular-nums">{{ tyre['Consumer Price'] | currency:'INR':'symbol':'1.0-0' }}</span>
+                    </td>
+                    <td class="px-8 py-5 text-right">
+                      <span class="text-sm font-bold text-slate-300 tabular-nums">{{ tyre.MRP | currency:'INR':'symbol':'1.0-0' }}</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Footer -->
+      <footer class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 opacity-40 hover:opacity-100 transition-opacity duration-700">
+        <div class="text-[11px] font-bold uppercase tracking-[0.4em] text-slate-500">© 2026 MOTO FINEZ Intelligence Systems</div>
+        <div class="flex items-center gap-2">
+          <div class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
+          <span class="text-[10px] uppercase tracking-widest font-black text-slate-600">Secure Node Active</span>
+        </div>
+      </footer>
+    </main>
+  </ng-container>
 </div>

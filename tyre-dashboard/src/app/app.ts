@@ -11,6 +11,16 @@ import { FormsModule } from '@angular/forms';
 export class App implements OnInit {
   title = 'Tyre Price Dashboard';
   
+  // Auth State
+  isLoggedIn = signal<boolean>(false);
+  username = signal<string>('');
+  password = signal<string>('');
+  loginError = signal<string | null>(null);
+
+  // Constants (In a real app, these would be in an environment file or backend)
+  private readonly AUTH_USER = 'admin';
+  private readonly AUTH_PASS = 'motofinez2026'; // Based on your shop's new year
+
   tyres = signal<any[]>([]);
   brands = signal<string[]>([]);
   selectedBrand = signal<string>('All');
@@ -40,6 +50,12 @@ export class App implements OnInit {
   });
 
   async ngOnInit() {
+    // Check for existing session
+    const session = localStorage.getItem('mf_session');
+    if (session === 'true') {
+      this.isLoggedIn.set(true);
+    }
+
     try {
       const response = await fetch('/tyres.json');
       if (!response.ok) throw new Error('Failed to load data');
@@ -58,5 +74,21 @@ export class App implements OnInit {
 
   selectBrand(brand: string) {
     this.selectedBrand.set(brand);
+  }
+
+  onLogin() {
+    if (this.username() === this.AUTH_USER && this.password() === this.AUTH_PASS) {
+      this.isLoggedIn.set(true);
+      this.loginError.set(null);
+      localStorage.setItem('mf_session', 'true');
+    } else {
+      this.loginError.set('Invalid credentials. Please try again.');
+    }
+  }
+
+  logout() {
+    this.isLoggedIn.set(false);
+    localStorage.removeItem('mf_session');
+    this.password.set(''); // Clear password
   }
 }
