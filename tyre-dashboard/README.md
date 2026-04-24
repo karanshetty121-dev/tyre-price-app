@@ -1,59 +1,53 @@
-# TyreDashboard
+# Moto Finez - Master Price Intelligence Dashboard
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.8.
+A professional, high-performance web dashboard for managing and viewing tyre prices. Built with Angular and high-end Vanilla CSS for a premium, dark-themed experience.
 
-## Development server
+## 🚀 Key Features
 
-To start a local development server, run:
+-   **Role-Based Access Control**: Separate accounts for administrators and viewers.
+-   **Live Inventory Catalog**: Real-time filtering by brand and search queries.
+-   **Price Intelligence**: Instant access to Consumer Prices and MRP.
+-   **Admin Editing Suite**:
+    -   Inline price editing for Consumer Price and MRP.
+    -   Persistent local storage overrides.
+    -   Data Export (JSON) for master file updates.
+    -   Global reset to revert changes to the master file state.
+-   **Premium UI/UX**: Dark mode aesthetic, responsive design, and smooth micro-animations.
 
+## 🔑 Authentication
+
+| Role | Username | Password |
+| :--- | :--- | :--- |
+| **Administrator** | `karanshetty` | `Shetty@1992!` |
+| **Viewer** | `motofinez` | `moto2026` |
+
+## 🛠️ Getting Started
+
+### Development Server
+To start a local development server:
 ```bash
-ng serve
+npm install
+npm start
 ```
+Navigate to `http://localhost:4200/`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### Building for Production
 ```bash
-ng generate component component-name
+npm run build
 ```
+The build artifacts will be stored in the `dist/` directory.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 📂 Project Structure
 
-```bash
-ng generate --help
-```
+- `src/app/`: Core application logic and styling.
+- `public/tyres.json`: The master dataset of tyre prices.
+- `public/logo.png`: Brand identity assets.
 
-## Building
+## 📝 Admin Instructions
 
-To build the project run:
+1. **Editing**: Click the 📝 icon on any row to enter edit mode. Click ✔️ to save or ❌ to cancel.
+2. **Exporting**: Click **Export JSON** to download the modified dataset. This file can be used to update `public/tyres.json` permanently.
+3. **Resetting**: Click **Reset Overrides** to clear all browser-saved changes and return to the master price list.
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+© 2026 MOTO FINEZ Intelligence Systems
