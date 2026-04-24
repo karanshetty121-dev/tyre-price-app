@@ -20,7 +20,7 @@ export class App implements OnInit {
 
   // User Accounts
   private readonly ACCOUNTS = [
-    { username: 'admin', password: 'admin2026', role: 'admin' as const },
+    { username: 'karanshetty', password: 'Shetty@1992!', role: 'admin' as const },
     { username: 'motofinez', password: 'moto2026', role: 'viewer' as const }
   ];
 
