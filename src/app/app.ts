@@ -26,8 +26,21 @@ export class App implements OnInit {
 
   tyres = signal<any[]>([]);
   brands = signal<string[]>([]);
-  selectedBrand = signal<string>('All');
   searchQuery = signal<string>('');
+  
+  // Spec Filters
+  widths = signal<string[]>([]);
+  aspects = signal<string[]>([]);
+  constructions = signal<string[]>([]);
+  diameters = signal<string[]>([]);
+  loadSpeeds = signal<string[]>([]);
+
+  selectedBrand = signal<string>('All');
+  selectedWidth = signal<string>('All');
+  selectedAspect = signal<string>('All');
+  selectedConstruction = signal<string>('All');
+  selectedDiameter = signal<string>('All');
+  selectedLoadSpeed = signal<string>('All');
   
   loading = signal<boolean>(true);
   error = signal<string | null>(null);
@@ -40,15 +53,28 @@ export class App implements OnInit {
     const allTyres = this.tyres();
     const query = this.searchQuery().toLowerCase().trim();
     const brand = this.selectedBrand();
+    const width = this.selectedWidth();
+    const aspect = this.selectedAspect();
+    const construction = this.selectedConstruction();
+    const diameter = this.selectedDiameter();
+    const loadSpeed = this.selectedLoadSpeed();
 
     return allTyres
       .map((tyre, index) => ({ ...tyre, originalIndex: index }))
       .filter(t => {
         const matchesBrand = brand === 'All' || t.Brand === brand;
-        const size = t['Tyre Size'] ? t['Tyre Size'].toString().toLowerCase() : '';
+        const matchesWidth = width === 'All' || t._width === width;
+        const matchesAspect = aspect === 'All' || t._aspect === aspect;
+        const matchesConst = construction === 'All' || t._const === construction;
+        const matchesDiam = diameter === 'All' || t._diam === diameter;
+        const matchesLS = loadSpeed === 'All' || t._ls === loadSpeed;
+        
+        const q = query.toLowerCase();
+        const fullSize = t['Tyre Size'] ? t['Tyre Size'].toString().toLowerCase() : '';
         const pattern = t['Pattern'] ? t['Pattern'].toString().toLowerCase() : '';
-        const matchesQuery = !query || size.includes(query) || pattern.includes(query);
-        return matchesBrand && matchesQuery;
+        const matchesQuery = !query || fullSize.includes(q) || pattern.includes(q);
+        
+        return matchesBrand && matchesWidth && matchesAspect && matchesConst && matchesDiam && matchesLS && matchesQuery;
       });
   });
 
@@ -62,28 +88,61 @@ export class App implements OnInit {
     }
 
     try {
-      // 1. Try to load from Cloud Database
-      const cloudResponse = await fetch('/api/tyres');
-      const cloudData = await cloudResponse.json();
-      
-      let data;
-      if (cloudData && !cloudData.status) {
-        // We have cloud data! Use it.
-        data = cloudData;
-      } else {
-        // First time or empty database, load from local master file
-        const localResponse = await fetch('/tyres.json');
-        if (!localResponse.ok) throw new Error('Failed to load master data');
-        data = await localResponse.json();
-        
-        // Optionally seed the database with master data if admin is logged in
-        // (We'll let the first save handle this naturally)
-      }
+      let data = null;
 
-      this.tyres.set(data);
+      // 1. Try to load from Cloud Database (Skip if on localhost without proxy, or handle errors)
+      try {
+        const cloudResponse = await fetch('/api/tyres');
+        if (cloudResponse.ok) {
+          const contentType = cloudResponse.headers.get('content-type');
+          if (contentType && contentType.includes('application/json')) {
+            const cloudData = await cloudResponse.json();
+            if (cloudData && !cloudData.status) {
+              data = cloudData;
+            }
+          }
+        }
+      } catch (apiError) {
+        console.log('Cloud API not available locally, falling back to master file.');
+      }
       
-      const uniqueBrands = ['All', ...new Set(data.map((t: any) => t.Brand))];
+      // 2. Parse and Enrich Data
+      const enrichedData = data.map((t: any) => {
+        // Regex to handle various formats: "145 70 R12 69S", "155 R13", "195 65 R15 91H"
+        const sizeStr = (t['Tyre Size'] || '').toString();
+        const parts = sizeStr.split(/\s+/);
+        
+        let width = 'N/A', aspect = 'N/A', construction = 'N/A', diameter = 'N/A', ls = 'N/A';
+        
+        // Simple heuristic parser
+        parts.forEach(p => {
+          if (/^\d{3}$/.test(p)) width = p;
+          else if (/^\d{2}$/.test(p) && width !== 'N/A' && diameter === 'N/A') aspect = p;
+          else if (/^[A-Z]{1,2}$/.test(p)) construction = p;
+          else if (/^R\d{2}$/.test(p)) { construction = 'R'; diameter = p.substring(1); }
+          else if (/^\d{2}$/.test(p) && diameter === 'N/A') diameter = p;
+          else if (p.length >= 2 && /[0-9]{2}[A-Z]/.test(p)) ls = p;
+        });
+
+        // Fallback for R12, R13 etc if split didn't catch it
+        if (construction === 'N/A' && sizeStr.includes(' R')) construction = 'R';
+
+        return { ...t, _width: width, _aspect: aspect, _const: construction, _diam: diameter, _ls: ls };
+      });
+
+      this.tyres.set(enrichedData);
+      
+      const uniqueBrands = ['All', ...new Set(enrichedData.map((t: any) => t.Brand))].sort();
       this.brands.set(uniqueBrands as string[]);
+
+      // Extract unique specs for filters
+      const getUnique = (key: string) => ['All', ...new Set(enrichedData.map((t: any) => t[key]))].filter(v => v !== 'N/A').sort();
+      
+      this.widths.set(getUnique('_width'));
+      this.aspects.set(getUnique('_aspect'));
+      this.constructions.set(getUnique('_const'));
+      this.diameters.set(getUnique('_diam'));
+      this.loadSpeeds.set(getUnique('_ls'));
     } catch (e: any) {
       this.error.set(e.message);
     } finally {

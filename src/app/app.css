@@ -1,0 +1,29 @@
+/* Global Styles for Dropdown Visibility */
+select option {
+  background-color: #161B29;
+  color: #E2E8F0;
+  padding: 10px;
+}
+
+/* Ensure the select itself is readable */
+select {
+  color-scheme: dark;
+}
+
+/* Custom Scrollbar for the long size list */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F1A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #10B981;
+}
