@@ -215,27 +215,6 @@ export class App implements OnInit {
     }
   }
 
-  async resetData() {
-    if (confirm('Are you sure you want to reset all cloud data? This will revert to the original price list for EVERYONE.')) {
-      try {
-        const response = await fetch('/tyres.json');
-        const originalData = await response.json();
-        
-        const apiResponse = await fetch('/api/tyres', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ data: originalData })
-        });
-
-        if (apiResponse.ok) {
-          window.location.reload();
-        }
-      } catch (e: any) {
-        this.error.set('Failed to reset cloud data.');
-      }
-    }
-  }
-
   exportData() {
     // Remove originalIndex before exporting
     const exportData = this.tyres().map(({ originalIndex, ...rest }) => rest);

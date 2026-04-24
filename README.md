@@ -46,8 +46,7 @@ npm run build
 2.  **Adding Products**: Click **+ Add Product** to open the expansion module. Enter the manufacturer, pattern, and full tyre size (e.g., `205 55 R16`). The system will automatically parse the specs for filtering.
 3.  **Editing**: Click the 📝 icon on any row to enter high-speed edit mode. Click ✔️ to save directly to the cloud.
 4.  **Filtering**: Use the **Spec Grid** in the header to drill down into specific tyre dimensions (e.g., all 15-inch Bridgestones).
-5.  **Reseting**: Use the **Reset Overrides** button to revert the cloud database to the master `tyres.json` file state.
-6.  **Exporting**: Use **Export JSON** to download the current state of the global price list for offline backup.
+5.  **Exporting**: Use the **Download** icon in the header to download the current state of the global price list for offline backup.
 
 ---
 © 2026 MOTO FINEZ Intelligence Systems
