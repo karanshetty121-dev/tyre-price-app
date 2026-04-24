@@ -15,7 +15,8 @@ A professional, high-performance web dashboard for managing and viewing tyre pri
 -   **Role-Based Access Control**:
     -   **Admin**: Full editing capabilities and database management.
     -   **Viewer**: Read-only access for staff members.
--   **Premium Aesthetics**: Dark mode "Intelligence" theme with smooth micro-animations.
+-   **Inventory Expansion**: Integrated "Add Product" module for administrators to initialize new tyre specifications with automatic dimension parsing.
+-   **Premium Aesthetics**: Dark mode "Intelligence" theme with clean, no-spinner numeric inputs and smooth micro-animations.
 
 ## 🔑 Authentication
 
@@ -42,9 +43,11 @@ npm run build
 ## 📝 Admin Instructions
 
 1.  **Cloud Setup**: Connect a **Vercel KV** instance to your project via the Vercel Dashboard to enable global price persistence.
-2.  **Editing**: Click the 📝 icon on any row to enter high-speed edit mode. Click ✔️ to save directly to the cloud.
-3.  **Filtering**: Use the **Spec Grid** in the header to drill down into specific tyre dimensions (e.g., all 15-inch Bridgestones).
-4.  **Reseting**: Use the **Reset Overrides** button to revert the cloud database to the master `tyres.json` file state.
+2.  **Adding Products**: Click **+ Add Product** to open the expansion module. Enter the manufacturer, pattern, and full tyre size (e.g., `205 55 R16`). The system will automatically parse the specs for filtering.
+3.  **Editing**: Click the 📝 icon on any row to enter high-speed edit mode. Click ✔️ to save directly to the cloud.
+4.  **Filtering**: Use the **Spec Grid** in the header to drill down into specific tyre dimensions (e.g., all 15-inch Bridgestones).
+5.  **Reseting**: Use the **Reset Overrides** button to revert the cloud database to the master `tyres.json` file state.
+6.  **Exporting**: Use **Export JSON** to download the current state of the global price list for offline backup.
 
 ---
 © 2026 MOTO FINEZ Intelligence Systems

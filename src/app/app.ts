@@ -49,6 +49,17 @@ export class App implements OnInit {
   editingId = signal<number | null>(null);
   editForm = signal<any>(null);
 
+  // Add Product State
+  showAddForm = signal<boolean>(false);
+  newTyreForm = signal<any>({
+    'Brand': '',
+    'Pattern': '',
+    'Tyre Size': '',
+    'Type': 'Tubeless',
+    'Consumer Price': 0,
+    'MRP': 0
+  });
+
   filteredTyres = computed(() => {
     const allTyres = this.tyres();
     const query = this.searchQuery().toLowerCase().trim();
@@ -120,28 +131,7 @@ export class App implements OnInit {
 
       // 2. Parse and Enrich Data
       if (!data) data = [];
-      const enrichedData = data.map((t: any) => {
-        // Regex to handle various formats: "145 70 R12 69S", "155 R13", "195 65 R15 91H"
-        const sizeStr = (t['Tyre Size'] || '').toString();
-        const parts = sizeStr.split(/\s+/);
-        
-        let width = 'N/A', aspect = 'N/A', construction = 'N/A', diameter = 'N/A', ls = 'N/A';
-        
-        // Simple heuristic parser
-        parts.forEach((p: string) => {
-          if (/^\d{3}$/.test(p)) width = p;
-          else if (/^\d{2}$/.test(p) && width !== 'N/A' && diameter === 'N/A') aspect = p;
-          else if (/^[A-Z]{1,2}$/.test(p)) construction = p;
-          else if (/^R\d{2}$/.test(p)) { construction = 'R'; diameter = p.substring(1); }
-          else if (/^\d{2}$/.test(p) && diameter === 'N/A') diameter = p;
-          else if (p.length >= 2 && /[0-9]{2}[A-Z]/.test(p)) ls = p;
-        });
-
-        // Fallback for R12, R13 etc if split didn't catch it
-        if (construction === 'N/A' && sizeStr.includes(' R')) construction = 'R';
-
-        return { ...t, _width: width, _aspect: aspect, _const: construction, _diam: diameter, _ls: ls };
-      });
+      const enrichedData = data.map((t: any) => this.enrichTyre(t));
 
       this.tyres.set(enrichedData);
       
@@ -214,7 +204,7 @@ export class App implements OnInit {
       const response = await fetch('/api/tyres', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ data: updatedTyres })
+        body: JSON.stringify({ data: updatedTyres.map(t => this.cleanTyre(t)) })
       });
       
       if (!response.ok) throw new Error('Failed to save to cloud');
@@ -258,5 +248,85 @@ export class App implements OnInit {
     linkElement.setAttribute('href', dataUri);
     linkElement.setAttribute('download', exportFileDefaultName);
     linkElement.click();
+  }
+
+  private enrichTyre(t: any) {
+    // Regex to handle various formats: "145 70 R12 69S", "155 R13", "195 65 R15 91H"
+    const sizeStr = (t['Tyre Size'] || '').toString();
+    const parts = sizeStr.split(/\s+/);
+    
+    let width = 'N/A', aspect = 'N/A', construction = 'N/A', diameter = 'N/A', ls = 'N/A';
+    
+    // Simple heuristic parser
+    parts.forEach((p: string) => {
+      if (/^\d{3}$/.test(p)) width = p;
+      else if (/^\d{2}$/.test(p) && width !== 'N/A' && diameter === 'N/A') aspect = p;
+      else if (/^[A-Z]{1,2}$/.test(p)) construction = p;
+      else if (/^R\d{2}$/.test(p)) { construction = 'R'; diameter = p.substring(1); }
+      else if (/^\d{2}$/.test(p) && diameter === 'N/A') diameter = p;
+      else if (p.length >= 2 && /[0-9]{2}[A-Z]/.test(p)) ls = p;
+    });
+
+    // Fallback for R12, R13 etc if split didn't catch it
+    if (construction === 'N/A' && sizeStr.includes(' R')) construction = 'R';
+
+    return { ...t, _width: width, _aspect: aspect, _const: construction, _diam: diameter, _ls: ls };
+  }
+
+  toggleAddForm() {
+    this.showAddForm.update(v => !v);
+  }
+
+  async saveNewProduct() {
+    const newTyre = this.enrichTyre({ ...this.newTyreForm() });
+    const updatedTyres = [newTyre, ...this.tyres()];
+    
+    // Update local state
+    this.tyres.set(updatedTyres);
+    this.showAddForm.set(false);
+    
+    // Reset form
+    this.newTyreForm.set({
+      'Brand': '',
+      'Pattern': '',
+      'Tyre Size': '',
+      'Type': 'Tubeless',
+      'Consumer Price': 0,
+      'MRP': 0
+    });
+
+    // Update filters
+    this.updateFilters(updatedTyres);
+
+    try {
+      const response = await fetch('/api/tyres', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data: updatedTyres.map(t => this.cleanTyre(t)) })
+      });
+      
+      if (!response.ok) throw new Error('Failed to save to cloud');
+    } catch (e: any) {
+      console.error('Cloud Sync Error:', e);
+      this.error.set('Cloud Sync Error: ' + e.message);
+    }
+  }
+
+  private cleanTyre(t: any) {
+    const { originalIndex, _width, _aspect, _const, _diam, _ls, ...rest } = t;
+    return rest;
+  }
+
+  private updateFilters(data: any[]) {
+    const uniqueBrands = ['All', ...new Set(data.map((t: any) => t.Brand))].sort();
+    this.brands.set(uniqueBrands as string[]);
+
+    const getUnique = (key: string): string[] => ['All', ...new Set(data.map((t: any) => t[key]))].filter(v => v !== 'N/A').sort() as string[];
+    
+    this.widths.set(getUnique('_width'));
+    this.aspects.set(getUnique('_aspect'));
+    this.constructions.set(getUnique('_const'));
+    this.diameters.set(getUnique('_diam'));
+    this.loadSpeeds.set(getUnique('_ls'));
   }
 }
