@@ -28,12 +28,34 @@ export class App implements OnInit {
   brands = signal<string[]>([]);
   searchQuery = signal<string>('');
   
-  // Spec Filters
-  widths = signal<string[]>([]);
-  aspects = signal<string[]>([]);
-  constructions = signal<string[]>([]);
-  diameters = signal<string[]>([]);
-  loadSpeeds = signal<string[]>([]);
+  // Spec Filters (Dynamic based on other selections)
+  widths = computed(() => this.getOptions('_width', ['selectedBrand', 'selectedAspect', 'selectedConstruction', 'selectedDiameter', 'selectedLoadSpeed']));
+  aspects = computed(() => this.getOptions('_aspect', ['selectedBrand', 'selectedWidth', 'selectedConstruction', 'selectedDiameter', 'selectedLoadSpeed']));
+  constructions = computed(() => this.getOptions('_const', ['selectedBrand', 'selectedWidth', 'selectedAspect', 'selectedDiameter', 'selectedLoadSpeed']));
+  diameters = computed(() => this.getOptions('_diam', ['selectedBrand', 'selectedWidth', 'selectedAspect', 'selectedConstruction', 'selectedLoadSpeed']));
+  loadSpeeds = computed(() => this.getOptions('_ls', ['selectedBrand', 'selectedWidth', 'selectedAspect', 'selectedConstruction', 'selectedDiameter']));
+
+  private getOptions(key: string, otherFilters: string[]) {
+    const data = this.tyres();
+    const filtered = data.filter(t => {
+      return otherFilters.every(f => {
+        const val = (this as any)[f]();
+        if (val === 'All') return true;
+        
+        // Map filter signal name to tyre property
+        const propMap: any = {
+          selectedBrand: 'Brand',
+          selectedWidth: '_width',
+          selectedAspect: '_aspect',
+          selectedConstruction: '_const',
+          selectedDiameter: '_diam',
+          selectedLoadSpeed: '_ls'
+        };
+        return t[propMap[f]] === val;
+      });
+    });
+    return ['All', ...new Set(filtered.map(t => t[key]))].filter(v => v !== 'N/A').sort() as string[];
+  }
 
   selectedBrand = signal<string>('All');
   selectedWidth = signal<string>('All');
@@ -137,20 +159,21 @@ export class App implements OnInit {
       
       const uniqueBrands = ['All', ...new Set(enrichedData.map((t: any) => t.Brand))].sort();
       this.brands.set(uniqueBrands as string[]);
-
-      // Extract unique specs for filters
-      const getUnique = (key: string): string[] => ['All', ...new Set(enrichedData.map((t: any) => t[key]))].filter(v => v !== 'N/A').sort() as string[];
-      
-      this.widths.set(getUnique('_width'));
-      this.aspects.set(getUnique('_aspect'));
-      this.constructions.set(getUnique('_const'));
-      this.diameters.set(getUnique('_diam'));
-      this.loadSpeeds.set(getUnique('_ls'));
     } catch (e: any) {
       this.error.set(e.message);
     } finally {
       this.loading.set(false);
     }
+  }
+
+  resetFilters() {
+    this.selectedBrand.set('All');
+    this.selectedWidth.set('All');
+    this.selectedAspect.set('All');
+    this.selectedConstruction.set('All');
+    this.selectedDiameter.set('All');
+    this.selectedLoadSpeed.set('All');
+    this.searchQuery.set('');
   }
 
   selectBrand(brand: string) {
