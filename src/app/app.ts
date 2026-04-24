@@ -106,7 +106,20 @@ export class App implements OnInit {
         console.log('Cloud API not available locally, falling back to master file.');
       }
       
+      // 3. Fallback to local master file if cloud data is missing
+      if (!data || (Array.isArray(data) && data.length === 0)) {
+        try {
+          const localResponse = await fetch('/tyres.json');
+          if (localResponse.ok) {
+            data = await localResponse.json();
+          }
+        } catch (localError) {
+          console.error('Failed to load local master file:', localError);
+        }
+      }
+
       // 2. Parse and Enrich Data
+      if (!data) data = [];
       const enrichedData = data.map((t: any) => {
         // Regex to handle various formats: "145 70 R12 69S", "155 R13", "195 65 R15 91H"
         const sizeStr = (t['Tyre Size'] || '').toString();
@@ -115,7 +128,7 @@ export class App implements OnInit {
         let width = 'N/A', aspect = 'N/A', construction = 'N/A', diameter = 'N/A', ls = 'N/A';
         
         // Simple heuristic parser
-        parts.forEach(p => {
+        parts.forEach((p: string) => {
           if (/^\d{3}$/.test(p)) width = p;
           else if (/^\d{2}$/.test(p) && width !== 'N/A' && diameter === 'N/A') aspect = p;
           else if (/^[A-Z]{1,2}$/.test(p)) construction = p;
@@ -136,7 +149,7 @@ export class App implements OnInit {
       this.brands.set(uniqueBrands as string[]);
 
       // Extract unique specs for filters
-      const getUnique = (key: string) => ['All', ...new Set(enrichedData.map((t: any) => t[key]))].filter(v => v !== 'N/A').sort();
+      const getUnique = (key: string): string[] => ['All', ...new Set(enrichedData.map((t: any) => t[key]))].filter(v => v !== 'N/A').sort() as string[];
       
       this.widths.set(getUnique('_width'));
       this.aspects.set(getUnique('_aspect'));
