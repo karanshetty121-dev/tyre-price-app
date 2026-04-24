@@ -25,7 +25,7 @@ export class App implements OnInit {
   ];
 
   tyres = signal<any[]>([]);
-  brands = signal<string[]>([]);
+  brands = computed(() => ['All', ...new Set(this.tyres().map(t => t.Brand))].sort() as string[]);
   searchQuery = signal<string>('');
   
   // Spec Filters (Dynamic based on other selections)
@@ -156,9 +156,6 @@ export class App implements OnInit {
       const enrichedData = data.map((t: any) => this.enrichTyre(t));
 
       this.tyres.set(enrichedData);
-      
-      const uniqueBrands = ['All', ...new Set(enrichedData.map((t: any) => t.Brand))].sort();
-      this.brands.set(uniqueBrands as string[]);
     } catch (e: any) {
       this.error.set(e.message);
     } finally {
@@ -297,8 +294,6 @@ export class App implements OnInit {
       'MRP': 0
     });
 
-    // Update filters
-    this.updateFilters(updatedTyres);
 
     try {
       const response = await fetch('/api/tyres', {
@@ -319,16 +314,4 @@ export class App implements OnInit {
     return rest;
   }
 
-  private updateFilters(data: any[]) {
-    const uniqueBrands = ['All', ...new Set(data.map((t: any) => t.Brand))].sort();
-    this.brands.set(uniqueBrands as string[]);
-
-    const getUnique = (key: string): string[] => ['All', ...new Set(data.map((t: any) => t[key]))].filter(v => v !== 'N/A').sort() as string[];
-    
-    this.widths.set(getUnique('_width'));
-    this.aspects.set(getUnique('_aspect'));
-    this.constructions.set(getUnique('_const'));
-    this.diameters.set(getUnique('_diam'));
-    this.loadSpeeds.set(getUnique('_ls'));
-  }
 }
