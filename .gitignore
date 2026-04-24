@@ -1,8 +1,27 @@
-__pycache__/
-*.pyc
-do_extract.py
-export_data.py
-extract_script.py
-node_modules/
-.angular/
-dist/
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# IDEs and editors
+/.vscode
+/.idea
+/*.swp
+/*.tst
+/*.log
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Angular
+/.angular
+/.editorconfig
+/.prettierrc
