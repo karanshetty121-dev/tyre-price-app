@@ -62,18 +62,22 @@ export class App implements OnInit {
     }
 
     try {
-      const response = await fetch('/tyres.json');
-      if (!response.ok) throw new Error('Failed to load data');
-      let data = await response.json();
+      // 1. Try to load from Cloud Database
+      const cloudResponse = await fetch('/api/tyres');
+      const cloudData = await cloudResponse.json();
       
-      // Load local overrides
-      const localData = localStorage.getItem('mf_tyre_overrides');
-      if (localData) {
-        const overrides = JSON.parse(localData);
-        data = data.map((t: any, index: number) => {
-          const override = overrides.find((o: any) => o.index === index);
-          return override ? { ...t, ...override.data } : t;
-        });
+      let data;
+      if (cloudData && !cloudData.status) {
+        // We have cloud data! Use it.
+        data = cloudData;
+      } else {
+        // First time or empty database, load from local master file
+        const localResponse = await fetch('/tyres.json');
+        if (!localResponse.ok) throw new Error('Failed to load master data');
+        data = await localResponse.json();
+        
+        // Optionally seed the database with master data if admin is logged in
+        // (We'll let the first save handle this naturally)
       }
 
       this.tyres.set(data);
@@ -124,35 +128,49 @@ export class App implements OnInit {
     this.editForm.set(null);
   }
 
-  saveEdit(index: number) {
+  async saveEdit(index: number) {
     const updatedTyres = [...this.tyres()];
-    const originalIndex = this.tyres().findIndex((t, idx) => idx === index);
-    
     updatedTyres[index] = { ...this.editForm() };
+    
+    // Optimistic Update
     this.tyres.set(updatedTyres);
-
-    // Save to local storage overrides
-    const localData = localStorage.getItem('mf_tyre_overrides');
-    let overrides = localData ? JSON.parse(localData) : [];
-    
-    // Update or add override
-    const existingIndex = overrides.findIndex((o: any) => o.index === index);
-    if (existingIndex > -1) {
-      overrides[existingIndex].data = { ...this.editForm() };
-    } else {
-      overrides.push({ index, data: { ...this.editForm() } });
-    }
-    
-    localStorage.setItem('mf_tyre_overrides', JSON.stringify(overrides));
-    
     this.editingId.set(null);
     this.editForm.set(null);
+
+    try {
+      // Persist to Cloud Database
+      const response = await fetch('/api/tyres', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data: updatedTyres })
+      });
+      
+      if (!response.ok) throw new Error('Failed to save to cloud');
+      console.log('Price synchronized to cloud successfully');
+    } catch (e: any) {
+      console.error('Cloud Sync Error:', e);
+      this.error.set('Cloud Sync Error: ' + e.message + '. Please check your connection.');
+    }
   }
 
-  resetData() {
-    if (confirm('Are you sure you want to reset all price overrides? This cannot be undone.')) {
-      localStorage.removeItem('mf_tyre_overrides');
-      window.location.reload();
+  async resetData() {
+    if (confirm('Are you sure you want to reset all cloud data? This will revert to the original price list for EVERYONE.')) {
+      try {
+        const response = await fetch('/tyres.json');
+        const originalData = await response.json();
+        
+        const apiResponse = await fetch('/api/tyres', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ data: originalData })
+        });
+
+        if (apiResponse.ok) {
+          window.location.reload();
+        }
+      } catch (e: any) {
+        this.error.set('Failed to reset cloud data.');
+      }
     }
   }
 
