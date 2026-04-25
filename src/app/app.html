@@ -95,35 +95,35 @@
                 <!-- Width -->
                 <div class="relative group min-w-[100px]">
                   <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Width</label>
-                  <select [ngModel]="selectedWidth()" (ngModelChange)="selectedWidth.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
+                  <select [ngModel]="selectedWidth()" (ngModelChange)="selectedWidth.set($event)" class="w-full pl-3 pr-2 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
                     <option *ngFor="let v of widths()" [value]="v">{{ v }}</option>
                   </select>
                 </div>
                 <!-- Aspect -->
                 <div class="relative group min-w-[80px]">
                   <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Ratio</label>
-                  <select [ngModel]="selectedAspect()" (ngModelChange)="selectedAspect.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
+                  <select [ngModel]="selectedAspect()" (ngModelChange)="selectedAspect.set($event)" class="w-full pl-3 pr-2 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
                     <option *ngFor="let v of aspects()" [value]="v">{{ v }}</option>
                   </select>
                 </div>
                 <!-- Construction -->
                 <div class="relative group min-w-[100px]">
                   <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Construction</label>
-                  <select [ngModel]="selectedConstruction()" (ngModelChange)="selectedConstruction.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
+                  <select [ngModel]="selectedConstruction()" (ngModelChange)="selectedConstruction.set($event)" class="w-full pl-3 pr-2 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
                     <option *ngFor="let v of constructions()" [value]="v">{{ v }}</option>
                   </select>
                 </div>
               <!-- Diameter -->
               <div class="relative group min-w-[80px]">
                 <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Rim</label>
-                <select [ngModel]="selectedDiameter()" (ngModelChange)="selectedDiameter.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
+                <select [ngModel]="selectedDiameter()" (ngModelChange)="selectedDiameter.set($event)" class="w-full pl-3 pr-2 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
                   <option *ngFor="let v of diameters()" [value]="v">{{ v }}</option>
                 </select>
               </div>
               <!-- Load/Speed -->
               <div class="relative group min-w-[100px]">
                 <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">L/S</label>
-                <select [ngModel]="selectedLoadSpeed()" (ngModelChange)="selectedLoadSpeed.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
+                <select [ngModel]="selectedLoadSpeed()" (ngModelChange)="selectedLoadSpeed.set($event)" class="w-full pl-3 pr-2 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
                   <option *ngFor="let v of loadSpeeds()" [value]="v">{{ v }}</option>
                 </select>
               </div>
