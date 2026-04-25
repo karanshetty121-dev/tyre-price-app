@@ -302,6 +302,45 @@ export class App implements OnInit {
     this.showToast('Data exported successfully');
   }
 
+  async importData(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (!input.files?.length) return;
+
+    const file = input.files[0];
+    const reader = new FileReader();
+
+    reader.onload = async (e) => {
+      try {
+        const json = JSON.parse(e.target?.result as string);
+        if (Array.isArray(json)) {
+          // Enrich and set local state
+          const enriched = json.map(t => this.enrichTyre(t));
+          this.tyres.set(enriched);
+          this.showToast(`Imported ${json.length} products successfully`);
+          
+          // Reset file input
+          input.value = '';
+
+          // Persist to Cloud Database
+          const response = await fetch('/api/tyres', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ data: json.map(t => this.cleanTyre(t)) })
+          });
+          
+          if (!response.ok) throw new Error('Failed to sync imported data to cloud');
+        } else {
+          throw new Error('Invalid data format: Expected an array of products.');
+        }
+      } catch (err: any) {
+        console.error('Import error:', err);
+        this.error.set('Import Failed: ' + (err.message || 'Invalid JSON file'));
+        input.value = '';
+      }
+    };
+    reader.readAsText(file);
+  }
+
   private enrichTyre(t: any) {
     // Regex to handle various formats: "145 70 R12 69S", "155 R13", "195 65 R15 91H"
     const sizeStr = (t['Tyre Size'] || '').toString();
