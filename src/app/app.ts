@@ -1,6 +1,7 @@
 import { Component, OnInit, signal, computed, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import * as XLSX from 'xlsx';
 
 @Component({
   selector: 'app-root',
@@ -287,9 +288,76 @@ export class App implements OnInit {
     }
   }
 
+    }
+  }
+
+  exportToExcel() {
+    const data = this.tyres().map(t => this.cleanTyre(t));
+    const worksheet = XLSX.utils.json_to_sheet(data);
+    const workbook = XLSX.utils.book_new();
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Tyre Inventory');
+    
+    // Auto-size columns (rough estimate)
+    const maxWidths = data.reduce((acc: any, row: any) => {
+      Object.keys(row).forEach((key, i) => {
+        const val = row[key] ? row[key].toString().length : 0;
+        acc[i] = Math.max(acc[i] || 0, val, key.length);
+      });
+      return acc;
+    }, []);
+    worksheet['!cols'] = maxWidths.map((w: number) => ({ wch: w + 2 }));
+
+    XLSX.writeFile(workbook, 'tyre_inventory_export.xlsx');
+    this.showToast('Inventory exported to Excel');
+  }
+
+  async importFromExcel(event: Event) {
+    const input = event.target as HTMLInputElement;
+    if (!input.files?.length) return;
+
+    const file = input.files[0];
+    const reader = new FileReader();
+
+    reader.onload = async (e) => {
+      try {
+        const data = new Uint8Array(e.target?.result as ArrayBuffer);
+        const workbook = XLSX.read(data, { type: 'array' });
+        const firstSheetName = workbook.SheetNames[0];
+        const worksheet = workbook.Sheets[firstSheetName];
+        const json = XLSX.utils.sheet_to_json(worksheet);
+
+        if (Array.isArray(json) && json.length > 0) {
+          // Enrich and set local state
+          const enriched = json.map(t => this.enrichTyre(t));
+          this.tyres.set(enriched);
+          this.showToast(`Imported ${json.length} products from Excel`);
+          
+          // Reset file input
+          input.value = '';
+
+          // Persist to Cloud Database
+          const response = await fetch('/api/tyres', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ data: json.map(t => this.cleanTyre(t)) })
+          });
+          
+          if (!response.ok) throw new Error('Failed to sync imported data to cloud');
+        } else {
+          throw new Error('Invalid Excel file: No data found in the first sheet.');
+        }
+      } catch (err: any) {
+        console.error('Import error:', err);
+        this.error.set('Excel Import Failed: ' + (err.message || 'Check file format'));
+        input.value = '';
+      }
+    };
+    reader.readAsArrayBuffer(file);
+  }
+
   exportData() {
-    // Remove originalIndex before exporting
-    const exportData = this.tyres().map(({ originalIndex, ...rest }) => rest);
+    // Keep JSON export as a secondary option if needed, but renamed in UI
+    const exportData = this.tyres().map(({ originalIndex, _width, _aspect, _const, _diam, _ls, ...rest }) => rest);
     const dataStr = JSON.stringify(exportData, null, 2);
     const dataUri = 'data:application/json;charset=utf-8,' + encodeURIComponent(dataStr);
     

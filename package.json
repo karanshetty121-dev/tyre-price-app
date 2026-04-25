@@ -20,7 +20,8 @@
     "@vercel/blob": "^2.3.3",
     "@vercel/kv": "^3.0.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "@angular/build": "^21.2.8",
