@@ -58,20 +58,21 @@
           <!-- Branding -->
           <div class="flex items-center gap-5 group cursor-default">
             <div class="flex flex-col">
-              <h1 class="text-2xl font-black tracking-tight text-white leading-none">
+              <h1 class="text-3xl font-black tracking-tight text-white leading-none">
                 Moto<span class="text-emerald-400">Finz</span>
               </h1>
               <div class="flex items-center gap-3 mt-1.5">
                 <span class="h-[1px] w-4 bg-emerald-500/50"></span>
-                <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-500">Price Tracker</p>
-                <span [class]="'px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest ' + (userRole() === 'admin' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-blue-500/20 text-blue-400 border border-blue-500/30')">
+                <p class="text-[10px] uppercase tracking-[0.3em] font-medium text-slate-500">Price Tracker</p>
+                <span [class]="'px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest ' + (userRole() === 'admin' ? 'bg-slate-500/20 text-slate-400 border border-slate-500/30' : 'bg-slate-500/20 text-slate-400 border border-slate-500/30')">
                   {{ userRole() }}
                 </span>
               </div>
             </div>
-            <!-- Search & Multi-Spec Filter Bar -->
+          </div>
+          <!-- Search & Multi-Spec Filter Bar -->
           <div class="flex flex-col md:flex-row items-center gap-3 w-full">
-            <div class="relative flex-1 w-full md:max-w-[300px]">
+            <div class="relative flex-1 w-full md:max-w-[400px]">
               <div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
                 <svg class="h-4 w-4 text-emerald-500/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <circle cx="11" cy="11" r="8"></circle>
@@ -82,34 +83,36 @@
                 type="text" 
                 [ngModel]="searchQuery()"
                 (ngModelChange)="searchQuery.set($event)"
-                placeholder="Search patterns..." 
+                placeholder="Search by pattern, size..." 
                 class="block w-full pl-11 pr-4 py-2.5 bg-white/5 border border-white/10 rounded-2xl text-[13px] text-white placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-emerald-500/40 transition-all shadow-2xl"
               >
             </div>
 
             <!-- Spec Grid -->
-            <div class="grid grid-cols-2 sm:grid-cols-3 md:flex items-center gap-2 w-full md:w-auto">
-              <!-- Width -->
-              <div class="relative group min-w-[100px]">
-                <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Width</label>
-                <select [ngModel]="selectedWidth()" (ngModelChange)="selectedWidth.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
-                  <option *ngFor="let v of widths()" [value]="v">{{ v }}</option>
-                </select>
-              </div>
-              <!-- Aspect -->
-              <div class="relative group min-w-[80px]">
-                <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Ratio</label>
-                <select [ngModel]="selectedAspect()" (ngModelChange)="selectedAspect.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
-                  <option *ngFor="let v of aspects()" [value]="v">{{ v }}</option>
-                </select>
-              </div>
-              <!-- Construction -->
-              <div class="relative group min-w-[80px]">
-                <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Const</label>
-                <select [ngModel]="selectedConstruction()" (ngModelChange)="selectedConstruction.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
-                  <option *ngFor="let v of constructions()" [value]="v">{{ v }}</option>
-                </select>
-              </div>
+            <div class="w-full md:w-auto bg-white/[0.02] p-2.5 rounded-2xl border border-white/5 flex flex-col md:flex-row items-start md:items-center gap-3">
+              <div class="text-[10px] font-black text-slate-500 uppercase tracking-widest px-1">Filter by Tire Spec</div>
+              <div class="grid grid-cols-2 sm:grid-cols-3 md:flex items-center gap-2 w-full md:w-auto">
+                <!-- Width -->
+                <div class="relative group min-w-[100px]">
+                  <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Width</label>
+                  <select [ngModel]="selectedWidth()" (ngModelChange)="selectedWidth.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
+                    <option *ngFor="let v of widths()" [value]="v">{{ v }}</option>
+                  </select>
+                </div>
+                <!-- Aspect -->
+                <div class="relative group min-w-[80px]">
+                  <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Ratio</label>
+                  <select [ngModel]="selectedAspect()" (ngModelChange)="selectedAspect.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
+                    <option *ngFor="let v of aspects()" [value]="v">{{ v }}</option>
+                  </select>
+                </div>
+                <!-- Construction -->
+                <div class="relative group min-w-[100px]">
+                  <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Construction</label>
+                  <select [ngModel]="selectedConstruction()" (ngModelChange)="selectedConstruction.set($event)" class="w-full pl-3 pr-8 py-2 bg-white/5 border border-white/10 rounded-xl text-[12px] text-white appearance-none focus:ring-2 focus:ring-emerald-500/40 cursor-pointer">
+                    <option *ngFor="let v of constructions()" [value]="v">{{ v }}</option>
+                  </select>
+                </div>
               <!-- Diameter -->
               <div class="relative group min-w-[80px]">
                 <label class="absolute -top-2 left-3 px-1 bg-[#0B0F1A] text-[9px] font-black text-slate-500 uppercase tracking-widest z-10">Rim</label>
@@ -158,6 +161,14 @@
       </div>
     </header>
 
+    <!-- Toast Notification -->
+    <div *ngIf="toastMessage()" class="fixed bottom-6 right-6 z-[100] animate-in fade-in slide-in-from-bottom-4 duration-300">
+      <div class="bg-[#161B29] border border-emerald-500/30 text-emerald-400 px-6 py-3 rounded-2xl shadow-2xl flex items-center gap-3">
+        <svg class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+        <span class="text-sm font-bold">{{ toastMessage() }}</span>
+      </div>
+    </div>
+
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
       <!-- Loading / Error States -->
       <div *ngIf="loading()" class="flex flex-col items-center justify-center py-24">
@@ -192,7 +203,7 @@
               (click)="selectBrand(brand)"
               [ngClass]="{
                 'px-4 py-1.5 rounded-full text-xs font-bold transition-all duration-300 transform active:scale-95 shadow-lg': true,
-                'bg-emerald-500 text-[#0B0F1A] shadow-emerald-500/20 ring-4 ring-emerald-500/10': brand === selectedBrand(),
+                'bg-blue-500 text-[#0B0F1A] shadow-blue-500/20 ring-4 ring-blue-500/10': brand === selectedBrand(),
                 'bg-white/5 text-slate-400 hover:bg-white/10 hover:text-white border border-white/5': brand !== selectedBrand()
               }"
             >
@@ -260,8 +271,8 @@
               <h3 class="text-xl font-bold text-white">Inventory Catalog</h3>
               <p class="text-sm text-slate-500">Live pricing analysis for <span class="text-emerald-400 font-bold">{{ selectedBrand() }}</span> network</p>
             </div>
-            <div class="px-4 py-1.5 bg-emerald-500/10 border border-emerald-500/20 rounded-lg">
-              <span class="text-xs font-black text-emerald-400 uppercase tracking-tighter">
+            <div class="px-4 py-1.5 bg-slate-800/50 border border-white/5 rounded-lg">
+              <span class="text-xs font-medium text-slate-400 uppercase tracking-widest">
                 {{ filteredTyres().length }} Units Identified
               </span>
             </div>
@@ -272,12 +283,12 @@
               <table class="min-w-full divide-y divide-white/5">
                 <thead>
                   <tr class="bg-white/[0.02]">
-                    <th class="px-6 py-3 text-left text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Manufacturer</th>
-                    <th class="px-6 py-3 text-left text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Design Pattern</th>
-                    <th class="px-6 py-3 text-left text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Dimension Spec</th>
+                    <th class="px-6 py-3 text-left text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] cursor-pointer hover:text-slate-300">Manufacturer <span class="inline-block opacity-50 ml-1">↑↓</span></th>
+                    <th class="px-6 py-3 text-left text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] cursor-pointer hover:text-slate-300">Design Pattern <span class="inline-block opacity-50 ml-1">↑↓</span></th>
+                    <th class="px-6 py-3 text-left text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] cursor-pointer hover:text-slate-300">Dimension Spec <span class="inline-block opacity-50 ml-1">↑↓</span></th>
                     <th class="px-6 py-3 text-left text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Format</th>
-                    <th class="px-6 py-3 text-right text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Net Consumer</th>
-                    <th class="px-6 py-3 text-right text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Retail (MRP)</th>
+                    <th class="px-6 py-3 text-right text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] cursor-pointer hover:text-slate-300"><span class="inline-block opacity-50 mr-1">↑↓</span> Net Consumer</th>
+                    <th class="px-6 py-3 text-right text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] cursor-pointer hover:text-slate-300"><span class="inline-block opacity-50 mr-1">↑↓</span> Retail (MRP)</th>
                     <th *ngIf="userRole() === 'admin'" class="px-6 py-3 text-right text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Actions</th>
                   </tr>
                 </thead>
@@ -297,7 +308,12 @@
                     <td class="px-6 py-2.5 text-[13px] text-slate-400 group-hover:text-slate-200 transition-colors">{{ tyre.Pattern }}</td>
                     <td class="px-6 py-2.5 text-[13px] font-black text-white tracking-tight">{{ tyre['Tyre Size'] }}</td>
                     <td class="px-6 py-2.5">
-                      <span class="px-2 py-0.5 rounded text-[9px] font-black tracking-widest uppercase border border-white/10 bg-white/5 text-slate-500">
+                      <span [ngClass]="{
+                          'px-2 py-0.5 rounded text-[9px] font-black tracking-widest uppercase border': true,
+                          'border-white/5 bg-white/[0.02] text-slate-500': tyre.Type === 'Tubeless' || !tyre.Type,
+                          'border-amber-500/20 bg-amber-500/10 text-amber-400': tyre.Type === 'Tube Type',
+                          'border-blue-500/20 bg-blue-500/10 text-blue-400': tyre.Type !== 'Tubeless' && tyre.Type !== 'Tube Type' && tyre.Type
+                        }">
                         {{ tyre.Type || 'N/A' }}
                       </span>
                     </td>
@@ -318,10 +334,15 @@
                       </ng-template>
                     </td>
                     <td *ngIf="userRole() === 'admin'" class="px-6 py-2.5 text-right">
-                      <div class="flex justify-end gap-1.5">
-                        <button *ngIf="editingId() !== tyre.originalIndex" (click)="startEdit(tyre.originalIndex, tyre)" class="p-1.5 text-slate-500 hover:text-emerald-400 transition-colors">
+                      <div class="flex justify-end gap-1.5 items-center">
+                        <button *ngIf="editingId() !== tyre.originalIndex" (click)="startEdit(tyre.originalIndex, tyre)" class="p-1.5 text-slate-500 hover:text-blue-400 transition-colors" title="Edit">
                           <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                          </svg>
+                        </button>
+                        <button *ngIf="editingId() !== tyre.originalIndex" class="p-1.5 text-slate-500 hover:text-red-400 transition-colors" title="Delete">
+                          <svg class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                           </svg>
                         </button>
                         <ng-container *ngIf="editingId() === tyre.originalIndex">

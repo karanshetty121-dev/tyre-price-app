@@ -71,6 +71,15 @@ export class App implements OnInit {
   editingId = signal<number | null>(null);
   editForm = signal<any>(null);
 
+  // UI Feedback State
+  toastMessage = signal<string | null>(null);
+
+  showToast(msg: string) {
+    this.toastMessage.set(msg);
+    setTimeout(() => this.toastMessage.set(null), 3000);
+  }
+
+
   // Add Product State
   showAddForm = signal<boolean>(false);
   newTyreForm = signal<any>({
@@ -171,6 +180,7 @@ export class App implements OnInit {
     this.selectedDiameter.set('All');
     this.selectedLoadSpeed.set('All');
     this.searchQuery.set('');
+    this.showToast('Filters reset successfully');
   }
 
   selectBrand(brand: string) {
@@ -247,6 +257,7 @@ export class App implements OnInit {
     linkElement.setAttribute('href', dataUri);
     linkElement.setAttribute('download', exportFileDefaultName);
     linkElement.click();
+    this.showToast('Data exported successfully');
   }
 
   private enrichTyre(t: any) {
@@ -293,6 +304,8 @@ export class App implements OnInit {
       'Consumer Price': 0,
       'MRP': 0
     });
+
+    this.showToast('Product added successfully');
 
 
     try {
