@@ -1,4 +1,4 @@
-import { Component, OnInit, signal, computed } from '@angular/core';
+import { Component, OnInit, signal, computed, effect } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class App implements OnInit {
   title = 'MotoFinz Price Tracker';
+  Math = Math;
   
   // Auth State
   isLoggedIn = signal<boolean>(false);
@@ -27,6 +28,17 @@ export class App implements OnInit {
   tyres = signal<any[]>([]);
   brands = computed(() => ['All', ...new Set(this.tyres().map(t => t.Brand))].sort() as string[]);
   searchQuery = signal<string>('');
+  
+  // Pagination State
+  currentPage = signal<number>(1);
+  pageSize = signal<number>(20);
+  
+  paginatedTyres = computed(() => {
+    const start = (this.currentPage() - 1) * this.pageSize();
+    return this.filteredTyres().slice(start, start + this.pageSize());
+  });
+
+  totalPages = computed(() => Math.ceil(this.filteredTyres().length / this.pageSize()));
   
   // Spec Filters (Dynamic based on other selections)
   widths = computed(() => this.getOptions('_width', ['selectedBrand', 'selectedAspect', 'selectedConstruction', 'selectedDiameter', 'selectedLoadSpeed']));
@@ -120,6 +132,15 @@ export class App implements OnInit {
       });
   });
 
+  constructor() {
+    effect(() => {
+      // Trigger whenever filteredTyres changes
+      this.filteredTyres();
+      // Reset to first page
+      this.currentPage.set(1);
+    }, { allowSignalWrites: true });
+  }
+
   async ngOnInit() {
     // Check for existing session
     const session = localStorage.getItem('mf_session');
@@ -180,11 +201,32 @@ export class App implements OnInit {
     this.selectedDiameter.set('All');
     this.selectedLoadSpeed.set('All');
     this.searchQuery.set('');
+    this.currentPage.set(1);
     this.showToast('Filters reset successfully');
   }
 
   selectBrand(brand: string) {
     this.selectedBrand.set(brand);
+    this.currentPage.set(1);
+  }
+
+  setPage(page: number) {
+    if (page >= 1 && page <= this.totalPages()) {
+      this.currentPage.set(page);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  nextPage() {
+    if (this.currentPage() < this.totalPages()) {
+      this.setPage(this.currentPage() + 1);
+    }
+  }
+
+  prevPage() {
+    if (this.currentPage() > 1) {
+      this.setPage(this.currentPage() - 1);
+    }
   }
 
   onLogin() {
