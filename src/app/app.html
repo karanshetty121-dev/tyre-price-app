@@ -9,8 +9,8 @@
       <div class="absolute -top-24 -right-24 h-48 w-48 bg-emerald-500/10 blur-[80px] rounded-full"></div>
       
       <div class="relative text-center">
-        <h2 class="text-3xl font-black text-white tracking-tight">Price <span class="text-emerald-400">List</span></h2>
-        <p class="mt-2 text-slate-500 text-sm font-bold tracking-widest uppercase">MOTO FINEZ ENTERPRISE</p>
+        <h2 class="text-3xl font-black text-white tracking-tight">Moto<span class="text-emerald-400">Finz</span></h2>
+        <p class="mt-2 text-slate-500 text-sm font-bold tracking-widest uppercase">Price Tracker</p>
       </div>
 
       <form class="mt-8 space-y-6" (ngSubmit)="onLogin()">
@@ -59,11 +59,11 @@
           <div class="flex items-center gap-5 group cursor-default">
             <div class="flex flex-col">
               <h1 class="text-2xl font-black tracking-tight text-white leading-none">
-                Price <span class="text-emerald-400">List</span>
+                Moto<span class="text-emerald-400">Finz</span>
               </h1>
               <div class="flex items-center gap-3 mt-1.5">
                 <span class="h-[1px] w-4 bg-emerald-500/50"></span>
-                <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-500">MOTO FINEZ ENTERPRISE</p>
+                <p class="text-[10px] uppercase tracking-[0.3em] font-bold text-slate-500">Price Tracker</p>
                 <span [class]="'px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest ' + (userRole() === 'admin' ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30' : 'bg-blue-500/20 text-blue-400 border border-blue-500/30')">
                   {{ userRole() }}
                 </span>
@@ -348,7 +348,7 @@
 
       <!-- Footer -->
       <footer class="mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 opacity-40 hover:opacity-100 transition-opacity duration-700">
-        <div class="text-[11px] font-bold uppercase tracking-[0.4em] text-slate-500">© 2026 MOTO FINEZ ENTERPRISE</div>
+        <div class="text-[11px] font-bold uppercase tracking-[0.4em] text-slate-500">© 2026 MotoFinz Price Tracker</div>
         <div class="flex items-center gap-2">
           <div class="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></div>
           <span class="text-[10px] uppercase tracking-widest font-black text-slate-600">Secure Node Active</span>

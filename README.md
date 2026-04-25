@@ -1,4 +1,4 @@
-# Moto Finez - Price List
+# MotoFinz - Price Tracker
 
 A professional, high-performance web dashboard for managing and viewing tyre prices. Built with Angular and high-end Vanilla CSS for a premium, dark-themed experience.
 

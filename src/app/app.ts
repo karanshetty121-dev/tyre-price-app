@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './app.css'
 })
 export class App implements OnInit {
-  title = 'Price List';
+  title = 'MotoFinz Price Tracker';
   
   // Auth State
   isLoggedIn = signal<boolean>(false);
